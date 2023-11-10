@@ -333,7 +333,8 @@ impl Solution {
         let s = s.as_bytes();
         let mut set = HashSet::new();
         let mut i = 0;
-        s.iter()
+        s
+            .iter()
             .map(|c| {
                 while set.contains(&c) {
                     set.remove(&s[i]);
@@ -344,6 +345,35 @@ impl Solution {
             })
             .max()
             .unwrap_or(0) as i32
+    }
+}
+```
+
+### **PHP**
+
+```php
+class Solution {
+    /**
+     * @param String $s
+     * @return Integer
+     */
+    function lengthOfLongestSubstring($s) {
+        $max = 0;
+        for ($i = 0; $i < strlen($s); $i++) {
+            $chars = [];
+            $sub = '';
+            for ($j = $i; $j < strlen($s); $j++) {
+                if (in_array($s[$j], $chars)) {
+                    break;
+                }
+                $sub .= $s[$j];
+                $chars[] = $s[$j];
+            }
+            if (strlen($sub) > $max) {
+                $max = strlen($sub);
+            }
+        }
+        return $max;
     }
 }
 ```
