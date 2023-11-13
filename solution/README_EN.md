@@ -2936,6 +2936,14 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2925  |  [Maximum Score After Applying Operations on a Tree](/solution/2900-2999/2925.Maximum%20Score%20After%20Applying%20Operations%20on%20a%20Tree/README_EN.md)  |    |  Medium  |  Weekly Contest 370  |
 |  2926  |  [Maximum Balanced Subsequence Sum](/solution/2900-2999/2926.Maximum%20Balanced%20Subsequence%20Sum/README_EN.md)  |    |  Hard  |  Weekly Contest 370  |
 |  2927  |  [Distribute Candies Among Children III](/solution/2900-2999/2927.Distribute%20Candies%20Among%20Children%20III/README_EN.md)  |    |  Hard  |  🔒  |
+|  2928  |  [Distribute Candies Among Children I](/solution/2900-2999/2928.Distribute%20Candies%20Among%20Children%20I/README_EN.md)  |    |  Easy  |  Biweekly Contest 117  |
+|  2929  |  [Distribute Candies Among Children II](/solution/2900-2999/2929.Distribute%20Candies%20Among%20Children%20II/README_EN.md)  |    |  Medium  |  Biweekly Contest 117  |
+|  2930  |  [Number of Strings Which Can Be Rearranged to Contain Substring](/solution/2900-2999/2930.Number%20of%20Strings%20Which%20Can%20Be%20Rearranged%20to%20Contain%20Substring/README_EN.md)  |    |  Medium  |  Biweekly Contest 117  |
+|  2931  |  [Maximum Spending After Buying Items](/solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README_EN.md)  |    |  Hard  |  Biweekly Contest 117  |
+|  2932  |  [Maximum Strong Pair XOR I](/solution/2900-2999/2932.Maximum%20Strong%20Pair%20XOR%20I/README_EN.md)  |    |  Easy  |  Weekly Contest 371  |
+|  2933  |  [High-Access Employees](/solution/2900-2999/2933.High-Access%20Employees/README_EN.md)  |    |  Medium  |  Weekly Contest 371  |
+|  2934  |  [Minimum Operations to Maximize Last Elements in Arrays](/solution/2900-2999/2934.Minimum%20Operations%20to%20Maximize%20Last%20Elements%20in%20Arrays/README_EN.md)  |    |  Medium  |  Weekly Contest 371  |
+|  2935  |  [Maximum Strong Pair XOR II](/solution/2900-2999/2935.Maximum%20Strong%20Pair%20XOR%20II/README_EN.md)  |    |  Hard  |  Weekly Contest 371  |
 
 ## Copyright
 
