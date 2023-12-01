@@ -70,10 +70,12 @@ derived[1] = original[1] ⊕ original[0] = 1
 我们不妨假设原始二进制数组为 $a$，派生数组为 $b$，那么有：
 
 $$
-b_0 = a_0 \oplus a_1 \\
-b_1 = a_1 \oplus a_2 \\
-\cdots \\
-b_{n-1} = a_{n-1} \oplus a_0
+\begin{aligned}
+b_0 &= a_0 \oplus a_1 \\
+b_1 &= a_1 \oplus a_2 \\
+\vdots \\
+b_{n-1} &= a_{n-1} \oplus a_0
+\end{aligned}
 $$
 
 由于异或运算满足交换律和结合律，因此有：
