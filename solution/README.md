@@ -608,7 +608,7 @@
 |  0595  |  [大的国家](/solution/0500-0599/0595.Big%20Countries/README.md)  |  `数据库`  |  简单  |    |
 |  0596  |  [超过5名学生的课](/solution/0500-0599/0596.Classes%20More%20Than%205%20Students/README.md)  |  `数据库`  |  简单  |    |
 |  0597  |  [好友申请 I：总体通过率](/solution/0500-0599/0597.Friend%20Requests%20I%20Overall%20Acceptance%20Rate/README.md)  |  `数据库`  |  简单  |  🔒  |
-|  0598  |  [范围求和 II](/solution/0500-0599/0598.Range%20Addition%20II/README.md)  |  `数组`,`数学`  |  简单  |    |
+|  0598  |  [区间加法 II](/solution/0500-0599/0598.Range%20Addition%20II/README.md)  |  `数组`,`数学`  |  简单  |    |
 |  0599  |  [两个列表的最小索引总和](/solution/0500-0599/0599.Minimum%20Index%20Sum%20of%20Two%20Lists/README.md)  |  `数组`,`哈希表`,`字符串`  |  简单  |    |
 |  0600  |  [不含连续1的非负整数](/solution/0600-0699/0600.Non-negative%20Integers%20without%20Consecutive%20Ones/README.md)  |  `动态规划`  |  困难  |    |
 |  0601  |  [体育馆的人流量](/solution/0600-0699/0601.Human%20Traffic%20of%20Stadium/README.md)  |  `数据库`  |  困难  |    |
@@ -826,7 +826,7 @@
 |  0813  |  [最大平均值和的分组](/solution/0800-0899/0813.Largest%20Sum%20of%20Averages/README.md)  |  `数组`,`动态规划`,`前缀和`  |  中等  |    |
 |  0814  |  [二叉树剪枝](/solution/0800-0899/0814.Binary%20Tree%20Pruning/README.md)  |  `树`,`深度优先搜索`,`二叉树`  |  中等  |    |
 |  0815  |  [公交路线](/solution/0800-0899/0815.Bus%20Routes/README.md)  |  `广度优先搜索`,`数组`,`哈希表`  |  困难  |    |
-|  0816  |  [模糊坐标](/solution/0800-0899/0816.Ambiguous%20Coordinates/README.md)  |  `字符串`,`回溯`  |  中等  |    |
+|  0816  |  [模糊坐标](/solution/0800-0899/0816.Ambiguous%20Coordinates/README.md)  |  `字符串`,`回溯`,`枚举`  |  中等  |    |
 |  0817  |  [链表组件](/solution/0800-0899/0817.Linked%20List%20Components/README.md)  |  `数组`,`哈希表`,`链表`  |  中等  |    |
 |  0818  |  [赛车](/solution/0800-0899/0818.Race%20Car/README.md)  |  `动态规划`  |  困难  |    |
 |  0819  |  [最常见的单词](/solution/0800-0899/0819.Most%20Common%20Word/README.md)  |  `哈希表`,`字符串`,`计数`  |  简单  |    |
@@ -2707,7 +2707,7 @@
 |  2694  |  [事件发射器](/solution/2600-2699/2694.Event%20Emitter/README.md)  |    |  中等  |    |
 |  2695  |  [包装数组](/solution/2600-2699/2695.Array%20Wrapper/README.md)  |    |  简单  |    |
 |  2696  |  [删除子串后的字符串最小长度](/solution/2600-2699/2696.Minimum%20String%20Length%20After%20Removing%20Substrings/README.md)  |  `栈`,`字符串`,`模拟`  |  简单  |  第 346 场周赛  |
-|  2697  |  [字典序最小回文串](/solution/2600-2699/2697.Lexicographically%20Smallest%20Palindrome/README.md)  |  `双指针`,`字符串`  |  简单  |  第 346 场周赛  |
+|  2697  |  [字典序最小回文串](/solution/2600-2699/2697.Lexicographically%20Smallest%20Palindrome/README.md)  |  `贪心`,`双指针`,`字符串`  |  简单  |  第 346 场周赛  |
 |  2698  |  [求一个整数的惩罚数](/solution/2600-2699/2698.Find%20the%20Punishment%20Number%20of%20an%20Integer/README.md)  |  `数学`,`回溯`  |  中等  |  第 346 场周赛  |
 |  2699  |  [修改图中的边权](/solution/2600-2699/2699.Modify%20Graph%20Edge%20Weights/README.md)  |  `图`,`最短路`,`堆（优先队列）`  |  困难  |  第 346 场周赛  |
 |  2700  |  [两个对象之间的差异](/solution/2700-2799/2700.Differences%20Between%20Two%20Objects/README.md)  |    |  中等  |  🔒  |
@@ -2941,7 +2941,7 @@
 |  2928  |  [给小朋友们分糖果 I](/solution/2900-2999/2928.Distribute%20Candies%20Among%20Children%20I/README.md)  |  `数学`,`组合数学`,`枚举`  |  简单  |  第 117 场双周赛  |
 |  2929  |  [给小朋友们分糖果 II](/solution/2900-2999/2929.Distribute%20Candies%20Among%20Children%20II/README.md)  |  `数学`,`组合数学`,`枚举`  |  中等  |  第 117 场双周赛  |
 |  2930  |  [重新排列后包含指定子字符串的字符串数目](/solution/2900-2999/2930.Number%20of%20Strings%20Which%20Can%20Be%20Rearranged%20to%20Contain%20Substring/README.md)  |  `数学`,`动态规划`,`组合数学`  |  中等  |  第 117 场双周赛  |
-|  2931  |  [购买物品的最大开销](/solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README.md)  |  `贪心`,`数组`,`排序`,`堆（优先队列）`  |  困难  |  第 117 场双周赛  |
+|  2931  |  [购买物品的最大开销](/solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README.md)  |  `贪心`,`数组`,`矩阵`,`排序`,`堆（优先队列）`  |  困难  |  第 117 场双周赛  |
 |  2932  |  [找出强数对的最大异或值 I](/solution/2900-2999/2932.Maximum%20Strong%20Pair%20XOR%20I/README.md)  |  `位运算`,`字典树`,`数组`,`哈希表`,`滑动窗口`  |  简单  |  第 371 场周赛  |
 |  2933  |  [高访问员工](/solution/2900-2999/2933.High-Access%20Employees/README.md)  |  `数组`,`哈希表`,`字符串`,`排序`  |  中等  |  第 371 场周赛  |
 |  2934  |  [最大化数组末位元素的最少操作次数](/solution/2900-2999/2934.Minimum%20Operations%20to%20Maximize%20Last%20Elements%20in%20Arrays/README.md)  |  `贪心`,`数组`  |  中等  |  第 371 场周赛  |
@@ -2962,18 +2962,19 @@
 |  2949  |  [统计美丽子字符串 II](/solution/2900-2999/2949.Count%20Beautiful%20Substrings%20II/README.md)  |  `哈希表`,`数学`,`字符串`,`数论`,`前缀和`  |  困难  |  第 373 场周赛  |
 |  2950  |  [可整除子串的数量](/solution/2900-2999/2950.Number%20of%20Divisible%20Substrings/README.md)  |  `哈希表`,`字符串`,`计数`  |  中等  |  🔒  |
 |  2951  |  [找出峰值](/solution/2900-2999/2951.Find%20the%20Peaks/README.md)  |  `数组`,`枚举`  |  简单  |  第 374 场周赛  |
-|  2952  |  [需要添加的硬币的最小数量](/solution/2900-2999/2952.Minimum%20Number%20of%20Coins%20to%20be%20Added/README.md)  |  `贪心`,`数组`,`排序`  |  困难  |  第 374 场周赛  |
-|  2953  |  [统计完全子字符串](/solution/2900-2999/2953.Count%20Complete%20Substrings/README.md)  |  `哈希表`,`字符串`,`滑动窗口`  |  中等  |  第 374 场周赛  |
+|  2952  |  [需要添加的硬币的最小数量](/solution/2900-2999/2952.Minimum%20Number%20of%20Coins%20to%20be%20Added/README.md)  |  `贪心`,`数组`,`排序`  |  中等  |  第 374 场周赛  |
+|  2953  |  [统计完全子字符串](/solution/2900-2999/2953.Count%20Complete%20Substrings/README.md)  |  `哈希表`,`字符串`,`滑动窗口`  |  困难  |  第 374 场周赛  |
 |  2954  |  [统计感冒序列的数目](/solution/2900-2999/2954.Count%20the%20Number%20of%20Infection%20Sequences/README.md)  |  `数组`,`数学`,`组合数学`  |  困难  |  第 374 场周赛  |
-|  2955  |  [Number of Same-End Substrings](/solution/2900-2999/2955.Number%20of%20Same-End%20Substrings/README.md)  |    |  中等  |  🔒  |
-|  2956  |  [找到两个数组中的公共元素](/solution/2900-2999/2956.Find%20Common%20Elements%20Between%20Two%20Arrays/README.md)  |    |  简单  |  第 119 场双周赛  |
-|  2957  |  [消除相邻近似相等字符](/solution/2900-2999/2957.Remove%20Adjacent%20Almost-Equal%20Characters/README.md)  |    |  中等  |  第 119 场双周赛  |
-|  2958  |  [最多 K 个重复元素的最长子数组](/solution/2900-2999/2958.Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/README.md)  |    |  中等  |  第 119 场双周赛  |
-|  2959  |  [关闭分部的可行集合数目](/solution/2900-2999/2959.Number%20of%20Possible%20Sets%20of%20Closing%20Branches/README.md)  |    |  困难  |  第 119 场双周赛  |
-|  2960  |  [统计已测试设备](/solution/2900-2999/2960.Count%20Tested%20Devices%20After%20Test%20Operations/README.md)  |    |  简单  |  第 375 场周赛  |
-|  2961  |  [双模幂运算](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README.md)  |    |  中等  |  第 375 场周赛  |
-|  2962  |  [统计最大元素出现至少 K 次的子数组](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README.md)  |    |  中等  |  第 375 场周赛  |
-|  2963  |  [统计好分割方案的数目](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README.md)  |    |  困难  |  第 375 场周赛  |
+|  2955  |  [Number of Same-End Substrings](/solution/2900-2999/2955.Number%20of%20Same-End%20Substrings/README.md)  |  `数组`,`哈希表`,`字符串`,`计数`,`前缀和`  |  中等  |  🔒  |
+|  2956  |  [找到两个数组中的公共元素](/solution/2900-2999/2956.Find%20Common%20Elements%20Between%20Two%20Arrays/README.md)  |  `数组`,`哈希表`  |  简单  |  第 119 场双周赛  |
+|  2957  |  [消除相邻近似相等字符](/solution/2900-2999/2957.Remove%20Adjacent%20Almost-Equal%20Characters/README.md)  |  `贪心`,`字符串`,`动态规划`  |  中等  |  第 119 场双周赛  |
+|  2958  |  [最多 K 个重复元素的最长子数组](/solution/2900-2999/2958.Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/README.md)  |  `数组`,`哈希表`,`滑动窗口`  |  中等  |  第 119 场双周赛  |
+|  2959  |  [关闭分部的可行集合数目](/solution/2900-2999/2959.Number%20of%20Possible%20Sets%20of%20Closing%20Branches/README.md)  |  `位运算`,`图`,`枚举`,`最短路`,`堆（优先队列）`  |  困难  |  第 119 场双周赛  |
+|  2960  |  [统计已测试设备](/solution/2900-2999/2960.Count%20Tested%20Devices%20After%20Test%20Operations/README.md)  |  `数组`,`模拟`  |  简单  |  第 375 场周赛  |
+|  2961  |  [双模幂运算](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README.md)  |  `数组`,`数学`,`模拟`  |  中等  |  第 375 场周赛  |
+|  2962  |  [统计最大元素出现至少 K 次的子数组](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README.md)  |  `数组`,`滑动窗口`  |  中等  |  第 375 场周赛  |
+|  2963  |  [统计好分割方案的数目](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README.md)  |  `数组`,`哈希表`,`数学`,`组合数学`  |  困难  |  第 375 场周赛  |
+|  2964  |  [Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README.md)  |    |  中等  |  🔒  |
 
 ## 版权
 

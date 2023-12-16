@@ -607,7 +607,7 @@
   - [0595.大的国家](/solution/0500-0599/0595.Big%20Countries/README.md)
   - [0596.超过5名学生的课](/solution/0500-0599/0596.Classes%20More%20Than%205%20Students/README.md)
   - [0597.好友申请 I：总体通过率](/solution/0500-0599/0597.Friend%20Requests%20I%20Overall%20Acceptance%20Rate/README.md)
-  - [0598.范围求和 II](/solution/0500-0599/0598.Range%20Addition%20II/README.md)
+  - [0598.区间加法 II](/solution/0500-0599/0598.Range%20Addition%20II/README.md)
   - [0599.两个列表的最小索引总和](/solution/0500-0599/0599.Minimum%20Index%20Sum%20of%20Two%20Lists/README.md)
 
 - 0600-0699
@@ -3021,3 +3021,4 @@
   - [2961.双模幂运算](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README.md)
   - [2962.统计最大元素出现至少 K 次的子数组](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README.md)
   - [2963.统计好分割方案的数目](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README.md)
+  - [2964.Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README.md)

@@ -824,7 +824,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  0813  |  [Largest Sum of Averages](/solution/0800-0899/0813.Largest%20Sum%20of%20Averages/README_EN.md)  |  `Array`,`Dynamic Programming`,`Prefix Sum`  |  Medium  |    |
 |  0814  |  [Binary Tree Pruning](/solution/0800-0899/0814.Binary%20Tree%20Pruning/README_EN.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0815  |  [Bus Routes](/solution/0800-0899/0815.Bus%20Routes/README_EN.md)  |  `Breadth-First Search`,`Array`,`Hash Table`  |  Hard  |    |
-|  0816  |  [Ambiguous Coordinates](/solution/0800-0899/0816.Ambiguous%20Coordinates/README_EN.md)  |  `String`,`Backtracking`  |  Medium  |    |
+|  0816  |  [Ambiguous Coordinates](/solution/0800-0899/0816.Ambiguous%20Coordinates/README_EN.md)  |  `String`,`Backtracking`,`Enumeration`  |  Medium  |    |
 |  0817  |  [Linked List Components](/solution/0800-0899/0817.Linked%20List%20Components/README_EN.md)  |  `Array`,`Hash Table`,`Linked List`  |  Medium  |    |
 |  0818  |  [Race Car](/solution/0800-0899/0818.Race%20Car/README_EN.md)  |  `Dynamic Programming`  |  Hard  |    |
 |  0819  |  [Most Common Word](/solution/0800-0899/0819.Most%20Common%20Word/README_EN.md)  |  `Hash Table`,`String`,`Counting`  |  Easy  |    |
@@ -2705,7 +2705,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2694  |  [Event Emitter](/solution/2600-2699/2694.Event%20Emitter/README_EN.md)  |    |  Medium  |    |
 |  2695  |  [Array Wrapper](/solution/2600-2699/2695.Array%20Wrapper/README_EN.md)  |    |  Easy  |    |
 |  2696  |  [Minimum String Length After Removing Substrings](/solution/2600-2699/2696.Minimum%20String%20Length%20After%20Removing%20Substrings/README_EN.md)  |  `Stack`,`String`,`Simulation`  |  Easy  |  Weekly Contest 346  |
-|  2697  |  [Lexicographically Smallest Palindrome](/solution/2600-2699/2697.Lexicographically%20Smallest%20Palindrome/README_EN.md)  |  `Two Pointers`,`String`  |  Easy  |  Weekly Contest 346  |
+|  2697  |  [Lexicographically Smallest Palindrome](/solution/2600-2699/2697.Lexicographically%20Smallest%20Palindrome/README_EN.md)  |  `Greedy`,`Two Pointers`,`String`  |  Easy  |  Weekly Contest 346  |
 |  2698  |  [Find the Punishment Number of an Integer](/solution/2600-2699/2698.Find%20the%20Punishment%20Number%20of%20an%20Integer/README_EN.md)  |  `Math`,`Backtracking`  |  Medium  |  Weekly Contest 346  |
 |  2699  |  [Modify Graph Edge Weights](/solution/2600-2699/2699.Modify%20Graph%20Edge%20Weights/README_EN.md)  |  `Graph`,`Shortest Path`,`Heap (Priority Queue)`  |  Hard  |  Weekly Contest 346  |
 |  2700  |  [Differences Between Two Objects](/solution/2700-2799/2700.Differences%20Between%20Two%20Objects/README_EN.md)  |    |  Medium  |  🔒  |
@@ -2939,7 +2939,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2928  |  [Distribute Candies Among Children I](/solution/2900-2999/2928.Distribute%20Candies%20Among%20Children%20I/README_EN.md)  |  `Math`,`Combinatorics`,`Enumeration`  |  Easy  |  Biweekly Contest 117  |
 |  2929  |  [Distribute Candies Among Children II](/solution/2900-2999/2929.Distribute%20Candies%20Among%20Children%20II/README_EN.md)  |  `Math`,`Combinatorics`,`Enumeration`  |  Medium  |  Biweekly Contest 117  |
 |  2930  |  [Number of Strings Which Can Be Rearranged to Contain Substring](/solution/2900-2999/2930.Number%20of%20Strings%20Which%20Can%20Be%20Rearranged%20to%20Contain%20Substring/README_EN.md)  |  `Math`,`Dynamic Programming`,`Combinatorics`  |  Medium  |  Biweekly Contest 117  |
-|  2931  |  [Maximum Spending After Buying Items](/solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README_EN.md)  |  `Greedy`,`Array`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |  Biweekly Contest 117  |
+|  2931  |  [Maximum Spending After Buying Items](/solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README_EN.md)  |  `Greedy`,`Array`,`Matrix`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |  Biweekly Contest 117  |
 |  2932  |  [Maximum Strong Pair XOR I](/solution/2900-2999/2932.Maximum%20Strong%20Pair%20XOR%20I/README_EN.md)  |  `Bit Manipulation`,`Trie`,`Array`,`Hash Table`,`Sliding Window`  |  Easy  |  Weekly Contest 371  |
 |  2933  |  [High-Access Employees](/solution/2900-2999/2933.High-Access%20Employees/README_EN.md)  |  `Array`,`Hash Table`,`String`,`Sorting`  |  Medium  |  Weekly Contest 371  |
 |  2934  |  [Minimum Operations to Maximize Last Elements in Arrays](/solution/2900-2999/2934.Minimum%20Operations%20to%20Maximize%20Last%20Elements%20in%20Arrays/README_EN.md)  |  `Greedy`,`Array`  |  Medium  |  Weekly Contest 371  |
@@ -2960,18 +2960,19 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2949  |  [Count Beautiful Substrings II](/solution/2900-2999/2949.Count%20Beautiful%20Substrings%20II/README_EN.md)  |  `Hash Table`,`Math`,`String`,`Number Theory`,`Prefix Sum`  |  Hard  |  Weekly Contest 373  |
 |  2950  |  [Number of Divisible Substrings](/solution/2900-2999/2950.Number%20of%20Divisible%20Substrings/README_EN.md)  |  `Hash Table`,`String`,`Counting`  |  Medium  |  🔒  |
 |  2951  |  [Find the Peaks](/solution/2900-2999/2951.Find%20the%20Peaks/README_EN.md)  |  `Array`,`Enumeration`  |  Easy  |  Weekly Contest 374  |
-|  2952  |  [Minimum Number of Coins to be Added](/solution/2900-2999/2952.Minimum%20Number%20of%20Coins%20to%20be%20Added/README_EN.md)  |  `Greedy`,`Array`,`Sorting`  |  Hard  |  Weekly Contest 374  |
-|  2953  |  [Count Complete Substrings](/solution/2900-2999/2953.Count%20Complete%20Substrings/README_EN.md)  |  `Hash Table`,`String`,`Sliding Window`  |  Medium  |  Weekly Contest 374  |
+|  2952  |  [Minimum Number of Coins to be Added](/solution/2900-2999/2952.Minimum%20Number%20of%20Coins%20to%20be%20Added/README_EN.md)  |  `Greedy`,`Array`,`Sorting`  |  Medium  |  Weekly Contest 374  |
+|  2953  |  [Count Complete Substrings](/solution/2900-2999/2953.Count%20Complete%20Substrings/README_EN.md)  |  `Hash Table`,`String`,`Sliding Window`  |  Hard  |  Weekly Contest 374  |
 |  2954  |  [Count the Number of Infection Sequences](/solution/2900-2999/2954.Count%20the%20Number%20of%20Infection%20Sequences/README_EN.md)  |  `Array`,`Math`,`Combinatorics`  |  Hard  |  Weekly Contest 374  |
-|  2955  |  [Number of Same-End Substrings](/solution/2900-2999/2955.Number%20of%20Same-End%20Substrings/README_EN.md)  |    |  Medium  |  🔒  |
-|  2956  |  [Find Common Elements Between Two Arrays](/solution/2900-2999/2956.Find%20Common%20Elements%20Between%20Two%20Arrays/README_EN.md)  |    |  Easy  |  Biweekly Contest 119  |
-|  2957  |  [Remove Adjacent Almost-Equal Characters](/solution/2900-2999/2957.Remove%20Adjacent%20Almost-Equal%20Characters/README_EN.md)  |    |  Medium  |  Biweekly Contest 119  |
-|  2958  |  [Length of Longest Subarray With at Most K Frequency](/solution/2900-2999/2958.Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/README_EN.md)  |    |  Medium  |  Biweekly Contest 119  |
-|  2959  |  [Number of Possible Sets of Closing Branches](/solution/2900-2999/2959.Number%20of%20Possible%20Sets%20of%20Closing%20Branches/README_EN.md)  |    |  Hard  |  Biweekly Contest 119  |
-|  2960  |  [Count Tested Devices After Test Operations](/solution/2900-2999/2960.Count%20Tested%20Devices%20After%20Test%20Operations/README_EN.md)  |    |  Easy  |  Weekly Contest 375  |
-|  2961  |  [Double Modular Exponentiation](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README_EN.md)  |    |  Medium  |  Weekly Contest 375  |
-|  2962  |  [Count Subarrays Where Max Element Appears at Least K Times](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README_EN.md)  |    |  Medium  |  Weekly Contest 375  |
-|  2963  |  [Count the Number of Good Partitions](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README_EN.md)  |    |  Hard  |  Weekly Contest 375  |
+|  2955  |  [Number of Same-End Substrings](/solution/2900-2999/2955.Number%20of%20Same-End%20Substrings/README_EN.md)  |  `Array`,`Hash Table`,`String`,`Counting`,`Prefix Sum`  |  Medium  |  🔒  |
+|  2956  |  [Find Common Elements Between Two Arrays](/solution/2900-2999/2956.Find%20Common%20Elements%20Between%20Two%20Arrays/README_EN.md)  |  `Array`,`Hash Table`  |  Easy  |  Biweekly Contest 119  |
+|  2957  |  [Remove Adjacent Almost-Equal Characters](/solution/2900-2999/2957.Remove%20Adjacent%20Almost-Equal%20Characters/README_EN.md)  |  `Greedy`,`String`,`Dynamic Programming`  |  Medium  |  Biweekly Contest 119  |
+|  2958  |  [Length of Longest Subarray With at Most K Frequency](/solution/2900-2999/2958.Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/README_EN.md)  |  `Array`,`Hash Table`,`Sliding Window`  |  Medium  |  Biweekly Contest 119  |
+|  2959  |  [Number of Possible Sets of Closing Branches](/solution/2900-2999/2959.Number%20of%20Possible%20Sets%20of%20Closing%20Branches/README_EN.md)  |  `Bit Manipulation`,`Graph`,`Enumeration`,`Shortest Path`,`Heap (Priority Queue)`  |  Hard  |  Biweekly Contest 119  |
+|  2960  |  [Count Tested Devices After Test Operations](/solution/2900-2999/2960.Count%20Tested%20Devices%20After%20Test%20Operations/README_EN.md)  |  `Array`,`Simulation`  |  Easy  |  Weekly Contest 375  |
+|  2961  |  [Double Modular Exponentiation](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README_EN.md)  |  `Array`,`Math`,`Simulation`  |  Medium  |  Weekly Contest 375  |
+|  2962  |  [Count Subarrays Where Max Element Appears at Least K Times](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README_EN.md)  |  `Array`,`Sliding Window`  |  Medium  |  Weekly Contest 375  |
+|  2963  |  [Count the Number of Good Partitions](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README_EN.md)  |  `Array`,`Hash Table`,`Math`,`Combinatorics`  |  Hard  |  Weekly Contest 375  |
+|  2964  |  [Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README_EN.md)  |    |  Medium  |  🔒  |
 
 ## Copyright
 
