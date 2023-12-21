@@ -191,9 +191,7 @@ I'm looking for long-term contributors/partners to this repo! Send me [PRs](http
   <a href="https://github.com/doocs/leetcode"><img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/leetcode@main/images/how-to-contribute.svg" alt="how-to-contribute"></a>
 </p>
 
-You can also contribute to [doocs/leetcode](https://github.com/doocs/leetcode) using [Gitpod.io](https://www.gitpod.io), a free online dev environment with a single click.
-
-<a href="https://gitpod.io/#https://github.com/doocs/leetcode" target="_blank" alt="Open in Gitpod"><img src="https://gitpod.io/button/open-in-gitpod.svg"></a>
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=149001365&machine=basicLinux32gb&location=EastUs)
 
 ## Stargazers over time
 
@@ -218,6 +216,17 @@ Thank you to all our backers and sponsors!
 <a href="https://opencollective.com/doocs-leetcode/sponsors.svg?width=890" target="_blank"><img src="https://opencollective.com/doocs-leetcode/sponsors.svg?width=890"></a>
 
 > "_You help the developer community practice for interviews, and there is nothing better we could ask for._" -- [Alan Yessenbayev](https://opencollective.com/alan-yessenbayev)
+
+## Copyright
+
+The copyright of this project belongs to [Doocs](https://github.com/doocs) community. For commercial reprints, please contact [@yanglbme](mailto:contact@yanglibin.info) for authorization. For non-commercial reprints, please indicate the source.
+
+## Contact Us
+
+We welcome everyone to add @yanglbme's personal WeChat (WeChat ID: YLB0109), with the note "leetcode". In the future, we will create algorithm and technology related discussion groups, where we can learn and share experiences together, and make progress together.
+
+| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme-en.png" width="260px" align="left"/> |
+| --------------------------------------------------------------------------------------------------------------------------------- |
 
 ## License
 

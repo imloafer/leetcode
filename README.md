@@ -197,9 +197,7 @@
   <a href="https://github.com/doocs/leetcode"><img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/leetcode@main/images/how-to-contribute.svg" alt="how-to-contribute"></a>
 </p>
 
-[Gitpod.io](https://www.gitpod.io) 是一个免费的在线开发环境，你也可以使用它参与本项目。
-
-<a href="https://gitpod.io/#https://github.com/doocs/leetcode" target="_blank" alt="Open in Gitpod"><img src="https://gitpod.io/button/open-in-gitpod.svg"></a>
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=149001365&machine=basicLinux32gb&location=SoutheastAsia)
 
 ## Stars 趋势
 
@@ -231,6 +229,17 @@
 知名互联网科技博主 [@爱可可-爱生活](https://weibo.com/fly51fly) 微博推荐。
 
 <a href="https://weibo.com/fly51fly" target="_blank"><img src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/images/recommender-fly51fly.png"></a>
+
+## 版权
+
+本项目著作权归 [GitHub 开源社区 Doocs](https://github.com/doocs) 所有，商业转载请联系 @yanglbme 获得授权，非商业转载请注明出处。
+
+## 联系我们
+
+欢迎各位小伙伴们添加 @yanglbme 的个人微信（微信号：YLB0109），备注 「**leetcode**」。后续我们会创建算法、技术相关的交流群，大家一起交流学习，分享经验，共同进步。
+
+| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
+| ------------------------------------------------------------------------------------------------------------------------------ |
 
 ## 许可证
 

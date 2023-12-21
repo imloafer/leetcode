@@ -3,19 +3,16 @@
  * @return {number}
  */
 var subsetXORSum = function (nums) {
-    let res = [];
-    let prev = 0;
-    dfs(nums, 0, prev, res);
-    return res.reduce((a, c) => a + c, 0);
+    let ans = 0;
+    const n = nums.length;
+    const dfs = (i, s) => {
+        if (i >= n) {
+            ans += s;
+            return;
+        }
+        dfs(i + 1, s);
+        dfs(i + 1, s ^ nums[i]);
+    };
+    dfs(0, 0);
+    return ans;
 };
-
-function dfs(nums, depth, prev, res) {
-    res.push(prev);
-    for (let i = depth; i < nums.length; i++) {
-        prev ^= nums[i];
-        depth++;
-        dfs(nums, depth, prev, res);
-        // bracktrack
-        prev ^= nums[i];
-    }
-}

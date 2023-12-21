@@ -37,6 +37,14 @@
 
 ## Solutions
 
+**Solution 1: Array or Hash Table + Prefix Sum**
+
+We use an array or hash table $d$ to record the last occurrence of each number, use $s$ to record the prefix sum, and use $j$ to record the left endpoint of the current non-repeating subarray.
+
+We traverse the array, for each number $v$, if $d[v]$ exists, then we update $j$ to $max(j, d[v])$, which ensures that the current non-repeating subarray does not contain $v$. Then we update the answer to $max(ans, s[i] - s[j])$, and finally update $d[v]$ to $i$.
+
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the array $nums$.
+
 <!-- tabs:start -->
 
 ### **Python3**
@@ -119,6 +127,27 @@ func maximumUniqueSubarray(nums []int) (ans int) {
 		d[v] = i
 	}
 	return
+}
+```
+
+### **TypeScript**
+
+```ts
+function maximumUniqueSubarray(nums: number[]): number {
+    const m = Math.max(...nums);
+    const n = nums.length;
+    const s: number[] = Array.from({ length: n + 1 }, () => 0);
+    for (let i = 1; i <= n; ++i) {
+        s[i] = s[i - 1] + nums[i - 1];
+    }
+    const d = Array.from({ length: m + 1 }, () => 0);
+    let [ans, j] = [0, 0];
+    for (let i = 1; i <= n; ++i) {
+        j = Math.max(j, d[nums[i - 1]]);
+        ans = Math.max(ans, s[i] - s[j]);
+        d[nums[i - 1]] = i;
+    }
+    return ans;
 }
 ```
 

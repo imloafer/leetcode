@@ -2817,7 +2817,7 @@
   - [2761.Prime Pairs With Target Sum](/solution/2700-2799/2761.Prime%20Pairs%20With%20Target%20Sum/README_EN.md)
   - [2762.Continuous Subarrays](/solution/2700-2799/2762.Continuous%20Subarrays/README_EN.md)
   - [2763.Sum of Imbalance Numbers of All Subarrays](/solution/2700-2799/2763.Sum%20of%20Imbalance%20Numbers%20of%20All%20Subarrays/README_EN.md)
-  - [2764.is Array a Preorder of Some ‌Binary Tree](/solution/2700-2799/2764.is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README_EN.md)
+  - [2764.Is Array a Preorder of Some ‌Binary Tree](/solution/2700-2799/2764.Is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README_EN.md)
   - [2765.Longest Alternating Subarray](/solution/2700-2799/2765.Longest%20Alternating%20Subarray/README_EN.md)
   - [2766.Relocate Marbles](/solution/2700-2799/2766.Relocate%20Marbles/README_EN.md)
   - [2767.Partition String Into Minimum Beautiful Substrings](/solution/2700-2799/2767.Partition%20String%20Into%20Minimum%20Beautiful%20Substrings/README_EN.md)
@@ -3026,3 +3026,4 @@
   - [2966.Divide Array Into Arrays With Max Difference](/solution/2900-2999/2966.Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/README_EN.md)
   - [2967.Minimum Cost to Make Array Equalindromic](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README_EN.md)
   - [2968.Apply Operations to Maximize Frequency Score](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README_EN.md)
+  - [2969.Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README_EN.md)

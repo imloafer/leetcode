@@ -2772,7 +2772,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2761  |  [Prime Pairs With Target Sum](/solution/2700-2799/2761.Prime%20Pairs%20With%20Target%20Sum/README_EN.md)  |  `Array`,`Math`,`Enumeration`,`Number Theory`  |  Medium  |  Weekly Contest 352  |
 |  2762  |  [Continuous Subarrays](/solution/2700-2799/2762.Continuous%20Subarrays/README_EN.md)  |  `Queue`,`Array`,`Ordered Set`,`Sliding Window`,`Monotonic Queue`,`Heap (Priority Queue)`  |  Medium  |  Weekly Contest 352  |
 |  2763  |  [Sum of Imbalance Numbers of All Subarrays](/solution/2700-2799/2763.Sum%20of%20Imbalance%20Numbers%20of%20All%20Subarrays/README_EN.md)  |  `Array`,`Hash Table`,`Ordered Set`  |  Hard  |  Weekly Contest 352  |
-|  2764  |  [is Array a Preorder of Some ‌Binary Tree](/solution/2700-2799/2764.is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README_EN.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |  🔒  |
+|  2764  |  [Is Array a Preorder of Some ‌Binary Tree](/solution/2700-2799/2764.Is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README_EN.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |  🔒  |
 |  2765  |  [Longest Alternating Subarray](/solution/2700-2799/2765.Longest%20Alternating%20Subarray/README_EN.md)  |  `Array`,`Enumeration`  |  Easy  |  Biweekly Contest 108  |
 |  2766  |  [Relocate Marbles](/solution/2700-2799/2766.Relocate%20Marbles/README_EN.md)  |  `Array`,`Hash Table`,`Sorting`,`Simulation`  |  Medium  |  Biweekly Contest 108  |
 |  2767  |  [Partition String Into Minimum Beautiful Substrings](/solution/2700-2799/2767.Partition%20String%20Into%20Minimum%20Beautiful%20Substrings/README_EN.md)  |  `Hash Table`,`String`,`Dynamic Programming`,`Backtracking`  |  Medium  |  Biweekly Contest 108  |
@@ -2977,7 +2977,19 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2966  |  [Divide Array Into Arrays With Max Difference](/solution/2900-2999/2966.Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/README_EN.md)  |    |  Medium  |  Weekly Contest 376  |
 |  2967  |  [Minimum Cost to Make Array Equalindromic](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README_EN.md)  |    |  Medium  |  Weekly Contest 376  |
 |  2968  |  [Apply Operations to Maximize Frequency Score](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README_EN.md)  |    |  Hard  |  Weekly Contest 376  |
+|  2969  |  [Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README_EN.md)  |    |  Hard  |  🔒  |
 
 ## Copyright
 
-[@Doocs](https://github.com/doocs)
+The copyright of this project belongs to [Doocs](https://github.com/doocs) community. For commercial reprints, please contact [@yanglbme](mailto:contact@yanglibin.info) for authorization. For non-commercial reprints, please indicate the source.
+
+## Contact Us
+
+We welcome everyone to add @yanglbme's personal WeChat (WeChat ID: YLB0109), with the note "leetcode". In the future, we will create algorithm and technology related discussion groups, where we can learn and share experiences together, and make progress together.
+
+| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme-en.png" width="260px" align="left"/> |
+| --------------------------------------------------------------------------------------------------------------------------------- |
+
+## License
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

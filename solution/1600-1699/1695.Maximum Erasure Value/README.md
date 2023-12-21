@@ -49,7 +49,7 @@
 
 遍历数组，对于每个数字 $v$，如果 $d[v]$ 存在，那么我们更新 $j$ 为 $max(j, d[v])$，这样就保证了当前不重复子数组不包含 $v$，然后更新答案为 $max(ans, s[i] - s[j])$，最后更新 $d[v]$ 为 $i$。
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为数组 `nums` 的长度。
+时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为数组 $nums$ 的长度。
 
 <!-- tabs:start -->
 
@@ -137,6 +137,27 @@ func maximumUniqueSubarray(nums []int) (ans int) {
 		d[v] = i
 	}
 	return
+}
+```
+
+### **TypeScript**
+
+```ts
+function maximumUniqueSubarray(nums: number[]): number {
+    const m = Math.max(...nums);
+    const n = nums.length;
+    const s: number[] = Array.from({ length: n + 1 }, () => 0);
+    for (let i = 1; i <= n; ++i) {
+        s[i] = s[i - 1] + nums[i - 1];
+    }
+    const d = Array.from({ length: m + 1 }, () => 0);
+    let [ans, j] = [0, 0];
+    for (let i = 1; i <= n; ++i) {
+        j = Math.max(j, d[nums[i - 1]]);
+        ans = Math.max(ans, s[i] - s[j]);
+        d[nums[i - 1]] = i;
+    }
+    return ans;
 }
 ```
 

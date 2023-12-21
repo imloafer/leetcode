@@ -2817,7 +2817,7 @@
   - [2761.和等于目标值的质数对](/solution/2700-2799/2761.Prime%20Pairs%20With%20Target%20Sum/README.md)
   - [2762.不间断子数组](/solution/2700-2799/2762.Continuous%20Subarrays/README.md)
   - [2763.所有子数组中不平衡数字之和](/solution/2700-2799/2763.Sum%20of%20Imbalance%20Numbers%20of%20All%20Subarrays/README.md)
-  - [2764.数组是否表示某二叉树的前序遍历](/solution/2700-2799/2764.is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README.md)
+  - [2764.数组是否表示某二叉树的前序遍历](/solution/2700-2799/2764.Is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README.md)
   - [2765.最长交替子序列](/solution/2700-2799/2765.Longest%20Alternating%20Subarray/README.md)
   - [2766.重新放置石块](/solution/2700-2799/2766.Relocate%20Marbles/README.md)
   - [2767.将字符串分割为最少的美丽子字符串](/solution/2700-2799/2767.Partition%20String%20Into%20Minimum%20Beautiful%20Substrings/README.md)
@@ -3026,3 +3026,4 @@
   - [2966.划分数组并满足最大差限制](/solution/2900-2999/2966.Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/README.md)
   - [2967.使数组成为等数数组的最小代价](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README.md)
   - [2968.执行操作使频率分数最大](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README.md)
+  - [2969.Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README.md)

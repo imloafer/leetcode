@@ -2774,7 +2774,7 @@
 |  2761  |  [和等于目标值的质数对](/solution/2700-2799/2761.Prime%20Pairs%20With%20Target%20Sum/README.md)  |  `数组`,`数学`,`枚举`,`数论`  |  中等  |  第 352 场周赛  |
 |  2762  |  [不间断子数组](/solution/2700-2799/2762.Continuous%20Subarrays/README.md)  |  `队列`,`数组`,`有序集合`,`滑动窗口`,`单调队列`,`堆（优先队列）`  |  中等  |  第 352 场周赛  |
 |  2763  |  [所有子数组中不平衡数字之和](/solution/2700-2799/2763.Sum%20of%20Imbalance%20Numbers%20of%20All%20Subarrays/README.md)  |  `数组`,`哈希表`,`有序集合`  |  困难  |  第 352 场周赛  |
-|  2764  |  [数组是否表示某二叉树的前序遍历](/solution/2700-2799/2764.is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README.md)  |  `栈`,`树`,`深度优先搜索`,`二叉树`  |  中等  |  🔒  |
+|  2764  |  [数组是否表示某二叉树的前序遍历](/solution/2700-2799/2764.Is%20Array%20a%20Preorder%20of%20Some%20%E2%80%8CBinary%20Tree/README.md)  |  `栈`,`树`,`深度优先搜索`,`二叉树`  |  中等  |  🔒  |
 |  2765  |  [最长交替子序列](/solution/2700-2799/2765.Longest%20Alternating%20Subarray/README.md)  |  `数组`,`枚举`  |  简单  |  第 108 场双周赛  |
 |  2766  |  [重新放置石块](/solution/2700-2799/2766.Relocate%20Marbles/README.md)  |  `数组`,`哈希表`,`排序`,`模拟`  |  中等  |  第 108 场双周赛  |
 |  2767  |  [将字符串分割为最少的美丽子字符串](/solution/2700-2799/2767.Partition%20String%20Into%20Minimum%20Beautiful%20Substrings/README.md)  |  `哈希表`,`字符串`,`动态规划`,`回溯`  |  中等  |  第 108 场双周赛  |
@@ -2979,7 +2979,15 @@
 |  2966  |  [划分数组并满足最大差限制](/solution/2900-2999/2966.Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/README.md)  |    |  中等  |  第 376 场周赛  |
 |  2967  |  [使数组成为等数数组的最小代价](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README.md)  |    |  中等  |  第 376 场周赛  |
 |  2968  |  [执行操作使频率分数最大](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README.md)  |    |  困难  |  第 376 场周赛  |
+|  2969  |  [Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README.md)  |    |  困难  |  🔒  |
 
 ## 版权
 
-著作权归 [GitHub 开源社区 Doocs](https://github.com/doocs) 所有，商业转载请联系 [@yanglbme](mailto:contact@yanglibin.info) 获得授权，非商业转载请注明出处。
+本项目著作权归 [GitHub 开源社区 Doocs](https://github.com/doocs) 所有，商业转载请联系 @yanglbme 获得授权，非商业转载请注明出处。
+
+## 联系我们
+
+欢迎各位小伙伴们添加 @yanglbme 的个人微信（微信号：YLB0109），备注 「**leetcode**」。后续我们会创建算法、技术相关的交流群，大家一起交流学习，分享经验，共同进步。
+
+| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
+| ------------------------------------------------------------------------------------------------------------------------------ |
