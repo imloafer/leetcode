@@ -2974,12 +2974,20 @@
 |  2961  |  [双模幂运算](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README.md)  |  `数组`,`数学`,`模拟`  |  中等  |  第 375 场周赛  |
 |  2962  |  [统计最大元素出现至少 K 次的子数组](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README.md)  |  `数组`,`滑动窗口`  |  中等  |  第 375 场周赛  |
 |  2963  |  [统计好分割方案的数目](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README.md)  |  `数组`,`哈希表`,`数学`,`组合数学`  |  困难  |  第 375 场周赛  |
-|  2964  |  [Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README.md)  |    |  中等  |  🔒  |
-|  2965  |  [找出缺失和重复的数字](/solution/2900-2999/2965.Find%20Missing%20and%20Repeated%20Values/README.md)  |    |  简单  |  第 376 场周赛  |
+|  2964  |  [Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README.md)  |  `数组`,`哈希表`  |  中等  |  🔒  |
+|  2965  |  [找出缺失和重复的数字](/solution/2900-2999/2965.Find%20Missing%20and%20Repeated%20Values/README.md)  |  `数组`,`哈希表`,`数学`,`矩阵`  |  简单  |  第 376 场周赛  |
 |  2966  |  [划分数组并满足最大差限制](/solution/2900-2999/2966.Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/README.md)  |    |  中等  |  第 376 场周赛  |
-|  2967  |  [使数组成为等数数组的最小代价](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README.md)  |    |  中等  |  第 376 场周赛  |
-|  2968  |  [执行操作使频率分数最大](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README.md)  |    |  困难  |  第 376 场周赛  |
-|  2969  |  [Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README.md)  |    |  困难  |  🔒  |
+|  2967  |  [使数组成为等数数组的最小代价](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README.md)  |  `贪心`,`数组`,`数学`,`排序`  |  中等  |  第 376 场周赛  |
+|  2968  |  [执行操作使频率分数最大](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README.md)  |  `数组`,`二分查找`,`前缀和`,`排序`,`滑动窗口`  |  困难  |  第 376 场周赛  |
+|  2969  |  [购买水果需要的最少金币数 II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README.md)  |  `队列`,`数组`,`动态规划`,`单调队列`  |  困难  |  🔒  |
+|  2970  |  [统计移除递增子数组的数目 I](/solution/2900-2999/2970.Count%20the%20Number%20of%20Incremovable%20Subarrays%20I/README.md)  |    |  简单  |  第 120 场双周赛  |
+|  2971  |  [找到最大周长的多边形](/solution/2900-2999/2971.Find%20Polygon%20With%20the%20Largest%20Perimeter/README.md)  |    |  中等  |  第 120 场双周赛  |
+|  2972  |  [统计移除递增子数组的数目 II](/solution/2900-2999/2972.Count%20the%20Number%20of%20Incremovable%20Subarrays%20II/README.md)  |    |  困难  |  第 120 场双周赛  |
+|  2973  |  [树中每个节点放置的金币数目](/solution/2900-2999/2973.Find%20Number%20of%20Coins%20to%20Place%20in%20Tree%20Nodes/README.md)  |    |  困难  |  第 120 场双周赛  |
+|  2974  |  [最小数字游戏](/solution/2900-2999/2974.Minimum%20Number%20Game/README.md)  |    |  简单  |  第 377 场周赛  |
+|  2975  |  [移除栅栏得到的正方形田地的最大面积](/solution/2900-2999/2975.Maximum%20Square%20Area%20by%20Removing%20Fences%20From%20a%20Field/README.md)  |    |  中等  |  第 377 场周赛  |
+|  2976  |  [转换字符串的最小成本 I](/solution/2900-2999/2976.Minimum%20Cost%20to%20Convert%20String%20I/README.md)  |    |  中等  |  第 377 场周赛  |
+|  2977  |  [转换字符串的最小成本 II](/solution/2900-2999/2977.Minimum%20Cost%20to%20Convert%20String%20II/README.md)  |    |  困难  |  第 377 场周赛  |
 
 ## 版权
 

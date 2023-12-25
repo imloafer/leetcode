@@ -13,7 +13,7 @@ user_agent = (
     "Chrome/77.0.3865.120 Safari/537.36"
 )
 sub_folders = [
-    str(i * 100).zfill(4) + "-" + str(i * 100 + 99).zfill(4) for i in range(100)
+    str(i * 100).zfill(4) + "-" + str(i * 100 + 99).zfill(4) for i in range(1000)
 ]
 cn_graph_url = "https://leetcode.cn/graphql"
 difficulty = dict(Easy="简单", Medium="中等", Hard="困难")
@@ -365,7 +365,7 @@ def run():
     for q in spider.get_all_questions(retry=6):
         slug = q["stat"]["question__title_slug"]
         qid = q["stat"]["frontend_question_id"]
-        if slug in question_details:
+        if slug in question_details and qid < 2960:
             continue
         detail = spider.get_question_detail(
             slug, retry=4

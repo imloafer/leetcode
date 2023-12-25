@@ -22,6 +22,20 @@
 
 ## 往期竞赛
 
+#### 第 377 场周赛(2023-12-24 10:30, 90 分钟) 参赛人数 3148
+
+- [2974. 最小数字游戏](/solution/2900-2999/2974.Minimum%20Number%20Game/README.md)
+- [2975. 移除栅栏得到的正方形田地的最大面积](/solution/2900-2999/2975.Maximum%20Square%20Area%20by%20Removing%20Fences%20From%20a%20Field/README.md)
+- [2976. 转换字符串的最小成本 I](/solution/2900-2999/2976.Minimum%20Cost%20to%20Convert%20String%20I/README.md)
+- [2977. 转换字符串的最小成本 II](/solution/2900-2999/2977.Minimum%20Cost%20to%20Convert%20String%20II/README.md)
+
+#### 第 120 场双周赛(2023-12-23 22:30, 90 分钟) 参赛人数 2542
+
+- [2970. 统计移除递增子数组的数目 I](/solution/2900-2999/2970.Count%20the%20Number%20of%20Incremovable%20Subarrays%20I/README.md)
+- [2971. 找到最大周长的多边形](/solution/2900-2999/2971.Find%20Polygon%20With%20the%20Largest%20Perimeter/README.md)
+- [2972. 统计移除递增子数组的数目 II](/solution/2900-2999/2972.Count%20the%20Number%20of%20Incremovable%20Subarrays%20II/README.md)
+- [2973. 树中每个节点放置的金币数目](/solution/2900-2999/2973.Find%20Number%20of%20Coins%20to%20Place%20in%20Tree%20Nodes/README.md)
+
 #### 第 376 场周赛(2023-12-17 10:30, 90 分钟) 参赛人数 3409
 
 - [2965. 找出缺失和重复的数字](/solution/2900-2999/2965.Find%20Missing%20and%20Repeated%20Values/README.md)

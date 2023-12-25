@@ -2972,12 +2972,20 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2961  |  [Double Modular Exponentiation](/solution/2900-2999/2961.Double%20Modular%20Exponentiation/README_EN.md)  |  `Array`,`Math`,`Simulation`  |  Medium  |  Weekly Contest 375  |
 |  2962  |  [Count Subarrays Where Max Element Appears at Least K Times](/solution/2900-2999/2962.Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/README_EN.md)  |  `Array`,`Sliding Window`  |  Medium  |  Weekly Contest 375  |
 |  2963  |  [Count the Number of Good Partitions](/solution/2900-2999/2963.Count%20the%20Number%20of%20Good%20Partitions/README_EN.md)  |  `Array`,`Hash Table`,`Math`,`Combinatorics`  |  Hard  |  Weekly Contest 375  |
-|  2964  |  [Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README_EN.md)  |    |  Medium  |  🔒  |
-|  2965  |  [Find Missing and Repeated Values](/solution/2900-2999/2965.Find%20Missing%20and%20Repeated%20Values/README_EN.md)  |    |  Easy  |  Weekly Contest 376  |
+|  2964  |  [Number of Divisible Triplet Sums](/solution/2900-2999/2964.Number%20of%20Divisible%20Triplet%20Sums/README_EN.md)  |  `Array`,`Hash Table`  |  Medium  |  🔒  |
+|  2965  |  [Find Missing and Repeated Values](/solution/2900-2999/2965.Find%20Missing%20and%20Repeated%20Values/README_EN.md)  |  `Array`,`Hash Table`,`Math`,`Matrix`  |  Easy  |  Weekly Contest 376  |
 |  2966  |  [Divide Array Into Arrays With Max Difference](/solution/2900-2999/2966.Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/README_EN.md)  |    |  Medium  |  Weekly Contest 376  |
-|  2967  |  [Minimum Cost to Make Array Equalindromic](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README_EN.md)  |    |  Medium  |  Weekly Contest 376  |
-|  2968  |  [Apply Operations to Maximize Frequency Score](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README_EN.md)  |    |  Hard  |  Weekly Contest 376  |
-|  2969  |  [Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README_EN.md)  |    |  Hard  |  🔒  |
+|  2967  |  [Minimum Cost to Make Array Equalindromic](/solution/2900-2999/2967.Minimum%20Cost%20to%20Make%20Array%20Equalindromic/README_EN.md)  |  `Greedy`,`Array`,`Math`,`Sorting`  |  Medium  |  Weekly Contest 376  |
+|  2968  |  [Apply Operations to Maximize Frequency Score](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README_EN.md)  |  `Array`,`Binary Search`,`Prefix Sum`,`Sorting`,`Sliding Window`  |  Hard  |  Weekly Contest 376  |
+|  2969  |  [Minimum Number of Coins for Fruits II](/solution/2900-2999/2969.Minimum%20Number%20of%20Coins%20for%20Fruits%20II/README_EN.md)  |  `Queue`,`Array`,`Dynamic Programming`,`Monotonic Queue`  |  Hard  |  🔒  |
+|  2970  |  [Count the Number of Incremovable Subarrays I](/solution/2900-2999/2970.Count%20the%20Number%20of%20Incremovable%20Subarrays%20I/README_EN.md)  |    |  Easy  |  Biweekly Contest 120  |
+|  2971  |  [Find Polygon With the Largest Perimeter](/solution/2900-2999/2971.Find%20Polygon%20With%20the%20Largest%20Perimeter/README_EN.md)  |    |  Medium  |  Biweekly Contest 120  |
+|  2972  |  [Count the Number of Incremovable Subarrays II](/solution/2900-2999/2972.Count%20the%20Number%20of%20Incremovable%20Subarrays%20II/README_EN.md)  |    |  Hard  |  Biweekly Contest 120  |
+|  2973  |  [Find Number of Coins to Place in Tree Nodes](/solution/2900-2999/2973.Find%20Number%20of%20Coins%20to%20Place%20in%20Tree%20Nodes/README_EN.md)  |    |  Hard  |  Biweekly Contest 120  |
+|  2974  |  [Minimum Number Game](/solution/2900-2999/2974.Minimum%20Number%20Game/README_EN.md)  |    |  Easy  |  Weekly Contest 377  |
+|  2975  |  [Maximum Square Area by Removing Fences From a Field](/solution/2900-2999/2975.Maximum%20Square%20Area%20by%20Removing%20Fences%20From%20a%20Field/README_EN.md)  |    |  Medium  |  Weekly Contest 377  |
+|  2976  |  [Minimum Cost to Convert String I](/solution/2900-2999/2976.Minimum%20Cost%20to%20Convert%20String%20I/README_EN.md)  |    |  Medium  |  Weekly Contest 377  |
+|  2977  |  [Minimum Cost to Convert String II](/solution/2900-2999/2977.Minimum%20Cost%20to%20Convert%20String%20II/README_EN.md)  |    |  Hard  |  Weekly Contest 377  |
 
 ## Copyright
 
