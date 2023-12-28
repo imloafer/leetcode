@@ -245,6 +245,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 | 2854 | [Rolling Average Steps](/solution/2800-2899/2854.Rolling%20Average%20Steps/README_EN.md)                                                                                                     | `Database` | Medium     | 🔒     |
 | 2893 | [Calculate Orders Within Each Interval](/solution/2800-2899/2893.Calculate%20Orders%20Within%20Each%20Interval/README_EN.md)                                                                 | `Database` | Medium     | 🔒     |
 | 2922 | [Market Analysis III](/solution/2900-2999/2922.Market%20Analysis%20III/README_EN.md)                                                                                                         | `Database` | Medium     | 🔒     |
+| 2978 | [Symmetric Coordinates](/solution/2900-2999/2978.Symmetric%20Coordinates/README_EN.md)                                                                                                       |            | Medium     | 🔒     |
 
 ## Copyright
 
