@@ -245,7 +245,18 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 | 2854 | [Rolling Average Steps](/solution/2800-2899/2854.Rolling%20Average%20Steps/README_EN.md)                                                                                                     | `Database` | Medium     | 🔒     |
 | 2893 | [Calculate Orders Within Each Interval](/solution/2800-2899/2893.Calculate%20Orders%20Within%20Each%20Interval/README_EN.md)                                                                 | `Database` | Medium     | 🔒     |
 | 2922 | [Market Analysis III](/solution/2900-2999/2922.Market%20Analysis%20III/README_EN.md)                                                                                                         | `Database` | Medium     | 🔒     |
-| 2978 | [Symmetric Coordinates](/solution/2900-2999/2978.Symmetric%20Coordinates/README_EN.md)                                                                                                       |            | Medium     | 🔒     |
+| 2978 | [Symmetric Coordinates](/solution/2900-2999/2978.Symmetric%20Coordinates/README_EN.md)                                                                                                       | `Database` | Medium     | 🔒     |
+| 2984 | [Find Peak Calling Hours for Each City](/solution/2900-2999/2984.Find%20Peak%20Calling%20Hours%20for%20Each%20City/README_EN.md)                                                             | `Database` | Medium     | 🔒     |
+| 2985 | [Calculate Compressed Mean](/solution/2900-2999/2985.Calculate%20Compressed%20Mean/README_EN.md)                                                                                             | `Database` | Easy       | 🔒     |
+| 2986 | [Find Third Transaction](/solution/2900-2999/2986.Find%20Third%20Transaction/README_EN.md)                                                                                                   | `Database` | Medium     | 🔒     |
+| 2987 | [Find Expensive Cities](/solution/2900-2999/2987.Find%20Expensive%20Cities/README_EN.md)                                                                                                     | `Database` | Easy       | 🔒     |
+| 2988 | [Manager of the Largest Department](/solution/2900-2999/2988.Manager%20of%20the%20Largest%20Department/README_EN.md)                                                                         | `Database` | Medium     | 🔒     |
+| 2989 | [Class Performance](/solution/2900-2999/2989.Class%20Performance/README_EN.md)                                                                                                               | `Database` | Medium     | 🔒     |
+| 2990 | [Loan Types](/solution/2900-2999/2990.Loan%20Types/README_EN.md)                                                                                                                             | `Database` | Easy       | 🔒     |
+| 2991 | [Top Three Wineries](/solution/2900-2999/2991.Top%20Three%20Wineries/README_EN.md)                                                                                                           | `Database` | Hard       | 🔒     |
+| 2993 | [Friday Purchases I](/solution/2900-2999/2993.Friday%20Purchases%20I/README_EN.md)                                                                                                           |            | Medium     | 🔒     |
+| 2994 | [Friday Purchases II](/solution/2900-2999/2994.Friday%20Purchases%20II/README_EN.md)                                                                                                         |            | Hard       | 🔒     |
+| 2995 | [Viewers Turned Streamers](/solution/2900-2999/2995.Viewers%20Turned%20Streamers/README_EN.md)                                                                                               |            | Hard       | 🔒     |
 
 ## Copyright
 
