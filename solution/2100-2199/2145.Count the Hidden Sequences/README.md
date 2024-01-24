@@ -12,12 +12,14 @@
 
 <ul>
 	<li>比方说，<code>differences = [1, -3, 4]</code>&nbsp;，<code>lower = 1</code>&nbsp;，<code>upper = 6</code>&nbsp;，那么隐藏数组是一个长度为 <code>4</code>&nbsp;且所有值都在&nbsp;<code>1</code>&nbsp;和&nbsp;<code>6</code>&nbsp;（包含两者）之间的数组。
+
     <ul>
     	<li><code>[3, 4, 1, 5]</code> 和&nbsp;<code>[4, 5, 2, 6]</code>&nbsp;都是符合要求的隐藏数组。</li>
     	<li><code>[5, 6, 3, 7]</code>&nbsp;不符合要求，因为它包含大于 <code>6</code>&nbsp;的元素。</li>
     	<li><code>[1, 2, 3, 4]</code>&nbsp;不符合要求，因为相邻元素的差值不符合给定数据。</li>
     </ul>
     </li>
+
 </ul>
 
 <p>请你返回 <strong>符合</strong>&nbsp;要求的隐藏数组的数目。如果没有符合要求的隐藏数组，请返回 <code>0</code>&nbsp;。</p>
@@ -66,13 +68,9 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -84,10 +82,6 @@ class Solution:
             mx = max(mx, num)
         return max(0, upper - lower - (mx - mi) + 1)
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -102,8 +96,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -120,8 +112,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func numberOfArrays(differences []int, lower int, upper int) int {
 	num, mi, mx := 0, 0, 0
@@ -134,18 +124,6 @@ func numberOfArrays(differences []int, lower int, upper int) int {
 }
 ```
 
-### **TypeScript**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
-```ts
-
-```
-
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

@@ -20,12 +20,14 @@
 
 <ul>
 	<li>坐标&nbsp;<code>(x1, y1)</code>&nbsp;字典序比另一个坐标&nbsp;<code>(x2, y2)</code> 小，需满足以下条件之一：
+
     <ul>
     	<li>要么&nbsp;<code>x1 &lt; x2</code>&nbsp;，</li>
     	<li>要么&nbsp;<code>x1 == x2</code> 且&nbsp;<code>y1 &lt; y2</code>&nbsp;。</li>
     </ul>
     </li>
     <li><code>⌊val⌋</code>&nbsp;表示小于等于&nbsp;<code>val</code>&nbsp;的最大整数（向下取整函数）。</li>
+
 </ul>
 
 <p>&nbsp;</p>
@@ -69,19 +71,13 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：暴力枚举**
+### 方法一：暴力枚举
 
 由于坐标点的范围是 $[0,.. 50]$，因此我们可以直接暴力枚举所有的坐标点 $(i, j)$，计算每个坐标点的信号强度，然后找出信号强度最大的坐标点。
 
 时间复杂度 $O(n \times C^2)$，其中 $n$ 是信号塔的数量，而 $C$ 是坐标点的范围大小。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -100,10 +96,6 @@ class Solution:
                     ans = [i, j]
         return ans
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -129,8 +121,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -158,8 +148,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func bestCoordinate(towers [][]int, radius int) []int {
 	ans := []int{0, 0}
@@ -183,10 +171,6 @@ func bestCoordinate(towers [][]int, radius int) []int {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

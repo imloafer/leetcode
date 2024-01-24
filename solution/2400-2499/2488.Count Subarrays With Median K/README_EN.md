@@ -12,11 +12,13 @@
 
 <ul>
 	<li>The median of an array is the <strong>middle </strong>element after sorting the array in <strong>ascending </strong>order. If the array is of even length, the median is the <strong>left </strong>middle element.
+
     <ul>
     	<li>For example, the median of <code>[2,3,1,4]</code> is <code>2</code>, and the median of <code>[8,4,3,5,1]</code> is <code>4</code>.</li>
     </ul>
     </li>
     <li>A subarray is a contiguous part of an array.</li>
+
 </ul>
 
 <p>&nbsp;</p>
@@ -48,9 +50,9 @@
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1
 
-### **Python3**
+<!-- tabs:start -->
 
 ```python
 class Solution:
@@ -70,8 +72,6 @@ class Solution:
             ans += cnt[-x] + cnt[-x + 1]
         return ans
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -103,8 +103,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -134,8 +132,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func countSubarrays(nums []int, k int) int {
@@ -173,8 +169,6 @@ func countSubarrays(nums []int, k int) int {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function countSubarrays(nums: number[], k: number): number {
     const i = nums.indexOf(k);
@@ -197,10 +191,6 @@ function countSubarrays(nums: number[], k: number): number {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

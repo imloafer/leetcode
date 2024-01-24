@@ -34,9 +34,17 @@
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1: Greedy Algorithm
 
-### **Python3**
+First, we convert the number into a string $s$. Then, we traverse the string $s$ from right to left, using an array or hash table $d$ to record the position of the maximum number to the right of each number (it can be the position of the number itself).
+
+Next, we traverse $d$ from left to right. If $s[i] < s[d[i]]$, we swap them and exit the traversal process.
+
+Finally, we convert the string $s$ back into a number, which is the answer.
+
+The time complexity is $O(\log M)$, and the space complexity is $O(\log M)$. Here, $M$ is the range of the number $num$.
+
+<!-- tabs:start -->
 
 ```python
 class Solution:
@@ -53,8 +61,6 @@ class Solution:
                 break
         return int(''.join(s))
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -84,8 +90,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -111,8 +115,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func maximumSwap(num int) int {
 	s := []byte(strconv.Itoa(num))
@@ -136,8 +138,6 @@ func maximumSwap(num int) int {
 	return ans
 }
 ```
-
-### **TypeScript**
 
 ```ts
 function maximumSwap(num: number): number {
@@ -167,8 +167,6 @@ function maximumSwap(num: number): number {
     return res;
 }
 ```
-
-### **Rust**
 
 ```rust
 impl Solution {
@@ -208,10 +206,6 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

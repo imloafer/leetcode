@@ -8,6 +8,7 @@
 
 <ul>
 	<li>Operation 1: Swap any two <strong>existing</strong> characters.
+
     <ul>
     	<li>For example, <code>a<u>b</u>cd<u>e</u> -&gt; a<u>e</u>cd<u>b</u></code></li>
     </ul>
@@ -17,6 +18,7 @@
     	<li>For example, <code><u>aa</u>c<u>abb</u> -&gt; <u>bb</u>c<u>baa</u></code> (all <code>a</code>&#39;s turn into <code>b</code>&#39;s, and all <code>b</code>&#39;s turn into <code>a</code>&#39;s)</li>
     </ul>
     </li>
+
 </ul>
 
 <p>You can use the operations on either string as many times as necessary.</p>
@@ -63,7 +65,7 @@ Apply Operation 2: &quot;<u>baa</u>ccc&quot; -&gt; &quot;<u>abb</u>ccc&quot;
 
 ## Solutions
 
-**Solution 1: Counting + Sorting**
+### Solution 1: Counting + Sorting
 
 According to the problem description, two strings are close if they meet the following two conditions simultaneously:
 
@@ -80,8 +82,6 @@ The time complexity is $O(m + n + C \times \log C)$, and the space complexity is
 
 <!-- tabs:start -->
 
-### **Python3**
-
 ```python
 class Solution:
     def closeStrings(self, word1: str, word2: str) -> bool:
@@ -90,8 +90,6 @@ class Solution:
             cnt1.keys()
         ) == set(cnt2.keys())
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -115,8 +113,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -142,8 +138,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func closeStrings(word1 string, word2 string) bool {
 	cnt1 := make([]int, 26)
@@ -162,8 +156,6 @@ func closeStrings(word1 string, word2 string) bool {
 	return slices.Equal(cnt1, cnt2)
 }
 ```
-
-### **TypeScript**
 
 ```ts
 function closeStrings(word1: string, word2: string): boolean {
@@ -185,8 +177,6 @@ function closeStrings(word1: string, word2: string): boolean {
     return cnt1.join('.') === cnt2.join('.');
 }
 ```
-
-### **Rust**
 
 ```rust
 impl Solution {
@@ -211,10 +201,6 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

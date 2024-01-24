@@ -36,12 +36,12 @@
 <p><strong>示例 2：</strong></p>
 
 <pre>
-<strong>输入：</strong>words = ["&#36;easy&#36;","&#36;problem&#36;"], separator = "&#36;"
+<strong>输入：</strong>words = ["$easy$","$problem$"], separator = "$"
 <strong>输出：</strong>["easy","problem"]
 <strong>解释：</strong>在本示例中，我们进行下述拆分：
 
-"&#36;easy&#36;" 拆分为 "easy"（不包括空字符串）
-"&#36;problem&#36;" 拆分为 "problem"（不包括空字符串）
+"$easy$" 拆分为 "easy"（不包括空字符串）
+"$problem$" 拆分为 "problem"（不包括空字符串）
 
 因此，结果数组为 ["easy","problem"] 。
 </pre>
@@ -60,15 +60,13 @@
 <ul>
 	<li><code>1 &lt;= words.length &lt;= 100</code></li>
 	<li><code>1 &lt;= words[i].length &lt;= 20</code></li>
-	<li><code>words[i]</code> 中的字符要么是小写英文字母，要么就是字符串 <code>".,|&#36;#@"</code> 中的字符（不包括引号）</li>
-	<li><code>separator</code> 是字符串 <code>".,|&#36;#@"</code> 中的某个字符（不包括引号）</li>
+	<li><code>words[i]</code> 中的字符要么是小写英文字母，要么就是字符串 <code>".,|$#@"</code> 中的字符（不包括引号）</li>
+	<li><code>separator</code> 是字符串 <code>".,|$#@"</code> 中的某个字符（不包括引号）</li>
 </ul>
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：模拟**
+### 方法一：模拟
 
 我们遍历字符串数组 $words$，对于每个字符串 $w$，我们使用 `separator` 作为分隔符进行拆分，如果拆分后的字符串不为空，则将其加入答案数组。
 
@@ -76,19 +74,11 @@
 
 <!-- tabs:start -->
 
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
 ```python
 class Solution:
     def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:
         return [s for w in words for s in w.split(separator) if s]
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 import java.util.regex.Pattern;
@@ -107,8 +97,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -129,8 +117,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func splitWordsBySeparator(words []string, separator byte) (ans []string) {
 	for _, w := range words {
@@ -144,18 +130,12 @@ func splitWordsBySeparator(words []string, separator byte) (ans []string) {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function splitWordsBySeparator(words: string[], separator: string): string[] {
     return words.flatMap(w => w.split(separator).filter(s => s.length > 0));
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

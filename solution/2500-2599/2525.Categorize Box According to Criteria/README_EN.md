@@ -8,6 +8,7 @@
 
 <ul>
 	<li>The box is <code>&quot;Bulky&quot;</code> if:
+
     <ul>
     	<li><strong>Any</strong> of the dimensions of the box is greater or equal to <code>10<sup>4</sup></code>.</li>
     	<li>Or, the <strong>volume</strong> of the box is greater or equal to <code>10<sup>9</sup></code>.</li>
@@ -18,6 +19,7 @@
     <li>If the box is neither <code>&quot;Bulky&quot;</code> nor <code>&quot;Heavy&quot;</code>, then its category is <code>&quot;Neither&quot;</code>.</li>
     <li>If the box is <code>&quot;Bulky&quot;</code> but not <code>&quot;Heavy&quot;</code>, then its category is <code>&quot;Bulky&quot;</code>.</li>
     <li>If the box is <code>&quot;Heavy&quot;</code> but not <code>&quot;Bulky&quot;</code>, then its category is <code>&quot;Heavy&quot;</code>.</li>
+
 </ul>
 
 <p><strong>Note</strong> that the volume of the box is the product of its length, width and height.</p>
@@ -55,15 +57,13 @@ Since its neither of the two above categories, we return &quot;Neither&quot;.</p
 
 ## Solutions
 
-**Solution 1: Simulation**
+### Solution 1: Simulation
 
 We can simulate according to the problem description.
 
 The time complexity is $O(1)$, and the space complexity is $O(1)$.
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class Solution:
@@ -75,6 +75,88 @@ class Solution:
         d = ['Neither', 'Bulky', 'Heavy', 'Both']
         return d[i]
 ```
+
+```java
+class Solution {
+    public String categorizeBox(int length, int width, int height, int mass) {
+        long v = (long) length * width * height;
+        int bulky = length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 ? 1 : 0;
+        int heavy = mass >= 100 ? 1 : 0;
+        String[] d = {"Neither", "Bulky", "Heavy", "Both"};
+        int i = heavy << 1 | bulky;
+        return d[i];
+    }
+}
+```
+
+```cpp
+class Solution {
+public:
+    string categorizeBox(int length, int width, int height, int mass) {
+        long v = (long) length * width * height;
+        int bulky = length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 ? 1 : 0;
+        int heavy = mass >= 100 ? 1 : 0;
+        string d[4] = {"Neither", "Bulky", "Heavy", "Both"};
+        int i = heavy << 1 | bulky;
+        return d[i];
+    }
+};
+```
+
+```go
+func categorizeBox(length int, width int, height int, mass int) string {
+	v := length * width * height
+	i := 0
+	if length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 {
+		i |= 1
+	}
+	if mass >= 100 {
+		i |= 2
+	}
+	d := [4]string{"Neither", "Bulky", "Heavy", "Both"}
+	return d[i]
+}
+```
+
+```ts
+function categorizeBox(length: number, width: number, height: number, mass: number): string {
+    const v = length * width * height;
+    let i = 0;
+    if (length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000) {
+        i |= 1;
+    }
+    if (mass >= 100) {
+        i |= 2;
+    }
+    return ['Neither', 'Bulky', 'Heavy', 'Both'][i];
+}
+```
+
+```rust
+impl Solution {
+    pub fn categorize_box(length: i32, width: i32, height: i32, mass: i32) -> String {
+        let v = (length as i64) * (width as i64) * (height as i64);
+        let mut i = 0;
+
+        if length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 {
+            i |= 1;
+        }
+
+        if mass >= 100 {
+            i |= 2;
+        }
+
+        let d = vec!["Neither", "Bulky", "Heavy", "Both"];
+        d[i].to_string()
+    }
+}
+```
+
+<!-- tabs:end -->
+
+### Solution 2
+
+<!-- tabs:start -->
 
 ```python
 class Solution:
@@ -91,21 +173,6 @@ class Solution:
             return "Heavy"
 
         return "Neither"
-```
-
-### **Java**
-
-```java
-class Solution {
-    public String categorizeBox(int length, int width, int height, int mass) {
-        long v = (long) length * width * height;
-        int bulky = length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 ? 1 : 0;
-        int heavy = mass >= 100 ? 1 : 0;
-        String[] d = {"Neither", "Bulky", "Heavy", "Both"};
-        int i = heavy << 1 | bulky;
-        return d[i];
-    }
-}
 ```
 
 ```java
@@ -128,22 +195,6 @@ class Solution {
         return "Neither";
     }
 }
-```
-
-### **C++**
-
-```cpp
-class Solution {
-public:
-    string categorizeBox(int length, int width, int height, int mass) {
-        long v = (long) length * width * height;
-        int bulky = length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 ? 1 : 0;
-        int heavy = mass >= 100 ? 1 : 0;
-        string d[4] = {"Neither", "Bulky", "Heavy", "Both"};
-        int i = heavy << 1 | bulky;
-        return d[i];
-    }
-};
 ```
 
 ```cpp
@@ -169,23 +220,6 @@ public:
 };
 ```
 
-### **Go**
-
-```go
-func categorizeBox(length int, width int, height int, mass int) string {
-	v := length * width * height
-	i := 0
-	if length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 {
-		i |= 1
-	}
-	if mass >= 100 {
-		i |= 2
-	}
-	d := [4]string{"Neither", "Bulky", "Heavy", "Both"}
-	return d[i]
-}
-```
-
 ```go
 func categorizeBox(length int, width int, height int, mass int) string {
 	v := length * width * height
@@ -204,22 +238,6 @@ func categorizeBox(length int, width int, height int, mass int) string {
 }
 ```
 
-### **TypeScript**
-
-```ts
-function categorizeBox(length: number, width: number, height: number, mass: number): string {
-    const v = length * width * height;
-    let i = 0;
-    if (length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000) {
-        i |= 1;
-    }
-    if (mass >= 100) {
-        i |= 2;
-    }
-    return ['Neither', 'Bulky', 'Heavy', 'Both'][i];
-}
-```
-
 ```ts
 function categorizeBox(length: number, width: number, height: number, mass: number): string {
     const v = length * width * height;
@@ -235,28 +253,6 @@ function categorizeBox(length: number, width: number, height: number, mass: numb
         return 'Heavy';
     }
     return 'Neither';
-}
-```
-
-### **Rust**
-
-```rust
-impl Solution {
-    pub fn categorize_box(length: i32, width: i32, height: i32, mass: i32) -> String {
-        let v = (length as i64) * (width as i64) * (height as i64);
-        let mut i = 0;
-
-        if length >= 10000 || width >= 10000 || height >= 10000 || v >= 1000000000 {
-            i |= 1;
-        }
-
-        if mass >= 100 {
-            i |= 2;
-        }
-
-        let d = vec!["Neither", "Bulky", "Heavy", "Both"];
-        d[i].to_string()
-    }
 }
 ```
 
@@ -287,10 +283,6 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

@@ -18,9 +18,10 @@
 
 <ul>
 	<li>对于坐标在&nbsp;<code>i</code> 和&nbsp;<code>j</code>&nbsp;的两个机器人，<code>(i,j)</code>&nbsp;和&nbsp;<code>(j,i)</code>&nbsp;视为相同的坐标对。也就是说，机器人视为无差别的。</li>
-	<li>当机器人相撞时，它们 <strong>立即改变</strong>&nbsp;它们的前进时间，这个过程不消耗任何时间。</li>
+	<li>当机器人相撞时，它们 <strong>立即改变</strong>&nbsp;它们的前进方向，这个过程不消耗任何时间。</li>
 	<li>
 	<p>当两个机器人在同一时刻占据相同的位置时，就会相撞。</p>
+
     <ul>
     	<li>
     	<p>例如，如果一个机器人位于位置 0 并往右移动，另一个机器人位于位置 2 并往左移动，下一秒，它们都将占据位置 1，并改变方向。再下一秒钟后，第一个机器人位于位置 0 并往左移动，而另一个机器人位于位置 2 并往右移动。</p>
@@ -30,6 +31,7 @@
     	</li>
     </ul>
     </li>
+
 </ul>
 
 <p>&nbsp;</p>
@@ -75,9 +77,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：脑筋急转弯 + 排序**
+### 方法一：脑筋急转弯 + 排序
 
 两个机器人相撞后，它们会立即改变方向，实际上相当于两个机器人继续往原来的方向移动。因此，我们遍历数组 $nums$，按照字符串 $s$ 的指令，将每个机器人的位置加上或减去 $d$，然后对数组 $nums$ 进行排序。
 
@@ -86,10 +86,6 @@
 时间复杂度 $O(n \times \log n)$，空间复杂度 $O(n)$。其中 $n$ 是机器人的数目。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -104,10 +100,6 @@ class Solution:
             s += x
         return ans % mod
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -128,8 +120,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -153,8 +143,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func sumDistance(nums []int, s string, d int) (ans int) {
 	for i, c := range s {
@@ -175,8 +163,6 @@ func sumDistance(nums []int, s string, d int) (ans int) {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function sumDistance(nums: number[], s: string, d: number): number {
     const n = nums.length;
@@ -195,10 +181,6 @@ function sumDistance(nums: number[], s: string, d: number): number {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

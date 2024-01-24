@@ -12,6 +12,7 @@
 
 <ul>
 	<li><code>void checkIn(int id, string stationName, int t)</code>
+
     <ul>
     	<li>通行卡 ID 等于 <code>id</code> 的乘客，在时间 <code>t</code> ，从 <code>stationName</code> 站进入</li>
     	<li>乘客一次只能从一个站进入</li>
@@ -30,6 +31,7 @@
     	<li>在调用 <code>getAverageTime</code> 之前，至少有一名乘客从 <code>startStation</code> 站到达 <code>endStation</code> 站</li>
     </ul>
     </li>
+
 </ul>
 
 <p>你可以假设对 <code>checkIn</code> 和 <code>checkOut</code> 方法的所有调用都是符合逻辑的。如果一名乘客在时间 <code>t<sub>1</sub></code> 进站、时间 <code>t<sub>2</sub></code> 出站，那么 <code>t<sub>1</sub> &lt; t<sub>2</sub></code> 。所有时间都按时间顺序发生。</p>
@@ -98,9 +100,7 @@ undergroundSystem.getAverageTime("Leyton", "Paradise"); // 返回 6.66667 ，(5 
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：哈希表**
+### 方法一：哈希表
 
 我们用两个哈希表来存储数据，其中：
 
@@ -116,10 +116,6 @@ undergroundSystem.getAverageTime("Leyton", "Paradise"); // 返回 6.66667 ，(5 
 时间复杂度 $O(1)$，空间复杂度 $O(n)$。其中 $n$ 为乘客的数量。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class UndergroundSystem:
@@ -146,10 +142,6 @@ class UndergroundSystem:
 # obj.checkOut(id,stationName,t)
 # param_3 = obj.getAverageTime(startStation,endStation)
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class UndergroundSystem {
@@ -189,8 +181,6 @@ class UndergroundSystem {
  */
 ```
 
-### **C++**
-
 ```cpp
 class UndergroundSystem {
 public:
@@ -226,8 +216,6 @@ private:
  * double param_3 = obj->getAverageTime(startStation,endStation);
  */
 ```
-
-### **Go**
 
 ```go
 type UndergroundSystem struct {
@@ -281,10 +269,6 @@ type pair struct {
  */
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

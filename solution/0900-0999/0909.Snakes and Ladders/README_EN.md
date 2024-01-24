@@ -10,12 +10,14 @@
 
 <ul>
 	<li>Choose a destination square <code>next</code> with a label in the range <code>[curr + 1, min(curr + 6, n<sup>2</sup>)]</code>.
+
     <ul>
     	<li>This choice simulates the result of a standard <strong>6-sided die roll</strong>: i.e., there are always at most 6 destinations, regardless of the size of the board.</li>
     </ul>
     </li>
     <li>If <code>next</code> has a snake or ladder, you <strong>must</strong> move to the destination of that snake or ladder. Otherwise, you move to <code>next</code>.</li>
     <li>The game ends when you reach the square <code>n<sup>2</sup></code>.</li>
+
 </ul>
 
 <p>A board square on row <code>r</code> and column <code>c</code> has a snake or ladder if <code>board[r][c] != -1</code>. The destination of that snake or ladder is <code>board[r][c]</code>. Squares <code>1</code> and <code>n<sup>2</sup></code> do not have a snake or ladder.</p>
@@ -62,11 +64,9 @@ This is the lowest possible number of moves to reach the last square, so return 
 
 ## Solutions
 
-BFS.
+### Solution 1
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class Solution:
@@ -96,8 +96,6 @@ class Solution:
             ans += 1
         return -1
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -144,8 +142,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -185,8 +181,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func snakesAndLadders(board [][]int) int {
@@ -228,10 +222,6 @@ func snakesAndLadders(board [][]int) int {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

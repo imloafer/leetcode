@@ -21,7 +21,7 @@ The salary of each candidate is guaranteed to be <strong>unique</strong>.</pre>
 
 <p>&nbsp;</p>
 
-<p>A company wants to hire new employees. The budget of the company for the salaries is <code>70000</code>. The company&#39;s criteria for hiring are:</p>
+<p>A company wants to hire new employees. The budget of the company for the salaries is <code>$70000</code>. The company&#39;s criteria for hiring are:</p>
 
 <ol>
 	<li>Keep hiring the senior with the smallest salary until you cannot hire any more seniors.</li>
@@ -95,9 +95,9 @@ We can hire all three juniors with the remaining budget.
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1
 
-### **SQL**
+<!-- tabs:start -->
 
 ```sql
 # Write your MySQL query statement below
@@ -134,3 +134,5 @@ WHERE cur <= 70000;
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

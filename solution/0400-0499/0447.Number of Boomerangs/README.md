@@ -6,7 +6,7 @@
 
 <!-- 这里写题目描述 -->
 
-<p>给定平面上<em>&nbsp;</em><code>n</code><em> </em>对 <strong>互不相同</strong> 的点&nbsp;<code>points</code> ，其中 <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> 。<strong>回旋镖</strong> 是由点&nbsp;<code>(i, j, k)</code> 表示的元组 ，其中&nbsp;<code>i</code>&nbsp;和&nbsp;<code>j</code>&nbsp;之间的距离和&nbsp;<code>i</code>&nbsp;和&nbsp;<code>k</code>&nbsp;之间的欧式距离相等（<strong>需要考虑元组的顺序</strong>）。</p>
+<p>给定平面上<em>&nbsp;</em><code>n</code><em> </em>对 <strong>互不相同</strong> 的点&nbsp;<code>points</code> ，其中 <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> 。<strong>回旋镖</strong> 是由点&nbsp;<code>(i, j, k)</code> 表示的元组 ，其中&nbsp;<code>i</code>&nbsp;和&nbsp;<code>j</code>&nbsp;之间的欧式距离和&nbsp;<code>i</code>&nbsp;和&nbsp;<code>k</code>&nbsp;之间的欧式距离相等（<strong>需要考虑元组的顺序</strong>）。</p>
 
 <p>返回平面上所有回旋镖的数量。</p>
 &nbsp;
@@ -47,9 +47,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：枚举 + 计数**
+### 方法一：枚举 + 计数
 
 我们可以枚举 `points` 中的每个点作为回旋镖的点 $i$，然后用一个哈希表 $cnt$ 记录其他点到 $i$ 的距离出现的次数。
 
@@ -58,10 +56,6 @@
 时间复杂度 $O(n^2)$，空间复杂度 $O(n)$。其中 $n$ 是数组 `points` 的长度。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -75,23 +69,6 @@ class Solution:
                 cnt[d] += 1
         return ans << 1
 ```
-
-```python
-class Solution:
-    def numberOfBoomerangs(self, points: List[List[int]]) -> int:
-        ans = 0
-        for p1 in points:
-            cnt = Counter()
-            for p2 in points:
-                d = dist(p1, p2)
-                cnt[d] += 1
-            ans += sum(x * (x - 1) for x in cnt.values())
-        return ans
-```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -108,6 +85,73 @@ class Solution {
         return ans << 1;
     }
 }
+```
+
+```cpp
+class Solution {
+public:
+    int numberOfBoomerangs(vector<vector<int>>& points) {
+        int ans = 0;
+        for (auto& p1 : points) {
+            unordered_map<int, int> cnt;
+            for (auto& p2 : points) {
+                int d = (p1[0] - p2[0]) * (p1[0] - p2[0]) + (p1[1] - p2[1]) * (p1[1] - p2[1]);
+                ans += cnt[d];
+                cnt[d]++;
+            }
+        }
+        return ans << 1;
+    }
+};
+```
+
+```go
+func numberOfBoomerangs(points [][]int) (ans int) {
+	for _, p1 := range points {
+		cnt := map[int]int{}
+		for _, p2 := range points {
+			d := (p1[0]-p2[0])*(p1[0]-p2[0]) + (p1[1]-p2[1])*(p1[1]-p2[1])
+			ans += cnt[d]
+			cnt[d]++
+		}
+	}
+	ans <<= 1
+	return
+}
+```
+
+```ts
+function numberOfBoomerangs(points: number[][]): number {
+    let ans = 0;
+    for (const [x1, y1] of points) {
+        const cnt: Map<number, number> = new Map();
+        for (const [x2, y2] of points) {
+            const d = (x1 - x2) ** 2 + (y1 - y2) ** 2;
+            ans += cnt.get(d) || 0;
+            cnt.set(d, (cnt.get(d) || 0) + 1);
+        }
+    }
+    return ans << 1;
+}
+```
+
+<!-- tabs:end -->
+
+### 方法二
+
+<!-- tabs:start -->
+
+```python
+class Solution:
+    def numberOfBoomerangs(self, points: List[List[int]]) -> int:
+        ans = 0
+        for p1 in points:
+            cnt = Counter()
+            for p2 in points:
+                d = dist(p1, p2)
+                cnt[d] += 1
+            ans += sum(x * (x - 1) for x in cnt.values())
+        return ans
 ```
 
 ```java
@@ -127,26 +171,6 @@ class Solution {
         return ans;
     }
 }
-```
-
-### **C++**
-
-```cpp
-class Solution {
-public:
-    int numberOfBoomerangs(vector<vector<int>>& points) {
-        int ans = 0;
-        for (auto& p1 : points) {
-            unordered_map<int, int> cnt;
-            for (auto& p2 : points) {
-                int d = (p1[0] - p2[0]) * (p1[0] - p2[0]) + (p1[1] - p2[1]) * (p1[1] - p2[1]);
-                ans += cnt[d];
-                cnt[d]++;
-            }
-        }
-        return ans << 1;
-    }
-};
 ```
 
 ```cpp
@@ -169,23 +193,6 @@ public:
 };
 ```
 
-### **Go**
-
-```go
-func numberOfBoomerangs(points [][]int) (ans int) {
-	for _, p1 := range points {
-		cnt := map[int]int{}
-		for _, p2 := range points {
-			d := (p1[0]-p2[0])*(p1[0]-p2[0]) + (p1[1]-p2[1])*(p1[1]-p2[1])
-			ans += cnt[d]
-			cnt[d]++
-		}
-	}
-	ans <<= 1
-	return
-}
-```
-
 ```go
 func numberOfBoomerangs(points [][]int) (ans int) {
 	for _, p1 := range points {
@@ -199,23 +206,6 @@ func numberOfBoomerangs(points [][]int) (ans int) {
 		}
 	}
 	return
-}
-```
-
-### **TypeScript**
-
-```ts
-function numberOfBoomerangs(points: number[][]): number {
-    let ans = 0;
-    for (const [x1, y1] of points) {
-        const cnt: Map<number, number> = new Map();
-        for (const [x2, y2] of points) {
-            const d = (x1 - x2) ** 2 + (y1 - y2) ** 2;
-            ans += cnt.get(d) || 0;
-            cnt.set(d, (cnt.get(d) || 0) + 1);
-        }
-    }
-    return ans << 1;
 }
 ```
 
@@ -236,10 +226,6 @@ function numberOfBoomerangs(points: number[][]): number {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

@@ -46,7 +46,7 @@ for (int i = 0; i &lt; len; i++) {
 <pre>
 <strong>输入：</strong>nums = [0,0,1,1,1,1,2,3,3]
 <strong>输出：</strong>7, nums = [0,0,1,1,2,3,3]
-<strong>解释：</strong>函数应返回新长度 length = <strong><code>7</code></strong>, 并且原数组的前五个元素被修改为&nbsp;<strong><code>0, 0, 1, 1, 2, 3, 3</code></strong>。不需要考虑数组中超出新长度后面的元素。
+<strong>解释：</strong>函数应返回新长度 length = <strong><code>7</code></strong>, 并且原数组的前七个元素被修改为&nbsp;<strong><code>0, 0, 1, 1, 2, 3, 3</code></strong>。不需要考虑数组中超出新长度后面的元素。
 </pre>
 
 <p>&nbsp;</p>
@@ -61,9 +61,7 @@ for (int i = 0; i &lt; len; i++) {
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：一次遍历**
+### 方法一：一次遍历
 
 我们用一个变量 $k$ 记录当前已经处理好的数组的长度，初始时 $k=0$，表示空数组。
 
@@ -86,10 +84,6 @@ for (int i = 0; i &lt; len; i++) {
 
 <!-- tabs:start -->
 
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
 ```python
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -100,10 +94,6 @@ class Solution:
                 k += 1
         return k
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -118,8 +108,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -136,8 +124,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func removeDuplicates(nums []int) int {
 	k := 0
@@ -151,8 +137,6 @@ func removeDuplicates(nums []int) int {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function removeDuplicates(nums: number[]): number {
     let k = 0;
@@ -165,23 +149,20 @@ function removeDuplicates(nums: number[]): number {
 }
 ```
 
-### **C#**
-
-```cs
-public class Solution {
-    public int RemoveDuplicates(int[] nums) {
-        int k = 0;
-        foreach (int x in nums) {
-            if (k < 2 || x != nums[k - 2]) {
-                nums[k++] = x;
+```rust
+impl Solution {
+    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+        let mut k = 0;
+        for i in 0..nums.len() {
+            if k < 2 || nums[i] != nums[k - 2] {
+                nums[k] = nums[i];
+                k += 1;
             }
         }
-        return k;
+        k as i32
     }
 }
 ```
-
-### **JavaScript**
 
 ```js
 /**
@@ -199,27 +180,20 @@ var removeDuplicates = function (nums) {
 };
 ```
 
-### **Rust**
-
-```rust
-impl Solution {
-    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
-        let mut k = 0;
-        for i in 0..nums.len() {
-            if k < 2 || nums[i] != nums[k - 2] {
-                nums[k] = nums[i];
-                k += 1;
+```cs
+public class Solution {
+    public int RemoveDuplicates(int[] nums) {
+        int k = 0;
+        foreach (int x in nums) {
+            if (k < 2 || x != nums[k - 2]) {
+                nums[k++] = x;
             }
         }
-        k as i32
+        return k;
     }
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

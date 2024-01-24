@@ -12,6 +12,7 @@
 
 <ul>
 	<li>如果只给出单一的元素&nbsp;<code>x</code>，那么表达式表示的字符串就只有&nbsp;<code>"x"</code>。<code>R(x) = {x}</code>
+
     <ul>
     	<li>例如，表达式 <code>"a"</code> 表示字符串 <code>"a"</code>。</li>
     	<li>而表达式 <code>"w"</code> 就表示字符串 <code>"w"</code>。</li>
@@ -69,9 +70,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：递归**
+### 方法一：递归
 
 我们设计一个递归函数 $dfs(exp)$，用于处理表达式 $exp$，并将结果存入集合 $s$ 中。
 
@@ -84,10 +83,6 @@
 时间复杂度约为 $O(n \times 2^{n / 4})$，其中 $n$ 为表达式 $expression$ 的长度。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -106,10 +101,6 @@ class Solution:
         dfs(expression)
         return sorted(s)
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -135,8 +126,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -167,8 +156,6 @@ private:
 };
 ```
 
-### **Go**
-
 ```go
 func braceExpansionII(expression string) []string {
 	s := map[string]struct{}{}
@@ -195,8 +182,6 @@ func braceExpansionII(expression string) []string {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function braceExpansionII(expression: string): string[] {
     const dfs = (exp: string) => {
@@ -218,10 +203,6 @@ function braceExpansionII(expression: string): string[] {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

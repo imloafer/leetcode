@@ -36,7 +36,7 @@ The compressed string is &quot;a1b2c2d1&quot;, which is longer than the original
 
 ## Solutions
 
-**Solution 1: Two Pointers**
+### Solution 1: Two Pointers
 
 We can use two pointers to find the start and end positions of each consecutive character, calculate the length of the consecutive characters, and then append the character and length to the string $t$.
 
@@ -45,8 +45,6 @@ Finally, we compare the lengths of $t$ and $S$. If the length of $t$ is less tha
 The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class Solution:
@@ -69,8 +67,6 @@ class Solution:
         return min(S, "".join(t), key=len)
 ```
 
-### **Java**
-
 ```java
 class Solution {
     public String compressString(String S) {
@@ -89,8 +85,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -112,8 +106,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func compressString(S string) string {
 	n := len(S)
@@ -133,30 +125,6 @@ func compressString(S string) string {
 	return S
 }
 ```
-
-### **JavaScript**
-
-```js
-/**
- * @param {string} S
- * @return {string}
- */
-var compressString = function (S) {
-    const n = S.length;
-    const t = [];
-    for (let i = 0; i < n; ) {
-        let j = i + 1;
-        while (j < n && S.charAt(j) === S.charAt(i)) {
-            ++j;
-        }
-        t.push(S.charAt(i), j - i);
-        i = j;
-    }
-    return t.length < n ? t.join('') : S;
-};
-```
-
-### **Rust**
 
 ```rust
 impl Solution {
@@ -185,10 +153,26 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
+```js
+/**
+ * @param {string} S
+ * @return {string}
+ */
+var compressString = function (S) {
+    const n = S.length;
+    const t = [];
+    for (let i = 0; i < n; ) {
+        let j = i + 1;
+        while (j < n && S.charAt(j) === S.charAt(i)) {
+            ++j;
+        }
+        t.push(S.charAt(i), j - i);
+        i = j;
+    }
+    return t.length < n ? t.join('') : S;
+};
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

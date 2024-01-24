@@ -23,12 +23,13 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><b>输入：</b>mapping = [8,9,4,0,2,1,3,5,7,6], nums = [991,338,38]
+<pre>
+<b>输入：</b>mapping = [8,9,4,0,2,1,3,5,7,6], nums = [991,338,38]
 <b>输出：</b>[338,38,991]
 <b>解释：</b>
 将数字 991 按照如下规则映射：
 1. mapping[9] = 6 ，所有数位 9 都会变成 6 。
-2. mapping[1] = 9 ，所有数位 1 都会变成 8 。
+2. mapping[1] = 9 ，所有数位 1 都会变成 9 。
 所以，991 映射的值为 669 。
 338 映射为 007 ，去掉前导 0 后得到 7 。
 38 映射为 07 ，去掉前导 0 后得到 7 。
@@ -38,7 +39,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>mapping = [0,1,2,3,4,5,6,7,8,9], nums = [789,456,123]
+<pre>
+<b>输入：</b>mapping = [0,1,2,3,4,5,6,7,8,9], nums = [789,456,123]
 <b>输出：</b>[123,456,789]
 <b>解释：</b>789 映射为 789 ，456 映射为 456 ，123 映射为 123 。所以排序后数组为 [123,456,789] 。
 </pre>
@@ -57,19 +59,13 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：自定义排序**
+### 方法一：自定义排序
 
 我们遍历数组 $nums$ 中的每个元素 $nums[i]$，将其映射后的值 $y$ 与下标 $i$ 一起存入数组 $arr$ 中，然后对数组 $arr$ 进行排序，最后将排序后的数组 $arr$ 中的下标 $i$ 取出，转换为原数组 $nums$ 中的元素 $nums[i]$ 即可。
 
 时间复杂度 $O(n \times \log n)$，空间复杂度 $O(n)$。其中 $n$ 为数组 $nums$ 的长度。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -86,10 +82,6 @@ class Solution:
         arr.sort()
         return [nums[i] for _, i in arr]
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -116,8 +108,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -143,8 +133,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func sortJumbled(mapping []int, nums []int) (ans []int) {
@@ -173,8 +161,6 @@ func sortJumbled(mapping []int, nums []int) (ans []int) {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function sortJumbled(mapping: number[], nums: number[]): number[] {
     const n = nums.length;
@@ -193,10 +179,6 @@ function sortJumbled(mapping: number[], nums: number[]): number[] {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

@@ -10,6 +10,7 @@
 
 <ul>
 	<li>In <code>1</code> second, you can either:
+
     <ul>
     	<li>move vertically by one&nbsp;unit,</li>
     	<li>move horizontally by one unit, or</li>
@@ -18,6 +19,7 @@
     </li>
     <li>You have to visit the points in the same order as they appear in the array.</li>
     <li>You are allowed to pass through points that appear later in the order, but these do not count as visits.</li>
+
 </ul>
 
 <p>&nbsp;</p>
@@ -50,7 +52,7 @@ Total time = 7 seconds</pre>
 
 ## Solutions
 
-**Solution 1: Simulation**
+### Solution 1: Simulation
 
 For two points $p1=(x_1, y_1)$ and $p2=(x_2, y_2)$, the distances moved in the x-axis and y-axis are $dx = |x_1 - x_2|$ and $dy = |y_1 - y_2|$ respectively.
 
@@ -62,8 +64,6 @@ The time complexity is $O(n)$, where $n$ is the number of points. The space comp
 
 <!-- tabs:start -->
 
-### **Python3**
-
 ```python
 class Solution:
     def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:
@@ -71,8 +71,6 @@ class Solution:
             max(abs(p1[0] - p2[0]), abs(p1[1] - p2[1])) for p1, p2 in pairwise(points)
         )
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -88,8 +86,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -104,8 +100,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func minTimeToVisitAllPoints(points [][]int) (ans int) {
@@ -125,8 +119,6 @@ func abs(x int) int {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function minTimeToVisitAllPoints(points: number[][]): number {
     let ans = 0;
@@ -138,8 +130,6 @@ function minTimeToVisitAllPoints(points: number[][]): number {
     return ans;
 }
 ```
-
-### **Rust**
 
 ```rust
 impl Solution {
@@ -156,8 +146,6 @@ impl Solution {
 }
 ```
 
-### **C**
-
 ```c
 #define max(a, b) (((a) > (b)) ? (a) : (b))
 
@@ -172,10 +160,6 @@ int minTimeToVisitAllPoints(int** points, int pointsSize, int* pointsColSize) {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

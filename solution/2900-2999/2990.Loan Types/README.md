@@ -20,7 +20,7 @@ loan_id 是这张表具有唯一值的列。
 该表包含 loan_id, user_id,和 loan_type。
 </pre>
 
-<p>编写一个查询，找到所有<strong>至少有一种 Refinance </strong>贷款类型和至少有一种 <strong>Mortgage</strong> 贷款类型的&nbsp;<strong>不同</strong> <code>user_id</code>。</p>
+<p>编写一个解决方案，找出所有具有至少一种 <strong>再融资</strong> 贷款类型和至少一种 <strong>抵押</strong> 贷款类型的&nbsp;<strong>不同的</strong>&nbsp;<code>user_id</code>。</p>
 
 <p>按 <em><strong>升序</strong> 返回结果表中的 </em><code>user_id</code>。</p>
 
@@ -61,17 +61,11 @@ Sessions table:
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：分组求和**
+### 方法一：分组求和
 
 我们可以对 `Loans` 表按照 `user_id` 进行分组，找出既包含 `Refinance` 又包含 `Mortgage` 的用户，然后按照 `user_id` 进行排序。
 
 <!-- tabs:start -->
-
-### **SQL**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```sql
 # Write your MySQL query statement below
@@ -83,3 +77,5 @@ ORDER BY 1;
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

@@ -12,6 +12,7 @@
 
 <ul>
 	<li>如果单词以元音开头（<code>'a'</code>, <code>'e'</code>, <code>'i'</code>, <code>'o'</code>, <code>'u'</code>），在单词后添加<code>"ma"</code>。
+
     <ul>
     	<li>例如，单词 <code>"apple"</code> 变为 <code>"applema"</code> 。</li>
     </ul>
@@ -26,6 +27,7 @@
     	<li>例如，在第一个单词后添加 <code>"a"</code> ，在第二个单词后添加 <code>"aa"</code> ，以此类推。</li>
     </ul>
     </li>
+
 </ul>
 
 <p>返回将 <code>sentence</code> 转换为山羊拉丁文后的句子。</p>
@@ -59,13 +61,9 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -79,10 +77,6 @@ class Solution:
             ans.append(word)
         return ' '.join(ans)
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -111,8 +105,6 @@ class Solution {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function toGoatLatin(sentence: string): string {
     return sentence
@@ -129,8 +121,6 @@ function toGoatLatin(sentence: string): string {
         .join(' ');
 }
 ```
-
-### **Rust**
 
 ```rust
 use std::collections::HashSet;
@@ -158,10 +148,6 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

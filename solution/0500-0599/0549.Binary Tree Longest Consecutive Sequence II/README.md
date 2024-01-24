@@ -1,4 +1,4 @@
-# [549. 二叉树中最长的连续序列](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii)
+# [549. 二叉树最长连续序列 II](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii)
 
 [English Version](/solution/0500-0599/0549.Binary%20Tree%20Longest%20Consecutive%20Sequence%20II/README_EN.md)
 
@@ -50,13 +50,9 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # Definition for a binary tree node.
@@ -91,10 +87,6 @@ class Solution:
         dfs(root)
         return ans
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /**
@@ -150,8 +142,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 /**
  * Definition for a binary tree node.
@@ -192,8 +182,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 /**
@@ -238,10 +226,6 @@ func longestConsecutive(root *TreeNode) int {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

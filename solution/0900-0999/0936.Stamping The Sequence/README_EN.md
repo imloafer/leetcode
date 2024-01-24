@@ -10,12 +10,14 @@
 
 <ul>
 	<li>For example, if <code>stamp = &quot;abc&quot;</code> and <code>target = &quot;abcba&quot;</code>, then <code>s</code> is <code>&quot;?????&quot;</code> initially. In one turn you can:
+
     <ul>
     	<li>place <code>stamp</code> at index <code>0</code> of <code>s</code> to obtain <code>&quot;abc??&quot;</code>,</li>
     	<li>place <code>stamp</code> at index <code>1</code> of <code>s</code> to obtain <code>&quot;?abc?&quot;</code>, or</li>
     	<li>place <code>stamp</code> at index <code>2</code> of <code>s</code> to obtain <code>&quot;??abc&quot;</code>.</li>
     </ul>
     Note that <code>stamp</code> must be fully contained in the boundaries of <code>s</code> in order to stamp (i.e., you cannot place <code>stamp</code> at index <code>3</code> of <code>s</code>).</li>
+
 </ul>
 
 <p>We want to convert <code>s</code> to <code>target</code> using <strong>at most</strong> <code>10 * target.length</code> turns.</p>
@@ -55,7 +57,7 @@
 
 ## Solutions
 
-**Solution 1: Reverse Thinking + Topological Sorting**
+### Solution 1: Reverse Thinking + Topological Sorting
 
 If we operate on the sequence in a forward manner, it would be quite complicated because subsequent operations would overwrite previous ones. Therefore, we consider operating on the sequence in a reverse manner, i.e., starting from the target string $target$ and considering the process of turning $target$ into $?????$.
 
@@ -78,8 +80,6 @@ After the topological sorting is over, if every position of the target string $t
 The time complexity is $O(n \times (n - m + 1))$, and the space complexity is $O(n \times (n - m + 1))$. Here, $n$ and $m$ are the lengths of the target string $target$ and the stamp, respectively.
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class Solution:
@@ -110,8 +110,6 @@ class Solution:
                             q.append(k)
         return ans[::-1] if all(vis) else []
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -160,8 +158,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -208,8 +204,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func movesToStamp(stamp string, target string) (ans []int) {
@@ -261,8 +255,6 @@ func movesToStamp(stamp string, target string) (ans []int) {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function movesToStamp(stamp: string, target: string): number[] {
     const m: number = stamp.length;
@@ -305,8 +297,6 @@ function movesToStamp(stamp: string, target: string): number[] {
     return ans;
 }
 ```
-
-### **Rust**
 
 ```rust
 use std::collections::VecDeque;
@@ -368,10 +358,6 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

@@ -14,6 +14,8 @@
 
 <p>给定 <code>id</code>。<code>id</code> 是从函数 <code>customInterval</code> 返回的值。<code>customClearInterval</code> 应该停止在间隔中执行提供的函数 <code>fn</code>。</p>
 
+<p><strong>注意：</strong>在 Node.js 中，<code>setTimeout</code> 和 <code>setInterval</code> 函数返回一个对象，而不是一个数字。</p>
+
 <p>&nbsp;</p>
 
 <p><b>示例 1：</b></p>
@@ -71,13 +73,9 @@ setTimeout(() =&gt; {
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **TypeScript**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```ts
 const intervalMap = new Map<number, NodeJS.Timeout>();
@@ -109,3 +107,5 @@ function customClearInterval(id: number) {
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

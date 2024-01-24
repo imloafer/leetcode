@@ -10,6 +10,7 @@
 
 <ul>
 	<li><code>void checkIn(int id, string stationName, int t)</code>
+
     <ul>
     	<li>A customer with a card ID equal to <code>id</code>, checks in at the station <code>stationName</code> at time <code>t</code>.</li>
     	<li>A customer can only be checked into one place at a time.</li>
@@ -28,6 +29,7 @@
     	<li>There will be at least one customer that has traveled from <code>startStation</code> to <code>endStation</code> before <code>getAverageTime</code> is called.</li>
     </ul>
     </li>
+
 </ul>
 
 <p>You may assume all calls to the <code>checkIn</code> and <code>checkOut</code> methods are consistent. If a customer checks in at time <code>t<sub>1</sub></code> then checks out at time <code>t<sub>2</sub></code>, then <code>t<sub>1</sub> &lt; t<sub>2</sub></code>. All events happen in chronological order.</p>
@@ -95,7 +97,7 @@ undergroundSystem.getAverageTime(&quot;Leyton&quot;, &quot;Paradise&quot;); // r
 
 ## Solutions
 
-**Solution 1: Hash Table**
+### Solution 1: Hash Table
 
 We use two hash tables to store data:
 
@@ -111,8 +113,6 @@ When we want to calculate a passenger's average travel time, we retrieve the pas
 The time complexity is $O(1)$, and the space complexity is $O(n)$. Where $n$ is the number of passengers.
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class UndergroundSystem:
@@ -139,8 +139,6 @@ class UndergroundSystem:
 # obj.checkOut(id,stationName,t)
 # param_3 = obj.getAverageTime(startStation,endStation)
 ```
-
-### **Java**
 
 ```java
 class UndergroundSystem {
@@ -180,8 +178,6 @@ class UndergroundSystem {
  */
 ```
 
-### **C++**
-
 ```cpp
 class UndergroundSystem {
 public:
@@ -217,8 +213,6 @@ private:
  * double param_3 = obj->getAverageTime(startStation,endStation);
  */
 ```
-
-### **Go**
 
 ```go
 type UndergroundSystem struct {
@@ -272,10 +266,6 @@ type pair struct {
  */
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

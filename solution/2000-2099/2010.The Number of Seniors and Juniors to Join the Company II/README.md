@@ -23,7 +23,7 @@ employee_id 是该表中具有唯一值的列。
 
 <p>&nbsp;</p>
 
-<p>一家公司想雇佣新员工。公司的工资预算是 <code>70000</code> 。公司的招聘标准是：</p>
+<p>一家公司想雇佣新员工。公司的工资预算是 <code>$70000</code> 。公司的招聘标准是：</p>
 
 <ol>
 	<li>继续雇佣薪水最低的高级职员，直到你不能再雇佣更多的高级职员。</li>
@@ -95,19 +95,13 @@ Candidates table:
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：窗口函数**
+### 方法一：窗口函数
 
 相似题目：
 
 -   [2004. 职员招聘人数](/solution/2000-2099/2004.The%20Number%20of%20Seniors%20and%20Juniors%20to%20Join%20the%20Company/README.md)
 
 <!-- tabs:start -->
-
-### **SQL**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```sql
 # Write your MySQL query statement below
@@ -144,3 +138,5 @@ WHERE cur <= 70000;
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

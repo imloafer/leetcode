@@ -10,6 +10,7 @@
 
 <ul>
 	<li>删除子字符串 <code>"ab"</code> 并得到 <code>x</code> 分。
+
     <ul>
     	<li>比方说，从 <code>"c<strong>ab</strong>xbae"</code> 删除 <code>ab</code> ，得到 <code>"cxbae"</code> 。</li>
     </ul>
@@ -19,6 +20,7 @@
     	<li>比方说，从 <code>"cabx<strong>ba</strong>e"</code> 删除 <code>ba</code> ，得到 <code>"cabxe"</code> 。</li>
     </ul>
     </li>
+
 </ul>
 
 <p>请返回对 <code>s</code> 字符串执行上面操作若干次能得到的最大得分。</p>
@@ -54,15 +56,9 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-不失一般性，可以设 `x >= y`。因此，可以先删除所有 "ab"，再删除所有 "ba"，获取最终得分 ans。
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -92,10 +88,6 @@ class Solution:
                     stk2.append(c)
         return ans
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -135,8 +127,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -178,8 +168,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func maximumGain(s string, x int, y int) int {
 	if x < y {
@@ -220,10 +208,6 @@ func maximumGain(s string, x int, y int) int {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

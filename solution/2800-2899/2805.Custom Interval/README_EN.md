@@ -12,6 +12,8 @@
 
 <p>Given the&nbsp;<code>id</code>. <code>id</code>&nbsp;is the&nbsp;returned value from&nbsp;the function&nbsp;<code>customInterval</code>. <code>customClearInterval</code>&nbsp;should stop executing&nbsp;provided function <code>fn</code> at intervals.</p>
 
+<p><strong>Note:</strong> The <code>setTimeout</code> and <code>setInterval</code> functions in Node.js return an object, not a number.</p>
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
@@ -67,9 +69,9 @@ setTimeout(() =&gt; {
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1
 
-### **TypeScript**
+<!-- tabs:start -->
 
 ```ts
 const intervalMap = new Map<number, NodeJS.Timeout>();
@@ -101,3 +103,5 @@ function customClearInterval(id: number) {
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

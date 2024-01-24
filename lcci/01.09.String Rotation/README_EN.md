@@ -36,7 +36,7 @@
 
 ## Solutions
 
-**Solution 1: String Matching**
+### Solution 1: String Matching
 
 First, if the lengths of strings $s1$ and $s2$ are not equal, they are definitely not rotation strings of each other.
 
@@ -59,15 +59,11 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is 
 
 <!-- tabs:start -->
 
-### **Python3**
-
 ```python
 class Solution:
     def isFlipedString(self, s1: str, s2: str) -> bool:
         return len(s1) == len(s2) and s2 in s1 * 2
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -76,8 +72,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -88,23 +82,17 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func isFlipedString(s1 string, s2 string) bool {
 	return len(s1) == len(s2) && strings.Contains(s1+s1, s2)
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function isFlipedString(s1: string, s2: string): boolean {
     return s1.length === s2.length && (s2 + s2).indexOf(s1) !== -1;
 }
 ```
-
-### **Rust**
 
 ```rust
 impl Solution {
@@ -114,39 +102,6 @@ impl Solution {
 }
 ```
 
-```rust
-impl Solution {
-    pub fn is_fliped_string(s1: String, s2: String) -> bool {
-        if s1 == s2 {
-            return true;
-        }
-        if s1.len() != s2.len() {
-            return false;
-        }
-        let s2: Vec<char> = (s2.clone() + &s2).chars().collect();
-        let n = s1.len();
-        let m = s2.len();
-        for i in 0..m - n {
-            let mut is_pass = true;
-            for (j, c) in s1.chars().enumerate() {
-                if c != s2[i + j] {
-                    is_pass = false;
-                    break;
-                }
-            }
-            if is_pass {
-                return true;
-            }
-        }
-        false
-    }
-}
-```
-
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

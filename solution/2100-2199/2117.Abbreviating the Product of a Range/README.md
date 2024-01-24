@@ -12,6 +12,7 @@
 
 <ol>
 	<li>统计乘积中&nbsp;<strong>后缀</strong> 0 的数目，并 <strong>移除</strong> 这些 0 ，将这个数目记为&nbsp;<code>C</code>&nbsp;。
+
     <ul>
     	<li>比方说，<code>1000</code>&nbsp;中有 <code>3</code> 个后缀 0&nbsp;，<code>546</code>&nbsp;中没有后缀 0 。</li>
     </ul>
@@ -26,6 +27,7 @@
     	<li>比方说，<code>12345678987600000</code>&nbsp;被表示为&nbsp;<code>"12345...89876e5"</code>&nbsp;。</li>
     </ul>
     </li>
+
 </ol>
 
 <p>请你返回一个字符串，表示 <strong>闭区间</strong>&nbsp;<code>[left, right]</code>&nbsp;中所有整数&nbsp;<strong>乘积</strong>&nbsp;的&nbsp;<strong>缩写</strong>&nbsp;。</p>
@@ -73,13 +75,9 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 import numpy
@@ -116,43 +114,6 @@ class Solution:
         pre = int(pow(10, z - int(z) + 4))
         return str(pre) + "..." + str(suf).zfill(5) + "e" + str(c)
 ```
-
-```python
-class Solution:
-    def abbreviateProduct(self, left: int, right: int) -> str:
-        cnt2 = cnt5 = 0
-        for x in range(left, right + 1):
-            while x % 2 == 0:
-                cnt2 += 1
-                x //= 2
-            while x % 5 == 0:
-                cnt5 += 1
-                x //= 5
-        c = cnt2 = cnt5 = min(cnt2, cnt5)
-        pre = suf = 1
-        gt = False
-        for x in range(left, right + 1):
-            suf *= x
-            while cnt2 and suf % 2 == 0:
-                suf //= 2
-                cnt2 -= 1
-            while cnt5 and suf % 5 == 0:
-                suf //= 5
-                cnt5 -= 1
-            if suf >= 1e10:
-                gt = True
-                suf %= int(1e10)
-            pre *= x
-            while pre > 1e5:
-                pre /= 10
-        if gt:
-            return str(int(pre)) + "..." + str(suf % int(1e5)).zfill(5) + 'e' + str(c)
-        return str(suf) + "e" + str(c)
-```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -194,8 +155,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -239,8 +198,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func abbreviateProduct(left int, right int) string {
@@ -286,16 +243,45 @@ func abbreviateProduct(left int, right int) string {
 }
 ```
 
-### **TypeScript**
+<!-- tabs:end -->
 
-```ts
+### 方法二
 
-```
+<!-- tabs:start -->
 
-### **...**
-
-```
-
+```python
+class Solution:
+    def abbreviateProduct(self, left: int, right: int) -> str:
+        cnt2 = cnt5 = 0
+        for x in range(left, right + 1):
+            while x % 2 == 0:
+                cnt2 += 1
+                x //= 2
+            while x % 5 == 0:
+                cnt5 += 1
+                x //= 5
+        c = cnt2 = cnt5 = min(cnt2, cnt5)
+        pre = suf = 1
+        gt = False
+        for x in range(left, right + 1):
+            suf *= x
+            while cnt2 and suf % 2 == 0:
+                suf //= 2
+                cnt2 -= 1
+            while cnt5 and suf % 5 == 0:
+                suf //= 5
+                cnt5 -= 1
+            if suf >= 1e10:
+                gt = True
+                suf %= int(1e10)
+            pre *= x
+            while pre > 1e5:
+                pre /= 10
+        if gt:
+            return str(int(pre)) + "..." + str(suf % int(1e5)).zfill(5) + 'e' + str(c)
+        return str(suf) + "e" + str(c)
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

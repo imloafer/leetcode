@@ -10,6 +10,7 @@
 
 <ul>
 	<li>The division operator <code>&#39;/&#39;</code> represents real division, not integer division.
+
     <ul>
     	<li>For example, <code>4 / (1 - 2 / 3) = 4 / (1 / 3) = 12</code>.</li>
     </ul>
@@ -24,6 +25,7 @@
     	<li>For example, if <code>cards = [1, 2, 1, 2]</code>, the expression <code>&quot;12 + 12&quot;</code> is not valid.</li>
     </ul>
     </li>
+
 </ul>
 
 <p>Return <code>true</code> if you can get such expression that evaluates to <code>24</code>, and <code>false</code> otherwise.</p>
@@ -54,7 +56,7 @@
 
 ## Solutions
 
-**Solution 1: DFS**
+### Solution 1: DFS
 
 We design a function $dfs(nums)$, where $nums$ represents the current number sequence. The function returns a boolean value indicating whether there exists a permutation that makes this number sequence equal to $24$.
 
@@ -65,8 +67,6 @@ Otherwise, we can enumerate any two numbers $a$ and $b$ in $nums$ as the left an
 If none of the enumerated cases return $true$, we return $false$.
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class Solution:
@@ -102,8 +102,6 @@ class Solution:
         nums = [float(x) for x in cards]
         return dfs(nums)
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -163,8 +161,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -227,8 +223,6 @@ private:
 };
 ```
 
-### **Go**
-
 ```go
 func judgePoint24(cards []int) bool {
 	ops := [4]rune{'+', '-', '*', '/'}
@@ -282,8 +276,6 @@ func judgePoint24(cards []int) bool {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function judgePoint24(cards: number[]): boolean {
     const ops: string[] = ['+', '-', '*', '/'];
@@ -336,10 +328,6 @@ function judgePoint24(cards: number[]): boolean {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

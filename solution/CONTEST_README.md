@@ -22,6 +22,20 @@
 
 ## 往期竞赛
 
+#### 第 381 场周赛(2024-01-21 10:30, 90 分钟) 参赛人数 3737
+
+- [3014. 输入单词需要的最少按键次数 I](/solution/3000-3099/3014.Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20I/README.md)
+- [3015. 按距离统计房屋对数目 I](/solution/3000-3099/3015.Count%20the%20Number%20of%20Houses%20at%20a%20Certain%20Distance%20I/README.md)
+- [3016. 输入单词需要的最少按键次数 II](/solution/3000-3099/3016.Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/README.md)
+- [3017. 按距离统计房屋对数目 II](/solution/3000-3099/3017.Count%20the%20Number%20of%20Houses%20at%20a%20Certain%20Distance%20II/README.md)
+
+#### 第 122 场双周赛(2024-01-20 22:30, 90 分钟) 参赛人数 2547
+
+- [3010. 将数组分成最小总代价的子数组 I](/solution/3000-3099/3010.Divide%20an%20Array%20Into%20Subarrays%20With%20Minimum%20Cost%20I/README.md)
+- [3011. 判断一个数组是否可以变为有序](/solution/3000-3099/3011.Find%20if%20Array%20Can%20Be%20Sorted/README.md)
+- [3012. 通过操作使数组长度最小](/solution/3000-3099/3012.Minimize%20Length%20of%20Array%20Using%20Operations/README.md)
+- [3013. 将数组分成最小总代价的子数组 II](/solution/3000-3099/3013.Divide%20an%20Array%20Into%20Subarrays%20With%20Minimum%20Cost%20II/README.md)
+
 #### 第 380 场周赛(2024-01-14 10:30, 90 分钟) 参赛人数 3325
 
 - [3005. 最大频率元素计数](/solution/3000-3099/3005.Count%20Elements%20With%20Maximum%20Frequency/README.md)
@@ -311,7 +325,7 @@
 
 #### 第 108 场双周赛(2023-07-08 22:30, 90 分钟) 参赛人数 2349
 
-- [2765. 最长交替子序列](/solution/2700-2799/2765.Longest%20Alternating%20Subarray/README.md)
+- [2765. 最长交替子数组](/solution/2700-2799/2765.Longest%20Alternating%20Subarray/README.md)
 - [2766. 重新放置石块](/solution/2700-2799/2766.Relocate%20Marbles/README.md)
 - [2767. 将字符串分割为最少的美丽子字符串](/solution/2700-2799/2767.Partition%20String%20Into%20Minimum%20Beautiful%20Substrings/README.md)
 - [2768. 黑格子的数目](/solution/2700-2799/2768.Number%20of%20Black%20Blocks/README.md)

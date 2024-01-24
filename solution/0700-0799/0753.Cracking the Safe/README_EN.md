@@ -10,6 +10,7 @@
 
 <ul>
 	<li>For example, the correct password is <code>&quot;345&quot;</code> and you enter in <code>&quot;012345&quot;</code>:
+
     <ul>
     	<li>After typing <code>0</code>, the most recent <code>3</code> digits is <code>&quot;0&quot;</code>, which is incorrect.</li>
     	<li>After typing <code>1</code>, the most recent <code>3</code> digits is <code>&quot;01&quot;</code>, which is incorrect.</li>
@@ -19,6 +20,7 @@
     	<li>After typing <code>5</code>, the most recent <code>3</code> digits is <code>&quot;345&quot;</code>, which is correct and the safe unlocks.</li>
     </ul>
     </li>
+
 </ul>
 
 <p>Return <em>any string of <strong>minimum length</strong> that will unlock the safe <strong>at some point</strong> of entering it</em>.</p>
@@ -42,7 +44,7 @@
 - &quot;01&quot; is typed in starting from the 1<sup>st</sup> digit.
 - &quot;10&quot; is typed in starting from the 3<sup>rd</sup> digit.
 - &quot;11&quot; is typed in starting from the 2<sup>nd</sup> digit.
-Thus &quot;01100&quot; will unlock the safe. &quot;01100&quot;, &quot;10011&quot;, and &quot;11001&quot; would also unlock the safe.
+Thus &quot;01100&quot; will unlock the safe. &quot;10011&quot;, and &quot;11001&quot; would also unlock the safe.
 </pre>
 
 <p>&nbsp;</p>
@@ -56,9 +58,9 @@ Thus &quot;01100&quot; will unlock the safe. &quot;01100&quot;, &quot;10011&quot
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1
 
-### **Python3**
+<!-- tabs:start -->
 
 ```python
 class Solution:
@@ -79,8 +81,6 @@ class Solution:
         ans.append("0" * (n - 1))
         return "".join(ans)
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -108,8 +108,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -134,8 +132,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func crackSafe(n int, k int) string {
 	mod := int(math.Pow(10, float64(n-1)))
@@ -159,10 +155,6 @@ func crackSafe(n int, k int) string {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

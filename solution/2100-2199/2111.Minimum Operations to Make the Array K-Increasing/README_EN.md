@@ -10,6 +10,7 @@
 
 <ul>
 	<li>For example, <code>arr = [4, 1, 5, 2, 6, 2]</code> is K-increasing for <code>k = 2</code> because:
+
     <ul>
     	<li><code>arr[0] &lt;= arr[2] (4 &lt;= 5)</code></li>
     	<li><code>arr[1] &lt;= arr[3] (1 &lt;= 2)</code></li>
@@ -18,6 +19,7 @@
     </ul>
     </li>
     <li>However, the same <code>arr</code> is not K-increasing for <code>k = 1</code> (because <code>arr[0] &gt; arr[1]</code>) or <code>k = 3</code> (because <code>arr[0] &gt; arr[3]</code>).</li>
+
 </ul>
 
 <p>In one <strong>operation</strong>, you can choose an index <code>i</code> and <strong>change</strong> <code>arr[i]</code> into <strong>any</strong> positive integer.</p>
@@ -69,9 +71,9 @@ Note that there can be other ways to make the array K-increasing, but none of th
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1
 
-### **Python3**
+<!-- tabs:start -->
 
 ```python
 class Solution:
@@ -88,8 +90,6 @@ class Solution:
 
         return sum(lis(arr[i::k]) for i in range(k))
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -134,8 +134,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -162,8 +160,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func kIncreasing(arr []int, k int) int {
@@ -206,16 +202,6 @@ func kIncreasing(arr []int, k int) int {
 }
 ```
 
-### **TypeScript**
-
-```ts
-
-```
-
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

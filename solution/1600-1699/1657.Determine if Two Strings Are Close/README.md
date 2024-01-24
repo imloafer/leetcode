@@ -10,6 +10,7 @@
 
 <ul>
 	<li>操作 1：交换任意两个 <strong>现有</strong> 字符。
+
     <ul>
     	<li>例如，<code>a<strong>b</strong>cd<strong>e</strong> -> a<strong>e</strong>cd<strong>b</strong></code></li>
     </ul>
@@ -19,6 +20,7 @@
     	<li>例如，<code><strong>aa</strong>c<strong>abb</strong> -> <strong>bb</strong>c<strong>baa</strong></code>（所有 <code>a</code> 转化为 <code>b</code> ，而所有的 <code>b</code> 转换为 <code>a</code> ）</li>
     </ul>
     </li>
+
 </ul>
 
 <p>你可以根据需要对任意一个字符串多次使用这两种操作。</p>
@@ -73,9 +75,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：计数 + 排序**
+### 方法一：计数 + 排序
 
 根据题目描述，两个字符串接近，需要同时满足以下两个条件：
 
@@ -92,10 +92,6 @@
 
 <!-- tabs:start -->
 
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
 ```python
 class Solution:
     def closeStrings(self, word1: str, word2: str) -> bool:
@@ -104,10 +100,6 @@ class Solution:
             cnt1.keys()
         ) == set(cnt2.keys())
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -131,8 +123,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -158,8 +148,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func closeStrings(word1 string, word2 string) bool {
 	cnt1 := make([]int, 26)
@@ -178,8 +166,6 @@ func closeStrings(word1 string, word2 string) bool {
 	return slices.Equal(cnt1, cnt2)
 }
 ```
-
-### **TypeScript**
 
 ```ts
 function closeStrings(word1: string, word2: string): boolean {
@@ -201,8 +187,6 @@ function closeStrings(word1: string, word2: string): boolean {
     return cnt1.join('.') === cnt2.join('.');
 }
 ```
-
-### **Rust**
 
 ```rust
 impl Solution {
@@ -227,10 +211,6 @@ impl Solution {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

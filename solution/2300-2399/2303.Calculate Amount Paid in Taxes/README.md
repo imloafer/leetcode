@@ -26,10 +26,10 @@
 <pre><strong>输入：</strong>brackets = [[3,50],[7,10],[12,25]], income = 10
 <strong>输出：</strong>2.65000
 <strong>解释：</strong>
-前 3 的税率为 50% 。需要支付税款 3 * 50% = 1.50 。
-接下来 7 - 3 = 4 的税率为 10% 。需要支付税款 4 * 10% = 0.40 。
-最后 10 - 7 = 3 的税率为 25% 。需要支付税款 3 * 25% = 0.75 。
-需要支付的税款总计 1.50 + 0.40 + 0.75 = 2.65 。
+前 $3 的税率为 50% 。需要支付税款 $3 * 50% = $1.50 。
+接下来 $7 - $3 = $4 的税率为 10% 。需要支付税款 $4 * 10% = $0.40 。
+最后 $10 - $7 = $3 的税率为 25% 。需要支付税款 $3 * 25% = $0.75 。
+需要支付的税款总计 $1.50 + $0.40 + $0.75 = $2.65 。
 </pre>
 
 <p><strong>示例 2：</strong></p>
@@ -37,9 +37,9 @@
 <pre><strong>输入：</strong>brackets = [[1,0],[4,25],[5,50]], income = 2
 <strong>输出：</strong>0.25000
 <strong>解释：</strong>
-前 1 的税率为 0% 。需要支付税款 1 * 0% = 0 。
-剩下 1 的税率为 25% 。需要支付税款 1 * 25% = 0.25 。
-需要支付的税款总计 0 + 0.25 = 0.25 。
+前 $1 的税率为 0% 。需要支付税款 $1 * 0% = $0 。
+剩下 $1 的税率为 25% 。需要支付税款 $1 * 25% = $0.25 。
+需要支付的税款总计 $0 + $0.25 = $0.25 。
 </pre>
 
 <p><strong>示例 3：</strong></p>
@@ -47,7 +47,7 @@
 <pre><strong>输入：</strong>brackets = [[2,50]], income = 0
 <strong>输出：</strong>0.00000
 <strong>解释：</strong>
-没有收入，无需纳税，需要支付的税款总计 0 。
+没有收入，无需纳税，需要支付的税款总计 $0 。
 </pre>
 
 <p>&nbsp;</p>
@@ -66,19 +66,13 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：模拟**
+### 方法一：模拟
 
 我们遍历 `brackets`，对于每个税级，计算该税级的税额，然后累加即可。
 
 时间复杂度 $O(n)$，其中 $n$ 为 `brackets` 的长度。空间复杂度 $O(1)$。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -89,10 +83,6 @@ class Solution:
             prev = upper
         return ans / 100
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -107,8 +97,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -125,8 +113,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func calculateTax(brackets [][]int, income int) float64 {
 	var ans, prev int
@@ -139,7 +125,17 @@ func calculateTax(brackets [][]int, income int) float64 {
 }
 ```
 
-### **Rust**
+```ts
+function calculateTax(brackets: number[][], income: number): number {
+    let ans = 0;
+    let prev = 0;
+    for (const [upper, percent] of brackets) {
+        ans += Math.max(0, Math.min(income, upper) - prev) * percent;
+        prev = upper;
+    }
+    return ans / 100;
+}
+```
 
 ```rust
 impl Solution {
@@ -158,24 +154,6 @@ impl Solution {
 }
 ```
 
-### **TypeScript**
-
-```ts
-function calculateTax(brackets: number[][], income: number): number {
-    let ans = 0;
-    let prev = 0;
-    for (const [upper, percent] of brackets) {
-        ans += Math.max(0, Math.min(income, upper) - prev) * percent;
-        prev = upper;
-    }
-    return ans / 100;
-}
-```
-
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

@@ -12,10 +12,12 @@
 
 <ul>
 	<li>选出两个下标（下标 <strong>从 0 开始</strong> 计数）<code>i</code> 和 <code>j</code>（<code>i != j</code>），并 <strong>更新</strong> <code>triplets[j]</code> 为 <code>[max(a<sub>i</sub>, a<sub>j</sub>), max(b<sub>i</sub>, b<sub>j</sub>), max(c<sub>i</sub>, c<sub>j</sub>)]</code> 。
+
     <ul>
     	<li>例如，<code>triplets[i] = [2, 5, 3]</code> 且 <code>triplets[j] = [1, 7, 5]</code>，<code>triplets[j]</code> 将会更新为 <code>[max(2, 1), max(5, 7), max(3, 5)] = [2, 7, 5]</code> 。</li>
     </ul>
     </li>
+
 </ul>
 
 <p>如果通过以上操作我们可以使得目标 <strong>三元组</strong> <code>target</code> 成为 <code>triplets</code> 的一个 <strong>元素</strong> ，则返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
@@ -71,9 +73,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：贪心**
+### 方法一：贪心
 
 我们记 $target = [x, y, z]$，初始时 $d = e = f = 0$，表示当前的 $a, b, c$ 的最大值。
 
@@ -84,10 +84,6 @@
 时间复杂度 $O(n)$，空间复杂度 $O(1)$。其中 $n$ 为数组 $triplets$ 的长度。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -101,10 +97,6 @@ class Solution:
                 f = max(f, c)
         return [d, e, f] == target
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -123,8 +115,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -145,8 +135,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func mergeTriplets(triplets [][]int, target []int) bool {
 	x, y, z := target[0], target[1], target[2]
@@ -163,8 +151,6 @@ func mergeTriplets(triplets [][]int, target []int) bool {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function mergeTriplets(triplets: number[][], target: number[]): boolean {
     const [x, y, z] = target;
@@ -180,10 +166,6 @@ function mergeTriplets(triplets: number[][], target: number[]): boolean {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

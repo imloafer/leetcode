@@ -10,6 +10,7 @@
 
 <ul>
 	<li>例如，<code>"abcde"</code> 可以缩写为：
+
     <ul>
     	<li><code>"a3e"</code>（<code>"bcd"</code> 变为 <code>"3"</code> ）</li>
     	<li><code>"1bcd1"</code>（<code>"a"</code> 和 <code>"e"</code> 都变为 <code>"1"</code>）<meta charset="UTF-8" /></li>
@@ -23,6 +24,7 @@
     	<li><meta charset="UTF-8" /><code>"22de"</code>&nbsp;(<code>"ab"</code> 变为&nbsp;<code>"2"</code>&nbsp;，&nbsp;<code>"bc"</code>&nbsp;变为&nbsp;<code>"2"</code>) &nbsp;是无效的，因为被选择的字符串是重叠的</li>
     </ul>
     </li>
+
 </ul>
 
 <p>给你一个字符串&nbsp;<code>word</code> ，返回&nbsp;<em>一个由</em>&nbsp;<code>word</code> 的<em>所有可能 <strong>广义缩写词</strong> 组成的列表</em>&nbsp;。按 <strong>任意顺序</strong> 返回答案。</p>
@@ -54,9 +56,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：DFS**
+### 方法一：DFS
 
 我们设计一个函数 $dfs(i)$，表示对于字符串 $word[i:]$，返回其所有可能的缩写。
 
@@ -72,17 +72,7 @@
 
 时间复杂度 $O(n \times 2^n)$，空间复杂度 $O(n)$。其中 $n$ 是字符串 $word$ 的长度。
 
-**方法二：二进制枚举**
-
-由于字符串 $word$ 的长度不超过 $15$，因此我们可以使用二进制枚举的方法枚举所有的缩写。我们用一个长度为 $n$ 的二进制数 $i$ 表示一种缩写方式，其中 $0$ 表示保留对应的字符，而 $1$ 表示删除对应的字符。我们在 $[0, 2^n)$ 的范围内枚举所有 $i$，并将其转换成对应的缩写，添加到答案列表中即可。
-
-时间复杂度 $O(n \times 2^n)$，空间复杂度 $O(n)$。其中 $n$ 是字符串 $word$ 的长度。
-
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -99,32 +89,6 @@ class Solution:
         n = len(word)
         return dfs(0)
 ```
-
-```python
-class Solution:
-    def generateAbbreviations(self, word: str) -> List[str]:
-        n = len(word)
-        ans = []
-        for i in range(1 << n):
-            cnt = 0
-            s = []
-            for j in range(n):
-                if i >> j & 1:
-                    cnt += 1
-                else:
-                    if cnt:
-                        s.append(str(cnt))
-                        cnt = 0
-                    s.append(word[j])
-            if cnt:
-                s.append(str(cnt))
-            ans.append("".join(s))
-        return ans
-```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -155,6 +119,114 @@ class Solution {
 }
 ```
 
+```cpp
+class Solution {
+public:
+    vector<string> generateAbbreviations(string word) {
+        int n = word.size();
+        function<vector<string>(int)> dfs = [&](int i) -> vector<string> {
+            if (i >= n) {
+                return {""};
+            }
+            vector<string> ans;
+            for (auto& s : dfs(i + 1)) {
+                string p(1, word[i]);
+                ans.emplace_back(p + s);
+            }
+            for (int j = i + 1; j <= n; ++j) {
+                for (auto& s : dfs(j + 1)) {
+                    string p = j < n ? string(1, word[j]) : "";
+                    ans.emplace_back(to_string(j - i) + p + s);
+                }
+            }
+            return ans;
+        };
+        return dfs(0);
+    }
+};
+```
+
+```go
+func generateAbbreviations(word string) []string {
+	n := len(word)
+	var dfs func(int) []string
+	dfs = func(i int) []string {
+		if i >= n {
+			return []string{""}
+		}
+		ans := []string{}
+		for _, s := range dfs(i + 1) {
+			ans = append(ans, word[i:i+1]+s)
+		}
+		for j := i + 1; j <= n; j++ {
+			for _, s := range dfs(j + 1) {
+				p := ""
+				if j < n {
+					p = word[j : j+1]
+				}
+				ans = append(ans, strconv.Itoa(j-i)+p+s)
+			}
+		}
+		return ans
+	}
+	return dfs(0)
+}
+```
+
+```ts
+function generateAbbreviations(word: string): string[] {
+    const n = word.length;
+    const dfs = (i: number): string[] => {
+        if (i >= n) {
+            return [''];
+        }
+        const ans: string[] = [];
+        for (const s of dfs(i + 1)) {
+            ans.push(word[i] + s);
+        }
+        for (let j = i + 1; j <= n; ++j) {
+            for (const s of dfs(j + 1)) {
+                ans.push((j - i).toString() + (j < n ? word[j] : '') + s);
+            }
+        }
+        return ans;
+    };
+    return dfs(0);
+}
+```
+
+<!-- tabs:end -->
+
+### 方法二：二进制枚举
+
+由于字符串 $word$ 的长度不超过 $15$，因此我们可以使用二进制枚举的方法枚举所有的缩写。我们用一个长度为 $n$ 的二进制数 $i$ 表示一种缩写方式，其中 $0$ 表示保留对应的字符，而 $1$ 表示删除对应的字符。我们在 $[0, 2^n)$ 的范围内枚举所有 $i$，并将其转换成对应的缩写，添加到答案列表中即可。
+
+时间复杂度 $O(n \times 2^n)$，空间复杂度 $O(n)$。其中 $n$ 是字符串 $word$ 的长度。
+
+<!-- tabs:start -->
+
+```python
+class Solution:
+    def generateAbbreviations(self, word: str) -> List[str]:
+        n = len(word)
+        ans = []
+        for i in range(1 << n):
+            cnt = 0
+            s = []
+            for j in range(n):
+                if i >> j & 1:
+                    cnt += 1
+                else:
+                    if cnt:
+                        s.append(str(cnt))
+                        cnt = 0
+                    s.append(word[j])
+            if cnt:
+                s.append(str(cnt))
+            ans.append("".join(s))
+        return ans
+```
+
 ```java
 class Solution {
     public List<String> generateAbbreviations(String word) {
@@ -182,35 +254,6 @@ class Solution {
         return ans;
     }
 }
-```
-
-### **C++**
-
-```cpp
-class Solution {
-public:
-    vector<string> generateAbbreviations(string word) {
-        int n = word.size();
-        function<vector<string>(int)> dfs = [&](int i) -> vector<string> {
-            if (i >= n) {
-                return {""};
-            }
-            vector<string> ans;
-            for (auto& s : dfs(i + 1)) {
-                string p(1, word[i]);
-                ans.emplace_back(p + s);
-            }
-            for (int j = i + 1; j <= n; ++j) {
-                for (auto& s : dfs(j + 1)) {
-                    string p = j < n ? string(1, word[j]) : "";
-                    ans.emplace_back(to_string(j - i) + p + s);
-                }
-            }
-            return ans;
-        };
-        return dfs(0);
-    }
-};
 ```
 
 ```cpp
@@ -243,35 +286,6 @@ public:
 };
 ```
 
-### **Go**
-
-```go
-func generateAbbreviations(word string) []string {
-	n := len(word)
-	var dfs func(int) []string
-	dfs = func(i int) []string {
-		if i >= n {
-			return []string{""}
-		}
-		ans := []string{}
-		for _, s := range dfs(i + 1) {
-			ans = append(ans, word[i:i+1]+s)
-		}
-		for j := i + 1; j <= n; j++ {
-			for _, s := range dfs(j + 1) {
-				p := ""
-				if j < n {
-					p = word[j : j+1]
-				}
-				ans = append(ans, strconv.Itoa(j-i)+p+s)
-			}
-		}
-		return ans
-	}
-	return dfs(0)
-}
-```
-
 ```go
 func generateAbbreviations(word string) (ans []string) {
 	n := len(word)
@@ -298,34 +312,6 @@ func generateAbbreviations(word string) (ans []string) {
 }
 ```
 
-### **TypeScript**
-
-```ts
-function generateAbbreviations(word: string): string[] {
-    const n = word.length;
-    const dfs = (i: number): string[] => {
-        if (i >= n) {
-            return [''];
-        }
-        const ans: string[] = [];
-        for (const s of dfs(i + 1)) {
-            ans.push(word[i] + s);
-        }
-        for (let j = i + 1; j <= n; ++j) {
-            for (const s of dfs(j + 1)) {
-                ans.push((j - i).toString() + (j < n ? word[j] : '') + s);
-            }
-        }
-        return ans;
-    };
-    return dfs(0);
-}
-```
-
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

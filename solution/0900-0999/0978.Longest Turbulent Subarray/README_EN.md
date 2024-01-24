@@ -12,6 +12,7 @@
 
 <ul>
 	<li>For <code>i &lt;= k &lt; j</code>:
+
     <ul>
     	<li><code>arr[k] &gt; arr[k + 1]</code> when <code>k</code> is odd, and</li>
     	<li><code>arr[k] &lt; arr[k + 1]</code> when <code>k</code> is even.</li>
@@ -23,6 +24,7 @@
     	<li><code>arr[k] &lt; arr[k + 1]</code> when <code>k</code> is odd.</li>
     </ul>
     </li>
+
 </ul>
 
 <p>&nbsp;</p>
@@ -58,9 +60,9 @@
 
 ## Solutions
 
-<!-- tabs:start -->
+### Solution 1
 
-### **Python3**
+<!-- tabs:start -->
 
 ```python
 class Solution:
@@ -73,8 +75,6 @@ class Solution:
             ans = max(ans, f, g)
         return ans
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -92,8 +92,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -110,8 +108,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func maxTurbulenceSize(arr []int) int {
@@ -131,8 +127,6 @@ func maxTurbulenceSize(arr []int) int {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function maxTurbulenceSize(arr: number[]): number {
     let f = 1;
@@ -149,10 +143,6 @@ function maxTurbulenceSize(arr: number[]): number {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

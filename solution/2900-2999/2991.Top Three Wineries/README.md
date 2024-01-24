@@ -21,7 +21,7 @@ id 是这张表具有唯一值的列。
 这张表包含 id, country, points,和 winery。
 </pre>
 
-<p>编写一个查询来找到 <strong>每个国家前三家&nbsp;</strong>基于它们的&nbsp;<strong>总分数&nbsp;</strong>的 <strong>酒庄</strong>。如果 <strong>多个酒庄</strong> 具有 <strong>相同</strong> 的总分数，则按 <strong>升序</strong> 排列它们的 <code>winery</code>&nbsp;名称。如果 <strong>没有第二家酒庄</strong>，则输出 'No Second Winery'，如果 <strong>没有第三家酒庄</strong>，则输出 'No Third Winery'。</p>
+<p>编写一个解决方案，根据每家酒庄的 <strong>总分</strong> 找出 <strong>每个国家</strong> 的 <strong>前三名酒庄</strong>。如果有 <strong>多个酒庄</strong> 的总分 <strong>相同</strong>，则按 <code>winery</code> 名称升序排列。如果没有 <strong>分数排在第二的酒庄</strong>，则输出 'No Second Winery'，如果没有 <strong>分数排在第三的酒庄</strong>，则输出 'No Third Winery'。</p>
 
 <p>返回结果表按<meta charset="UTF-8" /><em>&nbsp;</em><code>country</code><em>&nbsp;</em><strong>升序</strong> 排列。</p>
 
@@ -74,9 +74,7 @@ Sessions table:
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：分组 + 窗口函数 + 左连接**
+### 方法一：分组 + 窗口函数 + 左连接
 
 我们可以先对 `Wineries` 表按照 `country` 和 `winery` 进行分组，计算每个分组的总得分 `points`，然后再利用窗口函数 `RANK()` 将数据再按照 `country` 进行分组，按照 `points` 降序、`winery` 升序进行排序，并且用 `CONCAT()` 函数将 `winery` 和 `points` 进行拼接，得到如下形式的数据，记为 `T` 表：
 
@@ -94,10 +92,6 @@ Sessions table:
 接下来，我们只需要筛选出 `rk = 1` 的数据，然后再将 `T` 表自连接两次，分别连接 `rk = 2` 和 `rk = 3` 的数据，即可得到最终结果。
 
 <!-- tabs:start -->
-
-### **SQL**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```sql
 # Write your MySQL query statement below
@@ -126,3 +120,5 @@ ORDER BY 1;
 ```
 
 <!-- tabs:end -->
+
+<!-- end -->

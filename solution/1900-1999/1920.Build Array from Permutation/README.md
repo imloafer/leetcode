@@ -8,13 +8,14 @@
 
 <p>给你一个 <strong>从 0 开始的排列</strong> <code>nums</code>（<strong>下标也从 0 开始</strong>）。请你构建一个 <strong>同样长度</strong> 的数组 <code>ans</code> ，其中，对于每个 <code>i</code>（<code>0 &lt;= i &lt; nums.length</code>），都满足 <code>ans[i] = nums[nums[i]]</code> 。返回构建好的数组 <code>ans</code> 。</p>
 
-<p><strong>从 0 开始的排列</strong> <code>nums</code> 是一个由 <code>0</code> 到 <code>nums.length - 1</code>（<code>0</code> 和 <code>nums.length - 1</code> 也包含在内）的不同整数组成的数组。</p>
+<p><strong>从 0 开始的排列</strong> <code>nums</code> 是一个由 <code>0</code> 到&nbsp;<code>nums.length - 1</code>（<code>0</code> 和 <code>nums.length - 1</code> 也包含在内）的不同整数组成的数组。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>nums = [0,2,1,5,3,4]
+<pre>
+<strong>输入：</strong>nums = [0,2,1,5,3,4]
 <strong>输出：</strong>[0,1,2,4,5,3]<strong>
 解释：</strong>数组 ans 构建如下：
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
@@ -23,14 +24,15 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>nums = [5,0,1,2,3,4]
+<pre>
+<strong>输入：</strong>nums = [5,0,1,2,3,4]
 <strong>输出：</strong>[4,5,0,1,2,3]
 <strong>解释：</strong>数组 ans 构建如下：
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
     = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
     = [4,5,0,1,2,3]</pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
@@ -40,25 +42,21 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 	<li><code>nums</code> 中的元素 <strong>互不相同</strong></li>
 </ul>
 
+<p>&nbsp;</p>
+
+<p><strong>进阶：</strong>你能在不使用额外空间的情况下解决此问题吗（即 <code>O(1)</code> 内存）？</p>
+
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
         return [nums[num] for num in nums]
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -71,8 +69,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -87,8 +83,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func buildArray(nums []int) []int {
 	ans := make([]int, len(nums))
@@ -99,7 +93,21 @@ func buildArray(nums []int) []int {
 }
 ```
 
-### **JavaScript**
+```ts
+function buildArray(nums: number[]): number[] {
+    return nums.map(v => nums[v]);
+}
+```
+
+```rust
+impl Solution {
+    pub fn build_array(nums: Vec<i32>) -> Vec<i32> {
+        nums.iter()
+            .map(|&v| nums[v as usize])
+            .collect()
+    }
+}
+```
 
 ```js
 /**
@@ -115,28 +123,6 @@ var buildArray = function (nums) {
 };
 ```
 
-### **TypeScript**
-
-```ts
-function buildArray(nums: number[]): number[] {
-    return nums.map(v => nums[v]);
-}
-```
-
-### **Rust**
-
-```rust
-impl Solution {
-    pub fn build_array(nums: Vec<i32>) -> Vec<i32> {
-        nums.iter()
-            .map(|&v| nums[v as usize])
-            .collect()
-    }
-}
-```
-
-### **C**
-
 ```c
 /**
  * Note: The returned array must be malloced, assume caller calls free().
@@ -151,10 +137,6 @@ int* buildArray(int* nums, int numsSize, int* returnSize) {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

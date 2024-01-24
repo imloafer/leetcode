@@ -12,6 +12,7 @@
 
 <ul>
 	<li>除法运算符 <code>'/'</code> 表示实数除法，而不是整数除法。
+
     <ul>
     	<li>例如，&nbsp;<code>4 /(1 - 2 / 3)= 4 /(1 / 3)= 12</code>&nbsp;。</li>
     </ul>
@@ -26,6 +27,7 @@
     	<li>例如，如果 <code>cards =[1,2,1,2]</code> ，则表达式 <code>“12 + 12”</code> 无效。</li>
     </ul>
     </li>
+
 </ul>
 
 <p>如果可以得到这样的表达式，其计算结果为 <code>24</code> ，则返回 <code>true </code>，否则返回 <code>false</code>&nbsp;。</p>
@@ -58,9 +60,7 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
-
-**方法一：DFS**
+### 方法一：DFS
 
 我们设计一个函数 $dfs(nums)$，其中 $nums$ 表示当前的数字序列，函数返回一个布尔值，表示是否存在一种排列方式，使得这个数字序列可以得到 $24$。
 
@@ -71,10 +71,6 @@
 如果枚举完所有的情况都没有返回 $true$，那么我们就返回 $false$。
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -110,10 +106,6 @@ class Solution:
         nums = [float(x) for x in cards]
         return dfs(nums)
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -173,8 +165,6 @@ class Solution {
     }
 }
 ```
-
-### **C++**
 
 ```cpp
 class Solution {
@@ -237,8 +227,6 @@ private:
 };
 ```
 
-### **Go**
-
 ```go
 func judgePoint24(cards []int) bool {
 	ops := [4]rune{'+', '-', '*', '/'}
@@ -292,8 +280,6 @@ func judgePoint24(cards []int) bool {
 }
 ```
 
-### **TypeScript**
-
 ```ts
 function judgePoint24(cards: number[]): boolean {
     const ops: string[] = ['+', '-', '*', '/'];
@@ -346,10 +332,6 @@ function judgePoint24(cards: number[]): boolean {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

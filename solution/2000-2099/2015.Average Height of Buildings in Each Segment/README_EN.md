@@ -10,12 +10,14 @@
 
 <ul>
 	<li>For example, if <code>buildings = [[1,5,2],[3,10,4]],</code> the street could be represented by <code>street = [[1,3,2],[3,5,3],[5,10,4]]</code> because:
+
     <ul>
     	<li>From 1 to 3, there is only the first building with an average height of <code>2 / 1 = 2</code>.</li>
     	<li>From 3 to 5, both the first and the second building are there with an average height of <code>(2+4) / 2 = 3</code>.</li>
     	<li>From 5 to 10, there is only the second building with an average height of <code>4 / 1 = 4</code>.</li>
     </ul>
     </li>
+
 </ul>
 
 <p>Given <code>buildings</code>, return <em>the 2D integer array </em><code>street</code><em> as described above (<strong>excluding</strong> any areas of the street where there are no buldings). You may return the array in <strong>any order</strong></em>.</p>
@@ -74,7 +76,7 @@ We cannot group the segments together because an empty space with no buildings s
 
 ## Solutions
 
-**Solution 1: Differential Ordered Hash Table**
+### Solution 1: Differential Ordered Hash Table
 
 We use the differential idea and an ordered hash table `height` to record the height change at each position, and `cnt` to record the change in the number of buildings. By calculating the prefix sum of the ordered hash table, we can get the height and the number of buildings at each position.
 
@@ -83,8 +85,6 @@ Finally, we traverse the ordered hash table. For each position, if both the heig
 The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$. Here, $n$ is the number of buildings.
 
 <!-- tabs:start -->
-
-### **Python3**
 
 ```python
 class Solution:
@@ -110,8 +110,6 @@ class Solution:
             n += cnt[j]
         return ans
 ```
-
-### **Java**
 
 ```java
 class Solution {
@@ -150,8 +148,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -181,8 +177,6 @@ public:
     }
 };
 ```
-
-### **Go**
 
 ```go
 func averageHeightOfBuildings(buildings [][]int) [][]int {
@@ -219,10 +213,6 @@ func averageHeightOfBuildings(buildings [][]int) [][]int {
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->

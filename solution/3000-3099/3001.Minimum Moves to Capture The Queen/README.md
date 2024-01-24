@@ -6,7 +6,7 @@
 
 <!-- 这里写题目描述 -->
 
-<p>现有一个下标从 <strong>0</strong> 开始的 <code>8 x 8</code> 棋盘，上面有 <code>3</code> 枚棋子。</p>
+<p>现有一个下标从 <strong>1</strong> 开始的 <code>8 x 8</code> 棋盘，上面有 <code>3</code> 枚棋子。</p>
 
 <p>给你 <code>6</code> 个整数 <code>a</code> 、<code>b</code> 、<code>c</code> 、<code>d</code> 、<code>e</code> 和 <code>f</code> ，其中：</p>
 
@@ -59,13 +59,9 @@
 
 ## 解法
 
-<!-- 这里可写通用的实现逻辑 -->
+### 方法一
 
 <!-- tabs:start -->
-
-### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -87,10 +83,6 @@ class Solution:
         dirs2 = (-1, 1, 1, -1, -1)
         return 1 if check(dirs1, a, b, c, d) or check(dirs2, c, d, a, b) else 2
 ```
-
-### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -122,8 +114,6 @@ class Solution {
 }
 ```
 
-### **C++**
-
 ```cpp
 class Solution {
 public:
@@ -149,8 +139,6 @@ public:
 };
 ```
 
-### **Go**
-
 ```go
 func minMovesToCaptureTheQueen(a int, b int, c int, d int, e int, f int) int {
 	dirs := [2][5]int{{-1, 0, 1, 0, -1}, {-1, 1, 1, -1, -1}}
@@ -175,8 +163,6 @@ func minMovesToCaptureTheQueen(a int, b int, c int, d int, e int, f int) int {
 	return 2
 }
 ```
-
-### **TypeScript**
 
 ```ts
 function minMovesToCaptureTheQueen(
@@ -213,10 +199,6 @@ function minMovesToCaptureTheQueen(
 }
 ```
 
-### **...**
-
-```
-
-```
-
 <!-- tabs:end -->
+
+<!-- end -->
