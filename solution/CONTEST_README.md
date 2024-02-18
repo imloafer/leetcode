@@ -22,6 +22,43 @@
 
 ## 往期竞赛
 
+#### 第 385 场周赛(2024-02-18 10:30, 90 分钟) 参赛人数 2352
+
+
+#### 第 124 场双周赛(2024-02-17 22:30, 90 分钟) 参赛人数 1861
+
+- [3038. 相同分数的最大操作数目 I](/solution/3000-3099/3038.Maximum%20Number%20of%20Operations%20With%20the%20Same%20Score%20I/README.md)
+- [3039. 进行操作使字符串为空](/solution/3000-3099/3039.Apply%20Operations%20to%20Make%20String%20Empty/README.md)
+- [3040. 相同分数的最大操作数目 II](/solution/3000-3099/3040.Maximum%20Number%20of%20Operations%20With%20the%20Same%20Score%20II/README.md)
+- [3041. 修改数组后最大化数组中的连续元素数目](/solution/3000-3099/3041.Maximize%20Consecutive%20Elements%20in%20an%20Array%20After%20Modification/README.md)
+
+#### 第 384 场周赛(2024-02-11 10:30, 90 分钟) 参赛人数 1652
+
+- [3033. 修改矩阵](/solution/3000-3099/3033.Modify%20the%20Matrix/README.md)
+- [3034. 匹配模式数组的子数组数目 I](/solution/3000-3099/3034.Number%20of%20Subarrays%20That%20Match%20a%20Pattern%20I/README.md)
+- [3035. 回文字符串的最大数量](/solution/3000-3099/3035.Maximum%20Palindromes%20After%20Operations/README.md)
+- [3036. 匹配模式数组的子数组数目 II](/solution/3000-3099/3036.Number%20of%20Subarrays%20That%20Match%20a%20Pattern%20II/README.md)
+
+#### 第 383 场周赛(2024-02-04 10:30, 90 分钟) 参赛人数 2691
+
+- [3028. 边界上的蚂蚁](/solution/3000-3099/3028.Ant%20on%20the%20Boundary/README.md)
+- [3029. 将单词恢复初始状态所需的最短时间 I](/solution/3000-3099/3029.Minimum%20Time%20to%20Revert%20Word%20to%20Initial%20State%20I/README.md)
+- [3030. 找出网格的区域平均强度](/solution/3000-3099/3030.Find%20the%20Grid%20of%20Region%20Average/README.md)
+- [3031. 将单词恢复初始状态所需的最短时间 II](/solution/3000-3099/3031.Minimum%20Time%20to%20Revert%20Word%20to%20Initial%20State%20II/README.md)
+
+#### 第 123 场双周赛(2024-02-03 22:30, 90 分钟) 参赛人数 2209
+
+- [3025. 人员站位的方案数 I](/solution/3000-3099/3025.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20I/README.md)
+- [3026. 最大好子数组和](/solution/3000-3099/3026.Maximum%20Good%20Subarray%20Sum/README.md)
+- [3027. 人员站位的方案数 II](/solution/3000-3099/3027.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20II/README.md)
+
+#### 第 382 场周赛(2024-01-28 10:30, 90 分钟) 参赛人数 3134
+
+- [3019. 按键变更的次数](/solution/3000-3099/3019.Number%20of%20Changing%20Keys/README.md)
+- [3020. 子集中元素的最大数量](/solution/3000-3099/3020.Find%20the%20Maximum%20Number%20of%20Elements%20in%20Subset/README.md)
+- [3021. Alice 和 Bob 玩鲜花游戏](/solution/3000-3099/3021.Alice%20and%20Bob%20Playing%20Flower%20Game/README.md)
+- [3022. 给定操作次数内使剩余元素的或值最小](/solution/3000-3099/3022.Minimize%20OR%20of%20Remaining%20Elements%20Using%20Operations/README.md)
+
 #### 第 381 场周赛(2024-01-21 10:30, 90 分钟) 参赛人数 3737
 
 - [3014. 输入单词需要的最少按键次数 I](/solution/3000-3099/3014.Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20I/README.md)
@@ -1040,7 +1077,7 @@
 #### 第 74 场双周赛(2022-03-19 22:30, 90 分钟) 参赛人数 5442
 
 - [2206. 将数组划分成相等数对](/solution/2200-2299/2206.Divide%20Array%20Into%20Equal%20Pairs/README.md)
-- [2207. 字符串中最多数目的子字符串](/solution/2200-2299/2207.Maximize%20Number%20of%20Subsequences%20in%20a%20String/README.md)
+- [2207. 字符串中最多数目的子序列](/solution/2200-2299/2207.Maximize%20Number%20of%20Subsequences%20in%20a%20String/README.md)
 - [2208. 将数组和减半的最少操作次数](/solution/2200-2299/2208.Minimum%20Operations%20to%20Halve%20Array%20Sum/README.md)
 - [2209. 用地毯覆盖后的最少白色砖块](/solution/2200-2299/2209.Minimum%20White%20Tiles%20After%20Covering%20With%20Carpets/README.md)
 
@@ -1068,7 +1105,7 @@
 #### 第 282 场周赛(2022-02-27 10:30, 90 分钟) 参赛人数 7164
 
 - [2185. 统计包含给定前缀的字符串](/solution/2100-2199/2185.Counting%20Words%20With%20a%20Given%20Prefix/README.md)
-- [2186. 使两字符串互为字母异位词的最少步骤数](/solution/2100-2199/2186.Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram%20II/README.md)
+- [2186. 制造字母异位词的最小步骤数 II](/solution/2100-2199/2186.Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram%20II/README.md)
 - [2187. 完成旅途的最少时间](/solution/2100-2199/2187.Minimum%20Time%20to%20Complete%20Trips/README.md)
 - [2188. 完成比赛的最少时间](/solution/2100-2199/2188.Minimum%20Time%20to%20Finish%20the%20Race/README.md)
 
