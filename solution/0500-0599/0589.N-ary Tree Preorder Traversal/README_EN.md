@@ -2,6 +2,8 @@
 
 [中文文档](/solution/0500-0599/0589.N-ary%20Tree%20Preorder%20Traversal/README.md)
 
+<!-- tags:Stack,Tree,Depth-First Search -->
+
 ## Description
 
 <p>Given the <code>root</code> of an n-ary tree, return <em>the preorder traversal of its nodes&#39; values</em>.</p>
@@ -365,10 +367,9 @@ public:
  * }
  */
 
-func preorder(root *Node) []int {
-	var ans []int
+func preorder(root *Node) (ans []int) {
 	if root == nil {
-		return ans
+		return
 	}
 	stk := []*Node{root}
 	for len(stk) > 0 {
@@ -380,7 +381,7 @@ func preorder(root *Node) []int {
 			stk = append(stk, children[i])
 		}
 	}
-	return ans
+	return
 }
 ```
 

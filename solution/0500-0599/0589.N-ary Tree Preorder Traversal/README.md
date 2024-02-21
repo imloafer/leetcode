@@ -2,6 +2,8 @@
 
 [English Version](/solution/0500-0599/0589.N-ary%20Tree%20Preorder%20Traversal/README_EN.md)
 
+<!-- tags:栈,树,深度优先搜索 -->
+
 ## 题目描述
 
 <!-- 这里写题目描述 -->
@@ -369,10 +371,9 @@ public:
  * }
  */
 
-func preorder(root *Node) []int {
-	var ans []int
+func preorder(root *Node) (ans []int) {
 	if root == nil {
-		return ans
+		return
 	}
 	stk := []*Node{root}
 	for len(stk) > 0 {
@@ -384,7 +385,7 @@ func preorder(root *Node) []int {
 			stk = append(stk, children[i])
 		}
 	}
-	return ans
+	return
 }
 ```
 

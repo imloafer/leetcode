@@ -1125,6 +1125,8 @@
 |  1112  |  [每位学生的最高成绩](/solution/1100-1199/1112.Highest%20Grade%20For%20Each%20Student/README.md)  |  `数据库`  |  中等  |  🔒  |
 |  1113  |  [报告的记录](/solution/1100-1199/1113.Reported%20Posts/README.md)  |  `数据库`  |  简单  |  🔒  |
 |  1114  |  [按序打印](/solution/1100-1199/1114.Print%20in%20Order/README.md)  |  `多线程`  |  简单  |    |
+|  1115  |  [交替打印 FooBar](/solution/1100-1199/1115.Print%20FooBar%20Alternately/README.md)  |  `多线程`  |  中等  |    |
+|  1116  |  [打印零与奇偶数](/solution/1100-1199/1116.Print%20Zero%20Even%20Odd/README.md)  |  `多线程`  |  中等  |    |
 |  1117  |  [H2O 生成](/solution/1100-1199/1117.Building%20H2O/README.md)  |  `多线程`  |  中等  |    |
 |  1118  |  [一月有多少天](/solution/1100-1199/1118.Number%20of%20Days%20in%20a%20Month/README.md)  |  `数学`  |  简单  |  第 4 场双周赛  |
 |  1119  |  [删去字符串中的元音](/solution/1100-1199/1119.Remove%20Vowels%20from%20a%20String/README.md)  |  `字符串`  |  简单  |  第 4 场双周赛  |
@@ -3032,6 +3034,7 @@
 |  3021  |  [Alice 和 Bob 玩鲜花游戏](/solution/3000-3099/3021.Alice%20and%20Bob%20Playing%20Flower%20Game/README.md)  |  `数学`  |  中等  |  第 382 场周赛  |
 |  3022  |  [给定操作次数内使剩余元素的或值最小](/solution/3000-3099/3022.Minimize%20OR%20of%20Remaining%20Elements%20Using%20Operations/README.md)  |  `贪心`,`位运算`,`数组`  |  困难  |  第 382 场周赛  |
 |  3023  |  [在无限流中寻找模式 I](/solution/3000-3099/3023.Find%20Pattern%20in%20Infinite%20Stream%20I/README.md)  |  `数组`,`字符串匹配`,`滑动窗口`,`哈希函数`,`滚动哈希`  |  中等  |  🔒  |
+|  3024  |  [三角形类型](/solution/3000-3099/3024.Type%20of%20Triangle/README.md)  |  `数组`,`数学`,`排序`  |  简单  |    |
 |  3025  |  [人员站位的方案数 I](/solution/3000-3099/3025.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20I/README.md)  |  `几何`,`数组`,`数学`,`枚举`,`排序`  |  中等  |  第 123 场双周赛  |
 |  3026  |  [最大好子数组和](/solution/3000-3099/3026.Maximum%20Good%20Subarray%20Sum/README.md)  |  `数组`,`哈希表`,`前缀和`  |  中等  |  第 123 场双周赛  |
 |  3027  |  [人员站位的方案数 II](/solution/3000-3099/3027.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20II/README.md)  |  `几何`,`数组`,`数学`,`枚举`,`排序`  |  困难  |  第 123 场双周赛  |
@@ -3049,6 +3052,10 @@
 |  3039  |  [进行操作使字符串为空](/solution/3000-3099/3039.Apply%20Operations%20to%20Make%20String%20Empty/README.md)  |    |  中等  |  第 124 场双周赛  |
 |  3040  |  [相同分数的最大操作数目 II](/solution/3000-3099/3040.Maximum%20Number%20of%20Operations%20With%20the%20Same%20Score%20II/README.md)  |    |  中等  |  第 124 场双周赛  |
 |  3041  |  [修改数组后最大化数组中的连续元素数目](/solution/3000-3099/3041.Maximize%20Consecutive%20Elements%20in%20an%20Array%20After%20Modification/README.md)  |    |  困难  |  第 124 场双周赛  |
+|  3042  |  [统计前后缀下标对 I](/solution/3000-3099/3042.Count%20Prefix%20and%20Suffix%20Pairs%20I/README.md)  |    |  简单  |  第 385 场周赛  |
+|  3043  |  [最长公共前缀的长度](/solution/3000-3099/3043.Find%20the%20Length%20of%20the%20Longest%20Common%20Prefix/README.md)  |    |  中等  |  第 385 场周赛  |
+|  3044  |  [出现频率最高的素数](/solution/3000-3099/3044.Most%20Frequent%20Prime/README.md)  |    |  中等  |  第 385 场周赛  |
+|  3045  |  [统计前后缀下标对 II](/solution/3000-3099/3045.Count%20Prefix%20and%20Suffix%20Pairs%20II/README.md)  |    |  困难  |  第 385 场周赛  |
 
 ## 版权
 
