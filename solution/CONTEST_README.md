@@ -22,11 +22,18 @@
 
 ## 往期竞赛
 
-#### 第 385 场周赛(2024-02-18 10:30, 90 分钟) 参赛人数 2352
+#### 第 386 场周赛(2024-02-25 10:30, 90 分钟) 参赛人数 2731
+
+- [3046. 分割数组](/solution/3000-3099/3046.Split%20the%20Array/README.md)
+- [3047. 求交集区域内的最大正方形面积](/solution/3000-3099/3047.Find%20the%20Largest%20Area%20of%20Square%20Inside%20Two%20Rectangles/README.md)
+- [3048. 标记所有下标的最早秒数 I](/solution/3000-3099/3048.Earliest%20Second%20to%20Mark%20Indices%20I/README.md)
+- [3049. 标记所有下标的最早秒数 II](/solution/3000-3099/3049.Earliest%20Second%20to%20Mark%20Indices%20II/README.md)
+
+#### 第 385 场周赛(2024-02-18 10:30, 90 分钟) 参赛人数 2382
 
 - [3042. 统计前后缀下标对 I](/solution/3000-3099/3042.Count%20Prefix%20and%20Suffix%20Pairs%20I/README.md)
 - [3043. 最长公共前缀的长度](/solution/3000-3099/3043.Find%20the%20Length%20of%20the%20Longest%20Common%20Prefix/README.md)
-- [3044. 出现频率最高的素数](/solution/3000-3099/3044.Most%20Frequent%20Prime/README.md)
+- [3044. 出现频率最高的质数](/solution/3000-3099/3044.Most%20Frequent%20Prime/README.md)
 - [3045. 统计前后缀下标对 II](/solution/3000-3099/3045.Count%20Prefix%20and%20Suffix%20Pairs%20II/README.md)
 
 #### 第 124 场双周赛(2024-02-17 22:30, 90 分钟) 参赛人数 1861
@@ -52,6 +59,7 @@
 
 #### 第 123 场双周赛(2024-02-03 22:30, 90 分钟) 参赛人数 2209
 
+- [3024. 三角形类型](/solution/3000-3099/3024.Type%20of%20Triangle/README.md)
 - [3025. 人员站位的方案数 I](/solution/3000-3099/3025.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20I/README.md)
 - [3026. 最大好子数组和](/solution/3000-3099/3026.Maximum%20Good%20Subarray%20Sum/README.md)
 - [3027. 人员站位的方案数 II](/solution/3000-3099/3027.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20II/README.md)
@@ -2944,7 +2952,7 @@
 
 - [0867. 转置矩阵](/solution/0800-0899/0867.Transpose%20Matrix/README.md)
 - [0865. 具有所有最深节点的最小子树](/solution/0800-0899/0865.Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes/README.md)
-- [0866. 回文素数](/solution/0800-0899/0866.Prime%20Palindrome/README.md)
+- [0866. 回文质数](/solution/0800-0899/0866.Prime%20Palindrome/README.md)
 - [0864. 获取所有钥匙的最短路径](/solution/0800-0899/0864.Shortest%20Path%20to%20Get%20All%20Keys/README.md)
 
 #### 第 91 场周赛(2018-07-01 09:30, 90 分钟) 参赛人数 578
