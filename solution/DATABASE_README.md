@@ -269,9 +269,9 @@
 | 3057 | [Employees Project Allocation](/solution/3000-3099/3057.Employees%20Project%20Allocation/README.md)                                                          | `数据库` | 困难 | 🔒   |
 | 3058 | [Friends With No Mutual Friends](/solution/3000-3099/3058.Friends%20With%20No%20Mutual%20Friends/README.md)                                                  | `数据库` | 中等 | 🔒   |
 | 3059 | [Find All Unique Email Domains](/solution/3000-3099/3059.Find%20All%20Unique%20Email%20Domains/README.md)                                                    | `数据库` | 简单 | 🔒   |
-| 3060 | [User Activities within Time Bounds](/solution/3000-3099/3060.User%20Activities%20within%20Time%20Bounds/README.md)                                          | `数据库` | 困难 | 🔒   |
+| 3060 | [时间范围内的用户活动](/solution/3000-3099/3060.User%20Activities%20within%20Time%20Bounds/README.md)                                                        | `数据库` | 困难 | 🔒   |
 | 3061 | [计算滞留雨水](/solution/3000-3099/3061.Calculate%20Trapping%20Rain%20Water/README.md)                                                                       | `数据库` | 困难 | 🔒   |
-| 3087 | [Find Trending Hashtags](/solution/3000-3099/3087.Find%20Trending%20Hashtags/README.md)                                                                      |          | 中等 | 🔒   |
+| 3087 | [查找热门话题标签](/solution/3000-3099/3087.Find%20Trending%20Hashtags/README.md)                                                                            |          | 中等 | 🔒   |
 
 ## 版权
 
