@@ -876,7 +876,7 @@
 |  0863  |  [二叉树中所有距离为 K 的结点](/solution/0800-0899/0863.All%20Nodes%20Distance%20K%20in%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`二叉树`  |  中等  |  第 91 场周赛  |
 |  0864  |  [获取所有钥匙的最短路径](/solution/0800-0899/0864.Shortest%20Path%20to%20Get%20All%20Keys/README.md)  |  `位运算`,`广度优先搜索`,`数组`,`矩阵`  |  困难  |  第 92 场周赛  |
 |  0865  |  [具有所有最深节点的最小子树](/solution/0800-0899/0865.Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`  |  中等  |  第 92 场周赛  |
-|  0866  |  [回文质数](/solution/0800-0899/0866.Prime%20Palindrome/README.md)  |  `数学`  |  中等  |  第 92 场周赛  |
+|  0866  |  [回文质数](/solution/0800-0899/0866.Prime%20Palindrome/README.md)  |  `数学`,`数论`  |  中等  |  第 92 场周赛  |
 |  0867  |  [转置矩阵](/solution/0800-0899/0867.Transpose%20Matrix/README.md)  |  `数组`,`矩阵`,`模拟`  |  简单  |  第 92 场周赛  |
 |  0868  |  [二进制间距](/solution/0800-0899/0868.Binary%20Gap/README.md)  |  `位运算`  |  简单  |  第 93 场周赛  |
 |  0869  |  [重新排序得到 2 的幂](/solution/0800-0899/0869.Reordered%20Power%20of%202/README.md)  |  `哈希表`,`数学`,`计数`,`枚举`,`排序`  |  中等  |  第 93 场周赛  |
@@ -3104,6 +3104,15 @@
 |  3091  |  [执行操作使数据元素之和大于等于 K](/solution/3000-3099/3091.Apply%20Operations%20to%20Make%20Sum%20of%20Array%20Greater%20Than%20or%20Equal%20to%20k/README.md)  |  `贪心`,`数学`,`枚举`  |  中等  |  第 390 场周赛  |
 |  3092  |  [最高频率的 ID](/solution/3000-3099/3092.Most%20Frequent%20IDs/README.md)  |  `数组`,`哈希表`,`有序集合`,`堆（优先队列）`  |  中等  |  第 390 场周赛  |
 |  3093  |  [最长公共后缀查询](/solution/3000-3099/3093.Longest%20Common%20Suffix%20Queries/README.md)  |  `字典树`,`数组`,`字符串`  |  困难  |  第 390 场周赛  |
+|  3094  |  [Guess the Number Using Bitwise Questions II](/solution/3000-3099/3094.Guess%20the%20Number%20Using%20Bitwise%20Questions%20II/README.md)  |    |  中等  |  🔒  |
+|  3095  |  [或值至少 K 的最短子数组 I](/solution/3000-3099/3095.Shortest%20Subarray%20With%20OR%20at%20Least%20K%20I/README.md)  |    |  简单  |  第 127 场双周赛  |
+|  3096  |  [得到更多分数的最少关卡数目](/solution/3000-3099/3096.Minimum%20Levels%20to%20Gain%20More%20Points/README.md)  |    |  中等  |  第 127 场双周赛  |
+|  3097  |  [或值至少为 K 的最短子数组 II](/solution/3000-3099/3097.Shortest%20Subarray%20With%20OR%20at%20Least%20K%20II/README.md)  |    |  中等  |  第 127 场双周赛  |
+|  3098  |  [求出所有子序列的能量和](/solution/3000-3099/3098.Find%20the%20Sum%20of%20Subsequence%20Powers/README.md)  |    |  困难  |  第 127 场双周赛  |
+|  3099  |  [哈沙德数](/solution/3000-3099/3099.Harshad%20Number/README.md)  |    |  简单  |  第 391 场周赛  |
+|  3100  |  [换水问题 II](/solution/3100-3199/3100.Water%20Bottles%20II/README.md)  |    |  中等  |  第 391 场周赛  |
+|  3101  |  [交替子数组计数](/solution/3100-3199/3101.Count%20Alternating%20Subarrays/README.md)  |    |  中等  |  第 391 场周赛  |
+|  3102  |  [最小化曼哈顿距离](/solution/3100-3199/3102.Minimize%20Manhattan%20Distances/README.md)  |    |  困难  |  第 391 场周赛  |
 
 ## 版权
 
