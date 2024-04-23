@@ -3128,6 +3128,11 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  3117  |  [Minimum Sum of Values by Dividing Array](/solution/3100-3199/3117.Minimum%20Sum%20of%20Values%20by%20Dividing%20Array/README_EN.md)  |  `Bit Manipulation`,`Segment Tree`,`Queue`,`Array`,`Binary Search`,`Dynamic Programming`  |  Hard  |  Weekly Contest 393  |
 |  3118  |  [Friday Purchase III](/solution/3100-3199/3118.Friday%20Purchase%20III/README_EN.md)  |  `Database`  |  Medium  |  🔒  |
 |  3119  |  [Maximum Number of Potholes That Can Be Fixed](/solution/3100-3199/3119.Maximum%20Number%20of%20Potholes%20That%20Can%20Be%20Fixed/README_EN.md)  |    |  Medium  |  🔒  |
+|  3120  |  [Count the Number of Special Characters I](/solution/3100-3199/3120.Count%20the%20Number%20of%20Special%20Characters%20I/README_EN.md)  |    |  Easy  |  Weekly Contest 394  |
+|  3121  |  [Count the Number of Special Characters II](/solution/3100-3199/3121.Count%20the%20Number%20of%20Special%20Characters%20II/README_EN.md)  |    |  Medium  |  Weekly Contest 394  |
+|  3122  |  [Minimum Number of Operations to Satisfy Conditions](/solution/3100-3199/3122.Minimum%20Number%20of%20Operations%20to%20Satisfy%20Conditions/README_EN.md)  |    |  Medium  |  Weekly Contest 394  |
+|  3123  |  [Find Edges in Shortest Paths](/solution/3100-3199/3123.Find%20Edges%20in%20Shortest%20Paths/README_EN.md)  |    |  Hard  |  Weekly Contest 394  |
+|  3124  |  [Find Longest Calls](/solution/3100-3199/3124.Find%20Longest%20Calls/README_EN.md)  |    |  Medium  |  🔒  |
 
 ## Copyright
 

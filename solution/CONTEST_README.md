@@ -22,6 +22,13 @@
 
 ## 往期竞赛
 
+#### 第 394 场周赛(2024-04-21 10:30, 90 分钟) 参赛人数 3957
+
+- [3120. 统计特殊字母的数量 I](/solution/3100-3199/3120.Count%20the%20Number%20of%20Special%20Characters%20I/README.md)
+- [3121. 统计特殊字母的数量 II](/solution/3100-3199/3121.Count%20the%20Number%20of%20Special%20Characters%20II/README.md)
+- [3122. 使矩阵满足条件的最少操作次数](/solution/3100-3199/3122.Minimum%20Number%20of%20Operations%20to%20Satisfy%20Conditions/README.md)
+- [3123. 最短路径中的边](/solution/3100-3199/3123.Find%20Edges%20in%20Shortest%20Paths/README.md)
+
 #### 第 393 场周赛(2024-04-14 10:30, 90 分钟) 参赛人数 4218
 
 - [3114. 替换字符可以得到的最晚时间](/solution/3100-3199/3114.Latest%20Time%20You%20Can%20Obtain%20After%20Replacing%20Characters/README.md)
