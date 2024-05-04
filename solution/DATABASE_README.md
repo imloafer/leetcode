@@ -275,7 +275,8 @@
 | 3089 | [查找突发行为](/solution/3000-3099/3089.Find%20Bursty%20Behavior/README.md)                                                                                  | `数据库` | 中等 | 🔒   |
 | 3103 | [查找热门话题标签 II](/solution/3100-3199/3103.Find%20Trending%20Hashtags%20II/README.md)                                                                    | `数据库` | 困难 | 🔒   |
 | 3118 | [Friday Purchase III](/solution/3100-3199/3118.Friday%20Purchase%20III/README.md)                                                                            | `数据库` | 中等 | 🔒   |
-| 3124 | [查找最长的电话](/solution/3100-3199/3124.Find%20Longest%20Calls/README.md)                                                                                  |          | 中等 | 🔒   |
+| 3124 | [查找最长的电话](/solution/3100-3199/3124.Find%20Longest%20Calls/README.md)                                                                                  | `数据库` | 中等 | 🔒   |
+| 3126 | [Server Utilization Time](/solution/3100-3199/3126.Server%20Utilization%20Time/README.md)                                                                    | `数据库` | 中等 | 🔒   |
 
 ## 版权
 
