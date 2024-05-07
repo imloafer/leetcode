@@ -315,7 +315,7 @@
 |  0302  |  [包含全部黑色像素的最小矩形](/solution/0300-0399/0302.Smallest%20Rectangle%20Enclosing%20Black%20Pixels/README.md)  |  `深度优先搜索`,`广度优先搜索`,`数组`,`二分查找`,`矩阵`  |  困难  |  🔒  |
 |  0303  |  [区域和检索 - 数组不可变](/solution/0300-0399/0303.Range%20Sum%20Query%20-%20Immutable/README.md)  |  `设计`,`数组`,`前缀和`  |  简单  |    |
 |  0304  |  [二维区域和检索 - 矩阵不可变](/solution/0300-0399/0304.Range%20Sum%20Query%202D%20-%20Immutable/README.md)  |  `设计`,`数组`,`矩阵`,`前缀和`  |  中等  |    |
-|  0305  |  [岛屿数量 II](/solution/0300-0399/0305.Number%20of%20Islands%20II/README.md)  |  `并查集`,`数组`  |  困难  |  🔒  |
+|  0305  |  [岛屿数量 II](/solution/0300-0399/0305.Number%20of%20Islands%20II/README.md)  |  `并查集`,`数组`,`哈希表`  |  困难  |  🔒  |
 |  0306  |  [累加数](/solution/0300-0399/0306.Additive%20Number/README.md)  |  `字符串`,`回溯`  |  中等  |    |
 |  0307  |  [区域和检索 - 数组可修改](/solution/0300-0399/0307.Range%20Sum%20Query%20-%20Mutable/README.md)  |  `设计`,`树状数组`,`线段树`,`数组`  |  中等  |    |
 |  0308  |  [二维区域和检索 - 可变](/solution/0300-0399/0308.Range%20Sum%20Query%202D%20-%20Mutable/README.md)  |  `设计`,`树状数组`,`线段树`,`数组`,`矩阵`  |  困难  |  🔒  |
@@ -324,7 +324,7 @@
 |  0311  |  [稀疏矩阵的乘法](/solution/0300-0399/0311.Sparse%20Matrix%20Multiplication/README.md)  |  `数组`,`哈希表`,`矩阵`  |  中等  |  🔒  |
 |  0312  |  [戳气球](/solution/0300-0399/0312.Burst%20Balloons/README.md)  |  `数组`,`动态规划`  |  困难  |    |
 |  0313  |  [超级丑数](/solution/0300-0399/0313.Super%20Ugly%20Number/README.md)  |  `数组`,`数学`,`动态规划`  |  中等  |    |
-|  0314  |  [二叉树的垂直遍历](/solution/0300-0399/0314.Binary%20Tree%20Vertical%20Order%20Traversal/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`  |  中等  |  🔒  |
+|  0314  |  [二叉树的垂直遍历](/solution/0300-0399/0314.Binary%20Tree%20Vertical%20Order%20Traversal/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`,`排序`  |  中等  |  🔒  |
 |  0315  |  [计算右侧小于当前元素的个数](/solution/0300-0399/0315.Count%20of%20Smaller%20Numbers%20After%20Self/README.md)  |  `树状数组`,`线段树`,`数组`,`二分查找`,`分治`,`有序集合`,`归并排序`  |  困难  |    |
 |  0316  |  [去除重复字母](/solution/0300-0399/0316.Remove%20Duplicate%20Letters/README.md)  |  `栈`,`贪心`,`字符串`,`单调栈`  |  中等  |    |
 |  0317  |  [离建筑物最近的距离](/solution/0300-0399/0317.Shortest%20Distance%20from%20All%20Buildings/README.md)  |  `广度优先搜索`,`数组`,`矩阵`  |  困难  |  🔒  |
@@ -755,7 +755,7 @@
 |  0742  |  [二叉树最近的叶节点](/solution/0700-0799/0742.Closest%20Leaf%20in%20a%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`二叉树`  |  中等  |  🔒  |
 |  0743  |  [网络延迟时间](/solution/0700-0799/0743.Network%20Delay%20Time/README.md)  |  `深度优先搜索`,`广度优先搜索`,`图`,`最短路`,`堆（优先队列）`  |  中等  |    |
 |  0744  |  [寻找比目标字母大的最小字母](/solution/0700-0799/0744.Find%20Smallest%20Letter%20Greater%20Than%20Target/README.md)  |  `数组`,`二分查找`  |  简单  |    |
-|  0745  |  [前缀和后缀搜索](/solution/0700-0799/0745.Prefix%20and%20Suffix%20Search/README.md)  |  `设计`,`字典树`,`哈希表`,`字符串`  |  困难  |    |
+|  0745  |  [前缀和后缀搜索](/solution/0700-0799/0745.Prefix%20and%20Suffix%20Search/README.md)  |  `设计`,`字典树`,`数组`,`哈希表`,`字符串`  |  困难  |    |
 |  0746  |  [使用最小花费爬楼梯](/solution/0700-0799/0746.Min%20Cost%20Climbing%20Stairs/README.md)  |  `数组`,`动态规划`  |  简单  |    |
 |  0747  |  [至少是其他数字两倍的最大数](/solution/0700-0799/0747.Largest%20Number%20At%20Least%20Twice%20of%20Others/README.md)  |  `数组`,`排序`  |  简单  |    |
 |  0748  |  [最短补全词](/solution/0700-0799/0748.Shortest%20Completing%20Word/README.md)  |  `数组`,`哈希表`,`字符串`  |  简单  |    |
@@ -873,7 +873,7 @@
 |  0860  |  [柠檬水找零](/solution/0800-0899/0860.Lemonade%20Change/README.md)  |  `贪心`,`数组`  |  简单  |  第 91 场周赛  |
 |  0861  |  [翻转矩阵后的得分](/solution/0800-0899/0861.Score%20After%20Flipping%20Matrix/README.md)  |  `贪心`,`位运算`,`数组`,`矩阵`  |  中等  |  第 91 场周赛  |
 |  0862  |  [和至少为 K 的最短子数组](/solution/0800-0899/0862.Shortest%20Subarray%20with%20Sum%20at%20Least%20K/README.md)  |  `队列`,`数组`,`二分查找`,`前缀和`,`滑动窗口`,`单调队列`,`堆（优先队列）`  |  困难  |  第 91 场周赛  |
-|  0863  |  [二叉树中所有距离为 K 的结点](/solution/0800-0899/0863.All%20Nodes%20Distance%20K%20in%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`二叉树`  |  中等  |  第 91 场周赛  |
+|  0863  |  [二叉树中所有距离为 K 的结点](/solution/0800-0899/0863.All%20Nodes%20Distance%20K%20in%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`  |  中等  |  第 91 场周赛  |
 |  0864  |  [获取所有钥匙的最短路径](/solution/0800-0899/0864.Shortest%20Path%20to%20Get%20All%20Keys/README.md)  |  `位运算`,`广度优先搜索`,`数组`,`矩阵`  |  困难  |  第 92 场周赛  |
 |  0865  |  [具有所有最深节点的最小子树](/solution/0800-0899/0865.Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`  |  中等  |  第 92 场周赛  |
 |  0866  |  [回文质数](/solution/0800-0899/0866.Prime%20Palindrome/README.md)  |  `数学`,`数论`  |  中等  |  第 92 场周赛  |
@@ -997,7 +997,7 @@
 |  0984  |  [不含 AAA 或 BBB 的字符串](/solution/0900-0999/0984.String%20Without%20AAA%20or%20BBB/README.md)  |  `贪心`,`字符串`  |  中等  |  第 121 场周赛  |
 |  0985  |  [查询后的偶数和](/solution/0900-0999/0985.Sum%20of%20Even%20Numbers%20After%20Queries/README.md)  |  `数组`,`模拟`  |  中等  |  第 122 场周赛  |
 |  0986  |  [区间列表的交集](/solution/0900-0999/0986.Interval%20List%20Intersections/README.md)  |  `数组`,`双指针`  |  中等  |  第 122 场周赛  |
-|  0987  |  [二叉树的垂序遍历](/solution/0900-0999/0987.Vertical%20Order%20Traversal%20of%20a%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`  |  困难  |  第 122 场周赛  |
+|  0987  |  [二叉树的垂序遍历](/solution/0900-0999/0987.Vertical%20Order%20Traversal%20of%20a%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`哈希表`,`二叉树`,`排序`  |  困难  |  第 122 场周赛  |
 |  0988  |  [从叶结点开始的最小字符串](/solution/0900-0999/0988.Smallest%20String%20Starting%20From%20Leaf/README.md)  |  `树`,`深度优先搜索`,`字符串`,`二叉树`  |  中等  |  第 122 场周赛  |
 |  0989  |  [数组形式的整数加法](/solution/0900-0999/0989.Add%20to%20Array-Form%20of%20Integer/README.md)  |  `数组`,`数学`  |  简单  |  第 123 场周赛  |
 |  0990  |  [等式方程的可满足性](/solution/0900-0999/0990.Satisfiability%20of%20Equality%20Equations/README.md)  |  `并查集`,`图`,`数组`,`字符串`  |  中等  |  第 123 场周赛  |
@@ -1068,8 +1068,8 @@
 |  1055  |  [形成字符串的最短路径](/solution/1000-1099/1055.Shortest%20Way%20to%20Form%20String/README.md)  |  `贪心`,`双指针`,`字符串`  |  中等  |  🔒  |
 |  1056  |  [易混淆数](/solution/1000-1099/1056.Confusing%20Number/README.md)  |  `数学`  |  简单  |  🔒  |
 |  1057  |  [校园自行车分配](/solution/1000-1099/1057.Campus%20Bikes/README.md)  |  `贪心`,`数组`,`排序`  |  中等  |  🔒  |
-|  1058  |  [最小化舍入误差以满足目标](/solution/1000-1099/1058.Minimize%20Rounding%20Error%20to%20Meet%20Target/README.md)  |  `贪心`,`数组`,`数学`,`字符串`  |  中等  |  🔒  |
-|  1059  |  [从始点到终点的所有路径](/solution/1000-1099/1059.All%20Paths%20from%20Source%20Lead%20to%20Destination/README.md)  |  `深度优先搜索`,`图`  |  中等  |  🔒  |
+|  1058  |  [最小化舍入误差以满足目标](/solution/1000-1099/1058.Minimize%20Rounding%20Error%20to%20Meet%20Target/README.md)  |  `贪心`,`数组`,`数学`,`字符串`,`排序`  |  中等  |  🔒  |
+|  1059  |  [从始点到终点的所有路径](/solution/1000-1099/1059.All%20Paths%20from%20Source%20Lead%20to%20Destination/README.md)  |  `图`,`拓扑排序`  |  中等  |  🔒  |
 |  1060  |  [有序数组中的缺失元素](/solution/1000-1099/1060.Missing%20Element%20in%20Sorted%20Array/README.md)  |  `数组`,`二分查找`  |  中等  |  🔒  |
 |  1061  |  [按字典序排列最小的等效字符串](/solution/1000-1099/1061.Lexicographically%20Smallest%20Equivalent%20String/README.md)  |  `并查集`,`字符串`  |  中等  |    |
 |  1062  |  [最长重复子串](/solution/1000-1099/1062.Longest%20Repeating%20Substring/README.md)  |  `字符串`,`二分查找`,`动态规划`,`后缀数组`,`哈希函数`,`滚动哈希`  |  中等  |  🔒  |
@@ -1535,7 +1535,7 @@
 |  1522  |  [N 叉树的直径](/solution/1500-1599/1522.Diameter%20of%20N-Ary%20Tree/README.md)  |  `树`,`深度优先搜索`  |  中等  |  🔒  |
 |  1523  |  [在区间范围内统计奇数数目](/solution/1500-1599/1523.Count%20Odd%20Numbers%20in%20an%20Interval%20Range/README.md)  |  `数学`  |  简单  |  第 31 场双周赛  |
 |  1524  |  [和为奇数的子数组数目](/solution/1500-1599/1524.Number%20of%20Sub-arrays%20With%20Odd%20Sum/README.md)  |  `数组`,`数学`,`动态规划`,`前缀和`  |  中等  |  第 31 场双周赛  |
-|  1525  |  [字符串的好分割数目](/solution/1500-1599/1525.Number%20of%20Good%20Ways%20to%20Split%20a%20String/README.md)  |  `位运算`,`字符串`,`动态规划`  |  中等  |  第 31 场双周赛  |
+|  1525  |  [字符串的好分割数目](/solution/1500-1599/1525.Number%20of%20Good%20Ways%20to%20Split%20a%20String/README.md)  |  `位运算`,`哈希表`,`字符串`,`动态规划`  |  中等  |  第 31 场双周赛  |
 |  1526  |  [形成目标数组的子数组最少增加次数](/solution/1500-1599/1526.Minimum%20Number%20of%20Increments%20on%20Subarrays%20to%20Form%20a%20Target%20Array/README.md)  |  `栈`,`贪心`,`数组`,`动态规划`,`单调栈`  |  困难  |  第 31 场双周赛  |
 |  1527  |  [患某种疾病的患者](/solution/1500-1599/1527.Patients%20With%20a%20Condition/README.md)  |  `数据库`  |  简单  |    |
 |  1528  |  [重新排列字符串](/solution/1500-1599/1528.Shuffle%20String/README.md)  |  `数组`,`字符串`  |  简单  |  第 199 场周赛  |
@@ -1776,7 +1776,7 @@
 |  1763  |  [最长的美好子字符串](/solution/1700-1799/1763.Longest%20Nice%20Substring/README.md)  |  `位运算`,`哈希表`,`字符串`,`分治`,`滑动窗口`  |  简单  |  第 46 场双周赛  |
 |  1764  |  [通过连接另一个数组的子数组得到一个数组](/solution/1700-1799/1764.Form%20Array%20by%20Concatenating%20Subarrays%20of%20Another%20Array/README.md)  |  `贪心`,`数组`,`双指针`,`字符串匹配`  |  中等  |  第 46 场双周赛  |
 |  1765  |  [地图中的最高点](/solution/1700-1799/1765.Map%20of%20Highest%20Peak/README.md)  |  `广度优先搜索`,`数组`,`矩阵`  |  中等  |  第 46 场双周赛  |
-|  1766  |  [互质树](/solution/1700-1799/1766.Tree%20of%20Coprimes/README.md)  |  `树`,`数组`,`数学`,`数论`  |  困难  |  第 46 场双周赛  |
+|  1766  |  [互质树](/solution/1700-1799/1766.Tree%20of%20Coprimes/README.md)  |  `树`,`深度优先搜索`,`数组`,`数学`,`数论`  |  困难  |  第 46 场双周赛  |
 |  1767  |  [寻找没有被执行的任务对](/solution/1700-1799/1767.Find%20the%20Subtasks%20That%20Did%20Not%20Execute/README.md)  |  `数据库`  |  困难  |  🔒  |
 |  1768  |  [交替合并字符串](/solution/1700-1799/1768.Merge%20Strings%20Alternately/README.md)  |  `双指针`,`字符串`  |  简单  |  第 229 场周赛  |
 |  1769  |  [移动所有球到每个盒子所需的最小操作数](/solution/1700-1799/1769.Minimum%20Number%20of%20Operations%20to%20Move%20All%20Balls%20to%20Each%20Box/README.md)  |  `数组`,`字符串`  |  中等  |  第 229 场周赛  |
@@ -1873,7 +1873,7 @@
 |  1860  |  [增长的内存泄露](/solution/1800-1899/1860.Incremental%20Memory%20Leak/README.md)  |  `数学`,`模拟`  |  中等  |  第 52 场双周赛  |
 |  1861  |  [旋转盒子](/solution/1800-1899/1861.Rotating%20the%20Box/README.md)  |  `数组`,`双指针`,`矩阵`  |  中等  |  第 52 场双周赛  |
 |  1862  |  [向下取整数对和](/solution/1800-1899/1862.Sum%20of%20Floored%20Pairs/README.md)  |  `数组`,`数学`,`二分查找`,`前缀和`  |  困难  |  第 52 场双周赛  |
-|  1863  |  [找出所有子集的异或总和再求和](/solution/1800-1899/1863.Sum%20of%20All%20Subset%20XOR%20Totals/README.md)  |  `位运算`,`数组`,`数学`,`回溯`,`组合数学`  |  简单  |  第 241 场周赛  |
+|  1863  |  [找出所有子集的异或总和再求和](/solution/1800-1899/1863.Sum%20of%20All%20Subset%20XOR%20Totals/README.md)  |  `位运算`,`数组`,`数学`,`回溯`,`组合数学`,`枚举`  |  简单  |  第 241 场周赛  |
 |  1864  |  [构成交替字符串需要的最小交换次数](/solution/1800-1899/1864.Minimum%20Number%20of%20Swaps%20to%20Make%20the%20Binary%20String%20Alternating/README.md)  |  `贪心`,`字符串`  |  中等  |  第 241 场周赛  |
 |  1865  |  [找出和为指定值的下标对](/solution/1800-1899/1865.Finding%20Pairs%20With%20a%20Certain%20Sum/README.md)  |  `设计`,`数组`,`哈希表`  |  中等  |  第 241 场周赛  |
 |  1866  |  [恰有 K 根木棍可以看到的排列数目](/solution/1800-1899/1866.Number%20of%20Ways%20to%20Rearrange%20Sticks%20With%20K%20Sticks%20Visible/README.md)  |  `数学`,`动态规划`,`组合数学`  |  困难  |  第 241 场周赛  |
@@ -1938,7 +1938,7 @@
 |  1925  |  [统计平方和三元组的数目](/solution/1900-1999/1925.Count%20Square%20Sum%20Triples/README.md)  |  `数学`,`枚举`  |  简单  |  第 56 场双周赛  |
 |  1926  |  [迷宫中离入口最近的出口](/solution/1900-1999/1926.Nearest%20Exit%20from%20Entrance%20in%20Maze/README.md)  |  `广度优先搜索`,`数组`,`矩阵`  |  中等  |  第 56 场双周赛  |
 |  1927  |  [求和游戏](/solution/1900-1999/1927.Sum%20Game/README.md)  |  `贪心`,`数学`,`字符串`,`博弈`  |  中等  |  第 56 场双周赛  |
-|  1928  |  [规定时间内到达终点的最小花费](/solution/1900-1999/1928.Minimum%20Cost%20to%20Reach%20Destination%20in%20Time/README.md)  |  `图`,`动态规划`  |  困难  |  第 56 场双周赛  |
+|  1928  |  [规定时间内到达终点的最小花费](/solution/1900-1999/1928.Minimum%20Cost%20to%20Reach%20Destination%20in%20Time/README.md)  |  `图`,`数组`,`动态规划`  |  困难  |  第 56 场双周赛  |
 |  1929  |  [数组串联](/solution/1900-1999/1929.Concatenation%20of%20Array/README.md)  |  `数组`,`模拟`  |  简单  |  第 249 场周赛  |
 |  1930  |  [长度为 3 的不同回文子序列](/solution/1900-1999/1930.Unique%20Length-3%20Palindromic%20Subsequences/README.md)  |  `位运算`,`哈希表`,`字符串`,`前缀和`  |  中等  |  第 249 场周赛  |
 |  1931  |  [用三种不同颜色为网格涂色](/solution/1900-1999/1931.Painting%20a%20Grid%20With%20Three%20Different%20Colors/README.md)  |  `动态规划`  |  困难  |  第 249 场周赛  |
@@ -2005,7 +2005,7 @@
 |  1992  |  [找到所有的农场组](/solution/1900-1999/1992.Find%20All%20Groups%20of%20Farmland/README.md)  |  `深度优先搜索`,`广度优先搜索`,`数组`,`矩阵`  |  中等  |  第 60 场双周赛  |
 |  1993  |  [树上的操作](/solution/1900-1999/1993.Operations%20on%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`设计`,`数组`,`哈希表`  |  中等  |  第 60 场双周赛  |
 |  1994  |  [好子集的数目](/solution/1900-1999/1994.The%20Number%20of%20Good%20Subsets/README.md)  |  `位运算`,`数组`,`数学`,`动态规划`,`状态压缩`  |  困难  |  第 60 场双周赛  |
-|  1995  |  [统计特殊四元组](/solution/1900-1999/1995.Count%20Special%20Quadruplets/README.md)  |  `数组`,`枚举`  |  简单  |  第 257 场周赛  |
+|  1995  |  [统计特殊四元组](/solution/1900-1999/1995.Count%20Special%20Quadruplets/README.md)  |  `数组`,`哈希表`,`枚举`  |  简单  |  第 257 场周赛  |
 |  1996  |  [游戏中弱角色的数量](/solution/1900-1999/1996.The%20Number%20of%20Weak%20Characters%20in%20the%20Game/README.md)  |  `栈`,`贪心`,`数组`,`排序`,`单调栈`  |  中等  |  第 257 场周赛  |
 |  1997  |  [访问完所有房间的第一天](/solution/1900-1999/1997.First%20Day%20Where%20You%20Have%20Been%20in%20All%20the%20Rooms/README.md)  |  `数组`,`动态规划`  |  中等  |  第 257 场周赛  |
 |  1998  |  [数组的最大公因数排序](/solution/1900-1999/1998.GCD%20Sort%20of%20an%20Array/README.md)  |  `并查集`,`数组`,`数学`,`数论`,`排序`  |  困难  |  第 257 场周赛  |
@@ -3146,6 +3146,11 @@
 |  3133  |  [数组最后一个元素的最小值](/solution/3100-3199/3133.Minimum%20Array%20End/README.md)  |  `位运算`  |  中等  |  第 395 场周赛  |
 |  3134  |  [找出唯一性数组的中位数](/solution/3100-3199/3134.Find%20the%20Median%20of%20the%20Uniqueness%20Array/README.md)  |  `数组`,`哈希表`,`二分查找`,`滑动窗口`  |  困难  |  第 395 场周赛  |
 |  3135  |  [Equalize Strings by Adding or Removing Characters at Ends](/solution/3100-3199/3135.Equalize%20Strings%20by%20Adding%20or%20Removing%20Characters%20at%20Ends/README.md)  |    |  中等  |  🔒  |
+|  3136  |  [有效单词](/solution/3100-3199/3136.Valid%20Word/README.md)  |    |  简单  |  第 396 场周赛  |
+|  3137  |  [K 周期字符串需要的最少操作次数](/solution/3100-3199/3137.Minimum%20Number%20of%20Operations%20to%20Make%20Word%20K-Periodic/README.md)  |    |  中等  |  第 396 场周赛  |
+|  3138  |  [同位字符串连接的最小长度](/solution/3100-3199/3138.Minimum%20Length%20of%20Anagram%20Concatenation/README.md)  |    |  中等  |  第 396 场周赛  |
+|  3139  |  [使数组中所有元素相等的最小开销](/solution/3100-3199/3139.Minimum%20Cost%20to%20Equalize%20Array/README.md)  |    |  困难  |  第 396 场周赛  |
+|  3140  |  [Consecutive Available Seats II](/solution/3100-3199/3140.Consecutive%20Available%20Seats%20II/README.md)  |    |  中等  |  🔒  |
 
 ## 版权
 
