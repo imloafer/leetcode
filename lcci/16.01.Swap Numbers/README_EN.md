@@ -1,8 +1,18 @@
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/16.01.Swap%20Numbers/README_EN.md
+---
+
+<!-- problem:start -->
+
 # [16.01. Swap Numbers](https://leetcode.cn/problems/swap-numbers-lcci)
 
 [中文文档](/lcci/16.01.Swap%20Numbers/README.md)
 
 ## Description
+
+<!-- description:start -->
 
 <p>Write a function to swap a number in place (that is, without temporary vari&shy; ables).</p>
 
@@ -22,7 +32,11 @@
 	<li><code>numbers.length == 2</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Bitwise Operation
 
@@ -46,6 +60,8 @@ The time complexity is $O(1)$, and the space complexity is $O(1)$.
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def swapNumbers(self, numbers: List[int]) -> List[int]:
@@ -54,6 +70,8 @@ class Solution:
         numbers[0] ^= numbers[1]
         return numbers
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -65,6 +83,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -78,6 +98,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func swapNumbers(numbers []int) []int {
 	numbers[0] ^= numbers[1]
@@ -87,6 +109,8 @@ func swapNumbers(numbers []int) []int {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function swapNumbers(numbers: number[]): number[] {
     numbers[0] ^= numbers[1];
@@ -95,6 +119,8 @@ function swapNumbers(numbers: number[]): number[] {
     return numbers;
 }
 ```
+
+#### Swift
 
 ```swift
 class Solution {
@@ -110,4 +136,6 @@ class Solution {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

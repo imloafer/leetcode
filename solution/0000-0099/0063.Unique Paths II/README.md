@@ -1,12 +1,22 @@
+---
+comments: true
+difficulty: 中等
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0000-0099/0063.Unique%20Paths%20II/README.md
+tags:
+    - 数组
+    - 动态规划
+    - 矩阵
+---
+
+<!-- problem:start -->
+
 # [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii)
 
 [English Version](/solution/0000-0099/0063.Unique%20Paths%20II/README_EN.md)
 
-<!-- tags:数组,动态规划,矩阵 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>一个机器人位于一个<meta charset="UTF-8" />&nbsp;<code>m x n</code>&nbsp;网格的左上角 （起始点在下图中标记为 “Start” ）。</p>
 
@@ -47,7 +57,11 @@
 	<li><code>obstacleGrid[i][j]</code> 为 <code>0</code> 或 <code>1</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：记忆化搜索
 
@@ -65,6 +79,8 @@
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
@@ -79,6 +95,8 @@ class Solution:
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         return dfs(0, 0)
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -110,6 +128,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -133,6 +153,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func uniquePathsWithObstacles(obstacleGrid [][]int) int {
@@ -161,6 +183,8 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
     const m = obstacleGrid.length;
@@ -184,6 +208,10 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
 
 <!-- tabs:end -->
 
+<!-- solution:end -->
+
+<!-- solution:start -->
+
 ### 方法二：动态规划
 
 我们定义 $f[i][j]$ 表示到达网格 $(i,j)$ 的路径数。
@@ -198,6 +226,8 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
 时间复杂度 $O(m \times n)$，空间复杂度 $O(m \times n)$。其中 $m$ 和 $n$ 分别是网格的行数和列数。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -218,6 +248,8 @@ class Solution:
                     f[i][j] = f[i - 1][j] + f[i][j - 1]
         return f[-1][-1]
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -241,6 +273,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -266,6 +300,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	m, n := len(obstacleGrid), len(obstacleGrid[0])
@@ -289,6 +325,8 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	return f[m-1][n-1]
 }
 ```
+
+#### TypeScript
 
 ```ts
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
@@ -319,6 +357,8 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
     const m = obstacleGrid.length;
@@ -339,6 +379,8 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
     return dfs(0, 0);
 }
 ```
+
+#### Rust
 
 ```rust
 impl Solution {
@@ -373,4 +415,6 @@ impl Solution {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

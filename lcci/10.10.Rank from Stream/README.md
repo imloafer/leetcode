@@ -1,10 +1,19 @@
+---
+comments: true
+difficulty: 中等
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/10.10.Rank%20from%20Stream/README.md
+---
+
+<!-- problem:start -->
+
 # [面试题 10.10. 数字流的秩](https://leetcode.cn/problems/rank-from-stream-lcci)
 
 [English Version](/lcci/10.10.Rank%20from%20Stream/README_EN.md)
 
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
+
 <p>假设你正在读取一串整数。每隔一段时间，你希望能找出数字 x 的秩(小于或等于 x 的值的个数)。请实现数据结构和算法来支持这些操作，也就是说：</p>
 
 <p>实现 <code>track(int x)</code>&nbsp;方法，每读入一个数字都会调用该方法；</p>
@@ -29,7 +38,11 @@
 	<li><code>track</code>&nbsp;和&nbsp;<code>getRankOfNumber</code> 方法的调用次数均不超过 2000 次</li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：树状数组
 
@@ -40,6 +53,8 @@
 时间复杂度方面，树状数组的更新和查询操作的时间复杂度均为 $O(\log n)$，其中 $n$ 为树状数组的长度。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class BinaryIndexedTree:
@@ -79,6 +94,8 @@ class StreamRank:
 # obj.track(x)
 # param_2 = obj.getRankOfNumber(x)
 ```
+
+#### Java
 
 ```java
 class BinaryIndexedTree {
@@ -128,6 +145,8 @@ class StreamRank {
  * int param_2 = obj.getRankOfNumber(x);
  */
 ```
+
+#### C++
 
 ```cpp
 class BinaryIndexedTree {
@@ -180,6 +199,8 @@ private:
  */
 ```
 
+#### Go
+
 ```go
 type BinaryIndexedTree struct {
 	n int
@@ -228,6 +249,8 @@ func (this *StreamRank) GetRankOfNumber(x int) int {
  */
 ```
 
+#### TypeScript
+
 ```ts
 class BinaryIndexedTree {
     private n: number;
@@ -274,6 +297,8 @@ class StreamRank {
  * var param_2 = obj.getRankOfNumber(x)
  */
 ```
+
+#### Swift
 
 ```swift
 class BinaryIndexedTree {
@@ -323,4 +348,6 @@ class StreamRank {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

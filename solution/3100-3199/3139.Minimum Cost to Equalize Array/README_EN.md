@@ -1,10 +1,24 @@
+---
+comments: true
+difficulty: Hard
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/3100-3199/3139.Minimum%20Cost%20to%20Equalize%20Array/README_EN.md
+rating: 2666
+source: Weekly Contest 396 Q4
+tags:
+    - Greedy
+    - Array
+    - Enumeration
+---
+
+<!-- problem:start -->
+
 # [3139. Minimum Cost to Equalize Array](https://leetcode.com/problems/minimum-cost-to-equalize-array)
 
 [中文文档](/solution/3100-3199/3139.Minimum%20Cost%20to%20Equalize%20Array/README.md)
 
-<!-- tags: -->
-
 ## Description
+
+<!-- description:start -->
 
 <p>You are given an integer array <code>nums</code> and two integers <code>cost1</code> and <code>cost2</code>. You are allowed to perform <strong>either</strong> of the following operations <strong>any</strong> number of times:</p>
 
@@ -91,23 +105,35 @@
 	<li><code>1 &lt;= cost2 &lt;= 10<sup>6</sup></code></li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 
 ```
+
+#### Java
 
 ```java
 
 ```
 
+#### C++
+
 ```cpp
 
 ```
+
+#### Go
 
 ```go
 
@@ -115,4 +141,6 @@
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

@@ -1,10 +1,22 @@
+---
+comments: true
+difficulty: Hard
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0700-0799/0741.Cherry%20Pickup/README_EN.md
+tags:
+    - Array
+    - Dynamic Programming
+    - Matrix
+---
+
+<!-- problem:start -->
+
 # [741. Cherry Pickup](https://leetcode.com/problems/cherry-pickup)
 
 [中文文档](/solution/0700-0799/0741.Cherry%20Pickup/README.md)
 
-<!-- tags:Array,Dynamic Programming,Matrix -->
-
 ## Description
+
+<!-- description:start -->
 
 <p>You are given an <code>n x n</code> <code>grid</code> representing a field of cherries, each cell is one of three possible integers.</p>
 
@@ -54,7 +66,11 @@ The total number of cherries picked up is 5, and this is the maximum possible.
 	<li><code>grid[n - 1][n - 1] != -1</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Dynamic Programming
 
@@ -73,6 +89,8 @@ Where $t$ represents the number of cherries at positions $(i_1, k-i_1)$ and $(i_
 The time complexity is $O(n^3)$, and the space complexity is $O(n^3)$. Where $n$ is the side length of the grid.
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -100,6 +118,8 @@ class Solution:
                                 f[k][i1][i2] = max(f[k][i1][i2], f[k - 1][x1][x2] + t)
         return max(0, f[-1][-1][-1])
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -135,6 +155,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -167,6 +189,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func cherryPickup(grid [][]int) int {
@@ -205,6 +229,8 @@ func cherryPickup(grid [][]int) int {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function cherryPickup(grid: number[][]): number {
     const n: number = grid.length;
@@ -240,6 +266,8 @@ function cherryPickup(grid: number[][]): number {
     return Math.max(0, f[n * 2 - 2][n - 1][n - 1]);
 }
 ```
+
+#### JavaScript
 
 ```js
 /**
@@ -283,4 +311,6 @@ var cherryPickup = function (grid) {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

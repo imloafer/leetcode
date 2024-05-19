@@ -1,12 +1,22 @@
+---
+comments: true
+difficulty: 困难
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0700-0799/0741.Cherry%20Pickup/README.md
+tags:
+    - 数组
+    - 动态规划
+    - 矩阵
+---
+
+<!-- problem:start -->
+
 # [741. 摘樱桃](https://leetcode.cn/problems/cherry-pickup)
 
 [English Version](/solution/0700-0799/0741.Cherry%20Pickup/README_EN.md)
 
-<!-- tags:数组,动态规划,矩阵 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>给你一个 <code>n x n</code> 的网格 <code>grid</code> ，代表一块樱桃地，每个格子由以下三种数字的一种来表示：</p>
 
@@ -58,7 +68,11 @@
 	<li><code>grid[n - 1][n - 1] != -1</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：动态规划
 
@@ -77,6 +91,8 @@ $$
 时间复杂度 $O(n^3)$，空间复杂度 $O(n^3)$。其中 $n$ 表示网格的边长。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -104,6 +120,8 @@ class Solution:
                                 f[k][i1][i2] = max(f[k][i1][i2], f[k - 1][x1][x2] + t)
         return max(0, f[-1][-1][-1])
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -139,6 +157,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -171,6 +191,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func cherryPickup(grid [][]int) int {
@@ -209,6 +231,8 @@ func cherryPickup(grid [][]int) int {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function cherryPickup(grid: number[][]): number {
     const n: number = grid.length;
@@ -244,6 +268,8 @@ function cherryPickup(grid: number[][]): number {
     return Math.max(0, f[n * 2 - 2][n - 1][n - 1]);
 }
 ```
+
+#### JavaScript
 
 ```js
 /**
@@ -287,4 +313,6 @@ var cherryPickup = function (grid) {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

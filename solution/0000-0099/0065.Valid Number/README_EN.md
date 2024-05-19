@@ -1,10 +1,20 @@
+---
+comments: true
+difficulty: Hard
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0000-0099/0065.Valid%20Number/README_EN.md
+tags:
+    - String
+---
+
+<!-- problem:start -->
+
 # [65. Valid Number](https://leetcode.com/problems/valid-number)
 
 [中文文档](/solution/0000-0099/0065.Valid%20Number/README.md)
 
-<!-- tags:String -->
-
 ## Description
+
+<!-- description:start -->
 
 <p>Given a string <code>s</code>, return whether <code>s</code> is a <strong>valid number</strong>.<br />
 <br />
@@ -64,7 +74,11 @@ For example, all the following are valid numbers: <code>&quot;2&quot;, &quot;008
 	<li><code>s</code> consists of only English letters (both uppercase and lowercase), digits (<code>0-9</code>), plus <code>&#39;+&#39;</code>, minus <code>&#39;-&#39;</code>, or dot <code>&#39;.&#39;</code>.</li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Case Discussion
 
@@ -85,6 +99,8 @@ After traversing the string, return `true`.
 The time complexity is $O(n)$, and the space complexity is $O(1)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -117,6 +133,8 @@ class Solution:
             j += 1
         return True
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -159,6 +177,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -186,6 +206,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func isNumber(s string) bool {
@@ -224,6 +246,8 @@ func isNumber(s string) bool {
 	return true
 }
 ```
+
+#### Rust
 
 ```rust
 impl Solution {
@@ -285,6 +309,8 @@ impl Solution {
 }
 ```
 
+#### C#
+
 ```cs
 using System.Text.RegularExpressions;
 
@@ -299,4 +325,6 @@ public class Solution {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

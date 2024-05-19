@@ -1,12 +1,24 @@
+---
+comments: true
+difficulty: 简单
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/1100-1199/1128.Number%20of%20Equivalent%20Domino%20Pairs/README.md
+rating: 1332
+source: 第 146 场周赛 Q1
+tags:
+    - 数组
+    - 哈希表
+    - 计数
+---
+
+<!-- problem:start -->
+
 # [1128. 等价多米诺骨牌对的数量](https://leetcode.cn/problems/number-of-equivalent-domino-pairs)
 
 [English Version](/solution/1100-1199/1128.Number%20of%20Equivalent%20Domino%20Pairs/README_EN.md)
 
-<!-- tags:数组,哈希表,计数 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>给你一组多米诺骨牌 <code>dominoes</code> 。</p>
 
@@ -40,7 +52,11 @@
 	<li><code>1 &lt;= dominoes[i][j] &lt;= 9</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：计数
 
@@ -51,6 +67,8 @@
 时间复杂度 $O(n)$，空间复杂度 $O(C)$。其中 $n$ 是多米诺骨牌的数量，而 $C$ 是多米诺骨牌中拼接成的两位数的最大数量，即 $100$。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -63,6 +81,8 @@ class Solution:
             cnt[x] += 1
         return ans
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -78,6 +98,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -92,6 +114,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func numEquivDominoPairs(dominoes [][]int) (ans int) {
@@ -110,4 +134,6 @@ func numEquivDominoPairs(dominoes [][]int) (ans int) {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

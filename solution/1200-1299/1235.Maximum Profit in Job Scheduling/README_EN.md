@@ -1,10 +1,25 @@
+---
+comments: true
+difficulty: Hard
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/1200-1299/1235.Maximum%20Profit%20in%20Job%20Scheduling/README_EN.md
+rating: 2022
+source: Weekly Contest 159 Q4
+tags:
+    - Array
+    - Binary Search
+    - Dynamic Programming
+    - Sorting
+---
+
+<!-- problem:start -->
+
 # [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling)
 
 [中文文档](/solution/1200-1299/1235.Maximum%20Profit%20in%20Job%20Scheduling/README.md)
 
-<!-- tags:Array,Binary Search,Dynamic Programming,Sorting -->
-
 ## Description
+
+<!-- description:start -->
 
 <p>We have <code>n</code> jobs, where every job is scheduled to be done from <code>startTime[i]</code> to <code>endTime[i]</code>, obtaining a profit of <code>profit[i]</code>.</p>
 
@@ -53,7 +68,11 @@ Profit obtained 150 = 20 + 70 + 60.
 	<li><code>1 &lt;= profit[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Memoization Search + Binary Search
 
@@ -75,6 +94,8 @@ The time complexity is $O(n \times \log n)$, where $n$ is the number of jobs.
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def jobScheduling(
@@ -92,6 +113,8 @@ class Solution:
         n = len(profit)
         return dfs(0)
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -139,6 +162,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -162,6 +187,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func jobScheduling(startTime []int, endTime []int, profit []int) int {
@@ -189,6 +216,8 @@ func jobScheduling(startTime []int, endTime []int, profit []int) int {
 	return dfs(0)
 }
 ```
+
+#### TypeScript
 
 ```ts
 function jobScheduling(startTime: number[], endTime: number[], profit: number[]): number {
@@ -225,6 +254,10 @@ function jobScheduling(startTime: number[], endTime: number[], profit: number[])
 
 <!-- tabs:end -->
 
+<!-- solution:end -->
+
+<!-- solution:start -->
+
 ### Solution 2: Dynamic Programming + Binary Search
 
 We can also change the memoization search in Solution 1 to dynamic programming.
@@ -248,6 +281,8 @@ Similar problems:
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def jobScheduling(
@@ -261,6 +296,8 @@ class Solution:
             dp[i + 1] = max(dp[i], dp[j] + p)
         return dp[n]
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -294,6 +331,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -313,6 +352,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func jobScheduling(startTime []int, endTime []int, profit []int) int {
 	n := len(profit)
@@ -330,6 +371,8 @@ func jobScheduling(startTime []int, endTime []int, profit []int) int {
 	return dp[n]
 }
 ```
+
+#### TypeScript
 
 ```ts
 function jobScheduling(startTime: number[], endTime: number[], profit: number[]): number {
@@ -363,4 +406,6 @@ function jobScheduling(startTime: number[], endTime: number[], profit: number[])
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

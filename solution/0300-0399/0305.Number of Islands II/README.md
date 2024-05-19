@@ -1,14 +1,24 @@
+---
+comments: true
+difficulty: 困难
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0300-0399/0305.Number%20of%20Islands%20II/README.md
+tags:
+    - 并查集
+    - 数组
+    - 哈希表
+---
+
+<!-- problem:start -->
+
 # [305. 岛屿数量 II 🔒](https://leetcode.cn/problems/number-of-islands-ii)
 
 [English Version](/solution/0300-0399/0305.Number%20of%20Islands%20II/README_EN.md)
 
-<!-- tags:并查集,数组,哈希表 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
-<p>给你一个大小为 <code>m x n</code> 的二进制网格 <code>grid</code> 。网格表示一个地图，其中，<code>0</code> 表示水，<code>1</code> 表示陆地。最初，<code>grid</code> 中的所有单元格都是水单元格（即，所有单元格都是 <code>0</code>）。</p>
+<p>给你一个大小为 <code>m x n</code> 的二维二进制网格 <code>grid</code> 。网格表示一个地图，其中，<code>0</code> 表示水，<code>1</code> 表示陆地。最初，<code>grid</code> 中的所有单元格都是水单元格（即，所有单元格都是 <code>0</code>）。</p>
 
 <p>可以通过执行 <code>addLand</code> 操作，将某个位置的水转换成陆地。给你一个数组 <code>positions</code> ，其中 <code>positions[i] = [r<sub>i</sub>, c<sub>i</sub>]</code> 是要执行第 <code>i</code> 次操作的位置 <code>(r<sub>i</sub>, c<sub>i</sub>)</code> 。</p>
 
@@ -17,7 +27,7 @@
 <p><strong>岛屿</strong> 的定义是被「水」包围的「陆地」，通过水平方向或者垂直方向上相邻的陆地连接而成。你可以假设地图网格的四边均被无边无际的「水」所包围。</p>
 &nbsp;
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 <img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0300-0399/0305.Number%20of%20Islands%20II/images/tmp-grid.jpg" style="width: 500px; height: 294px;" />
 <pre>
 <strong>输入：</strong>m = 3, n = 3, positions = [[0,0],[0,1],[1,2],[2,1]]
@@ -30,7 +40,7 @@
 - 操作&nbsp;#4：<code>addLand(2, 1)</code> 将&nbsp;<code>grid[2][1]</code> 的水变为陆地。此时存在 3 个岛屿。
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>m = 1, n = 1, positions = [[0,0]]
@@ -53,7 +63,11 @@
 
 <p><strong>进阶：</strong>你可以设计一个时间复杂度 <code>O(k log(mn))</code> 的算法解决此问题吗？（其中 <code>k == positions.length</code>）</p>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：并查集
 
@@ -64,6 +78,8 @@
 时间复杂度 $O(k \times \alpha(m \times n))$ 或 $O(k \times \log(m \times n))$，其中 $k$ 是 $positions$ 的长度，而 $\alpha$ 是阿克曼函数的反函数，本题中 $\alpha(m \times n)$ 可以认为是一个很小的常数。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class UnionFind:
@@ -114,6 +130,8 @@ class Solution:
             ans.append(cnt)
         return ans
 ```
+
+#### Java
 
 ```java
 class UnionFind {
@@ -181,6 +199,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class UnionFind {
 public:
@@ -245,6 +265,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 type unionFind struct {
@@ -311,6 +333,8 @@ func numIslands2(m int, n int, positions [][]int) (ans []int) {
 }
 ```
 
+#### TypeScript
+
 ```ts
 class UnionFind {
     p: number[];
@@ -375,4 +399,6 @@ function numIslands2(m: number, n: number, positions: number[][]): number[] {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

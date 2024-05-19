@@ -1,8 +1,18 @@
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/16.26.Calculator/README_EN.md
+---
+
+<!-- problem:start -->
+
 # [16.26. Calculator](https://leetcode.cn/problems/calculator-lcci)
 
 [中文文档](/lcci/16.26.Calculator/README.md)
 
 ## Description
+
+<!-- description:start -->
 
 <p>Given an arithmetic equation consisting of positive integers, +, -, * and / (no paren&shy;theses), compute the result.</p>
 <p>The expression string contains only non-negative integers, +, -, *, / operators and empty spaces . The integer division should truncate toward zero.</p>
@@ -35,7 +45,11 @@
 	<li>Do not use the eval built-in library function.</li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Stack
 
@@ -46,6 +60,8 @@ Finally, the sum of all elements in the stack is the answer.
 The time complexity is $O(n)$, and the space complexity is $O(n)$. Where $n$ is the length of the string.
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -71,6 +87,8 @@ class Solution:
                 sign = c
         return sum(stk)
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -103,6 +121,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -145,6 +165,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func calculate(s string) (ans int) {
 	n := len(s)
@@ -176,6 +198,8 @@ func calculate(s string) (ans int) {
 	return
 }
 ```
+
+#### TypeScript
 
 ```ts
 function calculate(s: string): number {
@@ -209,6 +233,51 @@ function calculate(s: string): number {
 }
 ```
 
+#### Swift
+
+```swift
+class Solution {
+    func calculate(_ s: String) -> Int {
+        let n = s.count
+        var x = 0
+        var sign: Character = "+"
+        var stk = [Int]()
+        let sArray = Array(s)
+
+        for i in 0..<n {
+            let c = sArray[i]
+            if c.isNumber {
+                x = x * 10 + Int(String(c))!
+            }
+            if i == n - 1 || (!c.isNumber && c != " ") {
+                switch sign {
+                case "+":
+                    stk.append(x)
+                case "-":
+                    stk.append(-x)
+                case "*":
+                    if let last = stk.popLast() {
+                        stk.append(last * x)
+                    }
+                case "/":
+                    if let last = stk.popLast() {
+                        stk.append(last / x)
+                    }
+                default:
+                    break
+                }
+                x = 0
+                sign = c
+            }
+        }
+
+        return stk.reduce(0, +)
+    }
+}
+```
+
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

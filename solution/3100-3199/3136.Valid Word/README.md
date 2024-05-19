@@ -1,12 +1,22 @@
+---
+comments: true
+difficulty: 简单
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/3100-3199/3136.Valid%20Word/README.md
+rating: 1249
+source: 第 396 场周赛 Q1
+tags:
+    - 字符串
+---
+
+<!-- problem:start -->
+
 # [3136. 有效单词](https://leetcode.cn/problems/valid-word)
 
 [English Version](/solution/3100-3199/3136.Valid%20Word/README_EN.md)
 
-<!-- tags: -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p><strong>有效单词</strong> 需要满足以下几个条件：</p>
 
@@ -73,7 +83,11 @@
 	<li><code>word</code> 由英文大写和小写字母、数字、<code>'@'</code>、<code>'#'</code> 和 <code>'$'</code> 组成。</li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：模拟
 
@@ -86,6 +100,8 @@
 时间复杂度 $O(n)$，空间复杂度 $O(1)$。其中 $n$ 为字符串的长度。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -104,6 +120,8 @@ class Solution:
                     has_consonant = True
         return has_vowel and has_consonant
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -131,6 +149,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -161,6 +181,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func isValid(word string) bool {
 	if len(word) < 3 {
@@ -186,6 +208,8 @@ func isValid(word string) bool {
 	return hasVowel && hasConsonant
 }
 ```
+
+#### TypeScript
 
 ```ts
 function isValid(word: string): boolean {
@@ -213,4 +237,6 @@ function isValid(word: string): boolean {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

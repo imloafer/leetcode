@@ -1,6 +1,16 @@
+---
+comments: true
+difficulty: Easy
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/10.05.Sparse%20Array%20Search/README_EN.md
+---
+
+<!-- problem:start -->
+
 # [10.05. Sparse Array Search](https://leetcode.cn/problems/sparse-array-search-lcci)
 
 ## Description
+
+<!-- description:start -->
 
 <p>Given a sorted array of strings that is interspersed with empty strings, write a method to find the location of a given string.</p>
 
@@ -32,7 +42,11 @@
 	<li><code>1 &lt;= words.length &lt;= 1000000</code></li>
 </ol>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Binary Search
 
@@ -46,6 +60,8 @@ The implementation of the function $dfs(i, j)$ is as follows:
 In the worst case, the time complexity is $O(n \times m)$, and the space complexity is $O(n)$. Where $n$ and $m$ are the length of the string array and the length of the string $s$, respectively.
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -63,6 +79,8 @@ class Solution:
 
         return dfs(0, len(words) - 1)
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -87,6 +105,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -110,6 +130,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func findString(words []string, s string) int {
 	var dfs func(i, j int) int
@@ -130,6 +152,8 @@ func findString(words []string, s string) int {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function findString(words: string[], s: string): number {
     const dfs = (i: number, j: number): number => {
@@ -149,6 +173,8 @@ function findString(words: string[], s: string): number {
     return dfs(0, words.length - 1);
 }
 ```
+
+#### Swift
 
 ```swift
 class Solution {
@@ -175,4 +201,6 @@ class Solution {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

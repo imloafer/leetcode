@@ -1,8 +1,18 @@
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/17.05.Find%20Longest%20Subarray/README_EN.md
+---
+
+<!-- problem:start -->
+
 # [17.05. Find Longest Subarray](https://leetcode.cn/problems/find-longest-subarray-lcci)
 
 [中文文档](/lcci/17.05.Find%20Longest%20Subarray/README.md)
 
 ## Description
+
+<!-- description:start -->
 
 <p>Given an array filled with letters and numbers, find the longest subarray with an equal number of letters and numbers.</p>
 
@@ -38,7 +48,11 @@
 	<li><code>array.length &lt;= 100000</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Prefix Sum + Hash Table
 
@@ -57,6 +71,8 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Where $n$ is 
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def findLongestSubarray(self, array: List[str]) -> List[str]:
@@ -72,6 +88,8 @@ class Solution:
                 vis[s] = i
         return array[k : k + mx]
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -98,6 +116,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -120,6 +140,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func findLongestSubarray(array []string) []string {
@@ -144,6 +166,8 @@ func findLongestSubarray(array []string) []string {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function findLongestSubarray(array: string[]): string[] {
     const vis = new Map();
@@ -167,6 +191,33 @@ function findLongestSubarray(array: string[]): string[] {
 }
 ```
 
+#### Swift
+
+```swift
+class Solution {
+    func findLongestSubarray(_ array: [String]) -> [String] {
+        var vis: [Int: Int] = [0: -1]
+        var s = 0, mx = 0, k = 0
+
+        for i in 0..<array.count {
+            s += array[i].first!.isLetter ? 1 : -1
+            if let j = vis[s] {
+                if mx < i - j {
+                    mx = i - j
+                    k = j + 1
+                }
+            } else {
+                vis[s] = i
+            }
+        }
+
+        return Array(array[k..<(k + mx)])
+    }
+}
+```
+
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

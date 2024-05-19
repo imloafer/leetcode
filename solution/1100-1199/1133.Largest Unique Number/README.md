@@ -1,12 +1,24 @@
+---
+comments: true
+difficulty: 简单
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/1100-1199/1133.Largest%20Unique%20Number/README.md
+rating: 1226
+source: 第 5 场双周赛 Q1
+tags:
+    - 数组
+    - 哈希表
+    - 排序
+---
+
+<!-- problem:start -->
+
 # [1133. 最大唯一数 🔒](https://leetcode.cn/problems/largest-unique-number)
 
 [English Version](/solution/1100-1199/1133.Largest%20Unique%20Number/README_EN.md)
 
-<!-- tags:数组,哈希表,排序 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>给你一个整数数组&nbsp;<code>A</code>，请找出并返回在该数组中仅出现一次的最大整数。</p>
 
@@ -39,7 +51,11 @@
 	<li><code>0 &lt;= A[i] &lt;= 1000</code></li>
 </ol>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：计数 + 倒序遍历
 
@@ -49,12 +65,16 @@
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def largestUniqueNumber(self, nums: List[int]) -> int:
         cnt = Counter(nums)
         return max((x for x, v in cnt.items() if v == 1), default=-1)
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -72,6 +92,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -91,6 +113,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func largestUniqueNumber(nums []int) int {
 	cnt := [1001]int{}
@@ -106,6 +130,8 @@ func largestUniqueNumber(nums []int) int {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function largestUniqueNumber(nums: number[]): number {
     const cnt = Array(1001).fill(0);
@@ -120,6 +146,8 @@ function largestUniqueNumber(nums: number[]): number {
     return -1;
 }
 ```
+
+#### JavaScript
 
 ```js
 /**
@@ -142,4 +170,6 @@ var largestUniqueNumber = function (nums) {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

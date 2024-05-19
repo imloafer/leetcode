@@ -1,10 +1,18 @@
+---
+comments: true
+difficulty: 中等
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/16.22.Langtons%20Ant/README.md
+---
+
+<!-- problem:start -->
+
 # [面试题 16.22. 兰顿蚂蚁](https://leetcode.cn/problems/langtons-ant-lcci)
 
 [English Version](/lcci/16.22.Langtons%20Ant/README_EN.md)
 
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>一只蚂蚁坐在由白色和黑色方格构成的无限网格上。开始时，网格全白，蚂蚁面向右侧。每行走一步，蚂蚁执行以下操作。</p>
 <p>(1) 如果在白色方格上，则翻转方格的颜色，向右(顺时针)转 90 度，并向前移动一个单位。<br>
@@ -37,7 +45,11 @@
 	<li><code>K &lt;= 100000</code></li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：哈希表 + 模拟
 
@@ -50,6 +62,8 @@
 时间复杂度 $O(K)$，空间复杂度 $O(K)$。其中 $K$ 是蚂蚁行走的步数。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Solution:
@@ -80,6 +94,8 @@ class Solution:
         g[x - x1][y - y1] = d[p]
         return ["".join(row) for row in g]
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -125,6 +141,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -160,6 +178,8 @@ public:
     }
 };
 ```
+
+#### Go
 
 ```go
 func printKMoves(K int) []string {
@@ -206,6 +226,54 @@ func printKMoves(K int) []string {
 }
 ```
 
+#### Swift
+
+```swift
+class Solution {
+    func printKMoves(_ K: Int) -> [String] {
+        var x1 = 0, y1 = 0, x2 = 0, y2 = 0
+        let dirs = [0, 1, 0, -1, 0]
+        let d = "RDLU"
+        var x = 0, y = 0, p = 0
+        var black = Set<[Int]>()
+        var K = K
+
+        while K > 0 {
+            let t = [x, y]
+            if black.insert(t).inserted {
+                p = (p + 1) % 4
+            } else {
+                black.remove(t)
+                p = (p + 3) % 4
+            }
+            x += dirs[p]
+            y += dirs[p + 1]
+            x1 = min(x1, x)
+            y1 = min(y1, y)
+            x2 = max(x2, x)
+            y2 = max(y2, y)
+            K -= 1
+        }
+
+        let m = x2 - x1 + 1
+        let n = y2 - y1 + 1
+        var g = Array(repeating: Array(repeating: "_", count: n), count: m)
+
+        for t in black {
+            let i = t[0] - x1
+            let j = t[1] - y1
+            g[i][j] = "X"
+        }
+
+        g[x - x1][y - y1] = String(d[d.index(d.startIndex, offsetBy: p)])
+
+        return g.map { $0.joined() }
+    }
+}
+```
+
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

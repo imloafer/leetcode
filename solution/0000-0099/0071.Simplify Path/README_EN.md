@@ -1,10 +1,21 @@
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0000-0099/0071.Simplify%20Path/README_EN.md
+tags:
+    - Stack
+    - String
+---
+
+<!-- problem:start -->
+
 # [71. Simplify Path](https://leetcode.com/problems/simplify-path)
 
 [中文文档](/solution/0000-0099/0071.Simplify%20Path/README.md)
 
-<!-- tags:Stack,String -->
-
 ## Description
+
+<!-- description:start -->
 
 <p>Given an absolute path for a Unix-style file system, which begins with a slash <code>&#39;/&#39;</code>, transform this path into its <strong>simplified canonical path</strong>.</p>
 
@@ -93,7 +104,11 @@
 	<li><code>path</code> is a valid absolute Unix path.</li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Stack
 
@@ -109,6 +124,8 @@ The time complexity is $O(n)$ and the space complexity is $O(n)$, where $n$ is t
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def simplifyPath(self, path: str) -> str:
@@ -123,6 +140,8 @@ class Solution:
                 stk.append(s)
         return '/' + '/'.join(stk)
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -142,6 +161,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -174,6 +195,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func simplifyPath(path string) string {
 	var stk []string
@@ -193,6 +216,8 @@ func simplifyPath(path string) string {
 }
 ```
 
+#### TypeScript
+
 ```ts
 function simplifyPath(path: string): string {
     const stk: string[] = [];
@@ -211,6 +236,8 @@ function simplifyPath(path: string): string {
     return '/' + stk.join('/');
 }
 ```
+
+#### Rust
 
 ```rust
 impl Solution {
@@ -242,6 +269,8 @@ impl Solution {
 }
 ```
 
+#### C#
+
 ```cs
 public class Solution {
     public string SimplifyPath(string path) {
@@ -269,9 +298,15 @@ public class Solution {
 
 <!-- tabs:end -->
 
+<!-- solution:end -->
+
+<!-- solution:start -->
+
 ### Solution 2
 
 <!-- tabs:start -->
+
+#### Go
 
 ```go
 func simplifyPath(path string) string {
@@ -281,4 +316,6 @@ func simplifyPath(path string) string {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

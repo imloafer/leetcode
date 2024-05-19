@@ -1,12 +1,21 @@
+---
+comments: true
+difficulty: 简单
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0700-0799/0744.Find%20Smallest%20Letter%20Greater%20Than%20Target/README.md
+tags:
+    - 数组
+    - 二分查找
+---
+
+<!-- problem:start -->
+
 # [744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target)
 
 [English Version](/solution/0700-0799/0744.Find%20Smallest%20Letter%20Greater%20Than%20Target/README_EN.md)
 
-<!-- tags:数组,二分查找 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>给你一个字符数组 <code>letters</code>，该数组按<strong>非递减顺序</strong>排序，以及一个字符 <code>target</code>。<code>letters</code>&nbsp;里<strong>至少有两个不同</strong>的字符。</p>
 
@@ -47,7 +56,11 @@
 	<li><code>target</code> 是一个小写字母</li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：二分查找
 
@@ -61,12 +74,16 @@
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
         i = bisect_right(letters, ord(target), key=lambda c: ord(c))
         return letters[i % len(letters)]
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -78,6 +95,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -88,12 +107,16 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func nextGreatestLetter(letters []byte, target byte) byte {
 	i := sort.Search(len(letters), func(i int) bool { return letters[i] > target })
 	return letters[i%len(letters)]
 }
 ```
+
+#### TypeScript
 
 ```ts
 function nextGreatestLetter(letters: string[], target: string): string {
@@ -109,6 +132,8 @@ function nextGreatestLetter(letters: string[], target: string): string {
     return letters[l % letters.length];
 }
 ```
+
+#### Rust
 
 ```rust
 impl Solution {
@@ -127,6 +152,8 @@ impl Solution {
     }
 }
 ```
+
+#### PHP
 
 ```php
 class Solution {
@@ -153,4 +180,6 @@ class Solution {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

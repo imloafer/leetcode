@@ -1,10 +1,19 @@
+---
+comments: true
+difficulty: 中等
+edit_url: https://github.com/doocs/leetcode/edit/main/lcci/16.25.LRU%20Cache/README.md
+---
+
+<!-- problem:start -->
+
 # [面试题 16.25. LRU 缓存](https://leetcode.cn/problems/lru-cache-lcci)
 
 [English Version](/lcci/16.25.LRU%20Cache/README_EN.md)
 
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
+
 <p>设计和构建一个&ldquo;最近最少使用&rdquo;缓存，该缓存会删除最近最少使用的项目。缓存应该从键映射到值(允许你插入和检索特定键对应的值)，并在初始化时指定最大容量。当缓存被填满时，它应该删除最近最少使用的项目。</p>
 
 <p>它应该支持以下操作： 获取数据 <code>get</code> 和 写入数据 <code>put</code> 。</p>
@@ -27,7 +36,11 @@ cache.get(3);       // 返回  3
 cache.get(4);       // 返回  4
 </pre>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：哈希表 + 双向链表
 
@@ -43,6 +56,8 @@ cache.get(4);       // 返回  4
 时间复杂度 $O(1)$，空间复杂度 $O(capacity)$。
 
 <!-- tabs:start -->
+
+#### Python3
 
 ```python
 class Node:
@@ -110,6 +125,8 @@ class LRUCache:
 # param_1 = obj.get(key)
 # obj.put(key,value)
 ```
+
+#### Java
 
 ```java
 class Node {
@@ -198,6 +215,8 @@ class LRUCache {
  * obj.put(key,value);
  */
 ```
+
+#### C++
 
 ```cpp
 struct Node {
@@ -293,6 +312,8 @@ private:
  */
 ```
 
+#### Go
+
 ```go
 type node struct {
 	key, val   int
@@ -364,6 +385,8 @@ func (this *LRUCache) pushFront(n *node) {
 }
 ```
 
+#### TypeScript
+
 ```ts
 class LRUCache {
     capacity: number;
@@ -399,6 +422,8 @@ class LRUCache {
  * obj.put(key,value)
  */
 ```
+
+#### Rust
 
 ```rust
 use std::cell::RefCell;
@@ -531,6 +556,8 @@ impl LRUCache {
  */
 ```
 
+#### C#
+
 ```cs
 public class LRUCache {
     class Node {
@@ -610,6 +637,89 @@ public class LRUCache {
  */
 ```
 
+#### Swift
+
+```swift
+class Node {
+    var key: Int
+    var val: Int
+    var prev: Node?
+    var next: Node?
+
+    init(_ key: Int = 0, _ val: Int = 0) {
+        self.key = key
+        self.val = val
+    }
+}
+
+class LRUCache {
+    private var cache: [Int: Node] = [:]
+    private let head: Node = Node()
+    private let tail: Node = Node()
+    private var capacity: Int
+    private var size: Int = 0
+
+    init(_ capacity: Int) {
+        self.capacity = capacity
+        head.next = tail
+        tail.prev = head
+    }
+
+    func get(_ key: Int) -> Int {
+        guard let node = cache[key] else {
+            return -1
+        }
+        moveToHead(node)
+        return node.val
+    }
+
+    func put(_ key: Int, _ value: Int) {
+        if let node = cache[key] {
+            node.val = value
+            moveToHead(node)
+        } else {
+            let newNode = Node(key, value)
+            cache[key] = newNode
+            addToHead(newNode)
+            size += 1
+            if size > capacity {
+                if let tailNode = removeTail() {
+                    cache.removeValue(forKey: tailNode.key)
+                    size -= 1
+                }
+            }
+        }
+    }
+
+    private func moveToHead(_ node: Node) {
+        removeNode(node)
+        addToHead(node)
+    }
+
+    private func removeNode(_ node: Node) {
+        node.prev?.next = node.next
+        node.next?.prev = node.prev
+    }
+
+    private func addToHead(_ node: Node) {
+        node.prev = head
+        node.next = head.next
+        head.next?.prev = node
+        head.next = node
+    }
+
+    private func removeTail() -> Node? {
+        guard let res = tail.prev, res !== head else {
+            return nil
+        }
+        removeNode(res)
+        return res
+    }
+}
+```
+
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

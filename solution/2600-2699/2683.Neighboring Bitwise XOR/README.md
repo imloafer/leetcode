@@ -1,12 +1,23 @@
+---
+comments: true
+difficulty: 中等
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/2600-2699/2683.Neighboring%20Bitwise%20XOR/README.md
+rating: 1517
+source: 第 345 场周赛 Q2
+tags:
+    - 位运算
+    - 数组
+---
+
+<!-- problem:start -->
+
 # [2683. 相邻值的按位异或](https://leetcode.cn/problems/neighboring-bitwise-xor)
 
 [English Version](/solution/2600-2699/2683.Neighboring%20Bitwise%20XOR/README_EN.md)
 
-<!-- tags:位运算,数组 -->
-
 ## 题目描述
 
-<!-- 这里写题目描述 -->
+<!-- description:start -->
 
 <p>下标从 <strong>0</strong> 开始、长度为 <code>n</code> 的数组 <code>derived</code> 是由同样长度为 <code>n</code> 的原始 <strong>二进制数组</strong> <code>original</code> 通过计算相邻值的 <strong>按位异或（⊕）</strong>派生而来。</p>
 
@@ -63,7 +74,11 @@ derived[1] = original[1] ⊕ original[0] = 1
 	<li><code>derived</code> 中的值不是 <strong>0</strong> 就是 <strong>1</strong> 。</li>
 </ul>
 
+<!-- description:end -->
+
 ## 解法
+
+<!-- solution:start -->
 
 ### 方法一：位运算
 
@@ -90,11 +105,15 @@ $$
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def doesValidArrayExist(self, derived: List[int]) -> bool:
         return reduce(xor, derived) == 0
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -107,6 +126,8 @@ class Solution {
     }
 }
 ```
+
+#### C++
 
 ```cpp
 class Solution {
@@ -121,6 +142,8 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func doesValidArrayExist(derived []int) bool {
 	s := 0
@@ -130,6 +153,8 @@ func doesValidArrayExist(derived []int) bool {
 	return s == 0
 }
 ```
+
+#### TypeScript
 
 ```ts
 function doesValidArrayExist(derived: number[]): boolean {
@@ -143,9 +168,15 @@ function doesValidArrayExist(derived: number[]): boolean {
 
 <!-- tabs:end -->
 
+<!-- solution:end -->
+
+<!-- solution:start -->
+
 ### 方法二
 
 <!-- tabs:start -->
+
+#### TypeScript
 
 ```ts
 function doesValidArrayExist(derived: number[]): boolean {
@@ -155,4 +186,6 @@ function doesValidArrayExist(derived: number[]): boolean {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->

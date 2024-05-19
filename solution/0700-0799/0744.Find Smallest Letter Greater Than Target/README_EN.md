@@ -1,10 +1,21 @@
+---
+comments: true
+difficulty: Easy
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0700-0799/0744.Find%20Smallest%20Letter%20Greater%20Than%20Target/README_EN.md
+tags:
+    - Array
+    - Binary Search
+---
+
+<!-- problem:start -->
+
 # [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)
 
 [中文文档](/solution/0700-0799/0744.Find%20Smallest%20Letter%20Greater%20Than%20Target/README.md)
 
-<!-- tags:Array,Binary Search -->
-
 ## Description
+
+<!-- description:start -->
 
 <p>You are given an array of characters <code>letters</code> that is sorted in <strong>non-decreasing order</strong>, and a character <code>target</code>. There are <strong>at least two different</strong> characters in <code>letters</code>.</p>
 
@@ -46,7 +57,11 @@
 	<li><code>target</code> is a lowercase English letter.</li>
 </ul>
 
+<!-- description:end -->
+
 ## Solutions
+
+<!-- solution:start -->
 
 ### Solution 1: Binary Search
 
@@ -60,12 +75,16 @@ The time complexity is $O(\log n)$, where $n$ is the length of `letters`. The sp
 
 <!-- tabs:start -->
 
+#### Python3
+
 ```python
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
         i = bisect_right(letters, ord(target), key=lambda c: ord(c))
         return letters[i % len(letters)]
 ```
+
+#### Java
 
 ```java
 class Solution {
@@ -77,6 +96,8 @@ class Solution {
 }
 ```
 
+#### C++
+
 ```cpp
 class Solution {
 public:
@@ -87,12 +108,16 @@ public:
 };
 ```
 
+#### Go
+
 ```go
 func nextGreatestLetter(letters []byte, target byte) byte {
 	i := sort.Search(len(letters), func(i int) bool { return letters[i] > target })
 	return letters[i%len(letters)]
 }
 ```
+
+#### TypeScript
 
 ```ts
 function nextGreatestLetter(letters: string[], target: string): string {
@@ -108,6 +133,8 @@ function nextGreatestLetter(letters: string[], target: string): string {
     return letters[l % letters.length];
 }
 ```
+
+#### Rust
 
 ```rust
 impl Solution {
@@ -126,6 +153,8 @@ impl Solution {
     }
 }
 ```
+
+#### PHP
 
 ```php
 class Solution {
@@ -152,4 +181,6 @@ class Solution {
 
 <!-- tabs:end -->
 
-<!-- end -->
+<!-- solution:end -->
+
+<!-- problem:end -->
