@@ -52,8 +52,6 @@ edit_url: https://github.com/doocs/leetcode/edit/main/lcof/%E9%9D%A2%E8%AF%95%E9
 
 时间复杂度 $(\log n)$，空间复杂度 $O(1)$。其中 $n$ 为数组长度。
 
-注意，我们也可以每次取中间元素 `numbers[mid]` 与左端元素 `numbers[l]` 比较，但需要考虑当前 $[l,..r]$ 区间内的元素是否已经有序，即是否满足 `numbers[l] < numbers[r]`，如果满足，直接返回 `numbers[l]` 即可。其它情况与上述方法类似。
-
 <!-- tabs:start -->
 
 #### Python3
@@ -206,13 +204,37 @@ public class Solution {
 }
 ```
 
+#### Swift
+
+```swift
+class Solution {
+    func minArray(_ numbers: [Int]) -> Int {
+        var l = 0
+        var r = numbers.count - 1
+        while l < r {
+            let m = (l + r) / 2
+            if numbers[m] > numbers[r] {
+                l = m + 1
+            } else if numbers[m] < numbers[r] {
+                r = m
+            } else {
+                r -= 1
+            }
+        }
+        return numbers[l]
+    }
+}
+```
+
 <!-- tabs:end -->
 
 <!-- solution:end -->
 
 <!-- solution:start-->
 
-### 方法二
+### 方法二：二分查找（写法二）
+
+注意，我们也可以每次取中间元素 `numbers[mid]` 与左端元素 `numbers[l]` 比较，但需要考虑当前 $[l,..r]$ 区间内的元素是否已经有序，即是否满足 `numbers[l] < numbers[r]`，如果满足，直接返回 `numbers[l]` 即可。其它情况与方法一类似。
 
 <!-- tabs:start -->
 

@@ -218,36 +218,29 @@ public class Solution {
 }
 ```
 
-<!-- tabs:end -->
+#### Swift
 
-<!-- solution:end -->
+```swift
+/* public class TreeNode {
+*     public var val: Int
+*     public var left: TreeNode?
+*     public var right: TreeNode?
+*     public init(_ val: Int) {
+*         self.val = val
+*         self.left = nil
+*         self.right = nil
+*     }
+* }
+*/
 
-<!-- solution:start-->
-
-### 方法二
-
-<!-- tabs:start -->
-
-#### Python3
-
-```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-
-class Solution:
-    def maxDepth(self, root: TreeNode) -> int:
-        def dfs(root):
-            if root is None:
-                return 0
-            l, r = dfs(root.left), dfs(root.right)
-            return 1 + max(l, r)
-
-        return dfs(root)
+class Solution {
+    func maxDepth(_ root: TreeNode?) -> Int {
+        guard let root = root else {
+            return 0
+        }
+        return 1 + max(maxDepth(root.left), maxDepth(root.right))
+    }
+}
 ```
 
 <!-- tabs:end -->
