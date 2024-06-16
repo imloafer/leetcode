@@ -2,11 +2,13 @@
 comments: true
 difficulty: 中等
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3100-3199/3182.Find%20Top%20Scoring%20Students/README.md
+tags:
+    - 数据库
 ---
 
 <!-- problem:start -->
 
-# [3182. Find Top Scoring Students 🔒](https://leetcode.cn/problems/find-top-scoring-students)
+# [3182. 查找得分最高的学生 🔒](https://leetcode.cn/problems/find-top-scoring-students)
 
 [English Version](/solution/3100-3199/3182.Find%20Top%20Scoring%20Students/README_EN.md)
 
@@ -14,7 +16,7 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/3100-3199/3182.Fi
 
 <!-- description:start -->
 
-<p>Table: <code>students</code></p>
+<p>表：<code>students</code></p>
 
 <pre>
 +-------------+----------+
@@ -24,11 +26,11 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/3100-3199/3182.Fi
 | name        | varchar  |
 | major       | varchar  |
 +-------------+----------+
-student_id is the primary key (combination of columns with unique values) for this table.
-Each row of this table contains the student ID, student name, and their major.
+student_id 是这张表的主键（有不同值的列的组合）。
+这张表的每一行包含学生 ID，学生姓名和他们的专业。
 </pre>
 
-<p>Table: <code>courses</code></p>
+<p>表格：<code>courses</code></p>
 
 <pre>
 +-------------+----------+
@@ -39,11 +41,11 @@ Each row of this table contains the student ID, student name, and their major.
 | credits     | int      |
 | major       | varchar  |
 +-------------+----------+
-course_id is the primary key (combination of columns with unique values) for this table.
-Each row of this table contains the course ID, course name, the number of credits for the course, and the major it belongs to.
+course_id 是这张表的主键（有不同值的列的组合）。
+这张表的每一行包含课程 ID，课程名，课程学分和所属专业。
 </pre>
 
-<p>Table: <code>enrollments</code></p>
+<p>表：<code>enrollments</code></p>
 
 <pre>
 +-------------+----------+
@@ -54,23 +56,24 @@ Each row of this table contains the course ID, course name, the number of credit
 | semester    | varchar  |
 | grade       | varchar  |
 +-------------+----------+
-(student_id, course_id, semester) is the primary key (combination of columns with unique values) for this table.
-Each row of this table contains the student ID, course ID, semester, and grade received.
+(student_id, course_id, semester) 是这张表的主键（有不同值的列的组合）。
+这张表的每一行包含学生 ID，课程 ID，学期和获得的学分。
 </pre>
 
-<p>Write a solution to find the students who have <strong>taken</strong> <strong>all courses</strong> offered in their <code>major</code> and have achieved a <strong>grade of A</strong> <strong>in all these courses</strong>.</p>
+<p>编写一个解决方案来找到参加过他们的&nbsp;<code>major</code>&nbsp;提供的 <strong>所有课程&nbsp;</strong>并在&nbsp;<strong>所有这些课程中取得等级 A</strong> 的人。</p>
 
-<p>Return <em>the result table ordered by</em> <code>student_id</code> <em>in <strong>ascending</strong> order</em>.</p>
+<p>返回结果表以&nbsp;<code>student_id</code> <em><strong>升序&nbsp;</strong></em>排序。</p>
 
-<p>The result format is in the following example.</p>
+<p>结果格式如下所示。</p>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example:</strong></p>
+
+<p><strong class="example">示例：</strong></p>
 
 <div class="example-block">
-<p><strong>Input:</strong></p>
+<p><b>输入：</b></p>
 
-<p>students table:</p>
+<p>students 表：</p>
 
 <pre class="example-io">
 +------------+------------------+------------------+
@@ -83,7 +86,7 @@ Each row of this table contains the student ID, course ID, semester, and grade r
 +------------+------------------+------------------+
 </pre>
 
-<p>courses table:</p>
+<p>courses 表：</p>
 
 <pre class="example-io">
 +-----------+-----------------+---------+------------------+
@@ -96,7 +99,7 @@ Each row of this table contains the student ID, course ID, semester, and grade r
 +-----------+-----------------+---------+------------------+
 </pre>
 
-<p>enrollments table:</p>
+<p>enrollments 表：</p>
 
 <pre class="example-io">
 +------------+-----------+----------+-------+
@@ -113,7 +116,7 @@ Each row of this table contains the student ID, course ID, semester, and grade r
 +------------+-----------+----------+-------+
 </pre>
 
-<p><strong>Output:</strong></p>
+<p><strong>输出：</strong></p>
 
 <pre class="example-io">
 +------------+
@@ -124,16 +127,16 @@ Each row of this table contains the student ID, course ID, semester, and grade r
 +------------+
 </pre>
 
-<p><strong>Explanation:</strong></p>
+<p><strong>解释：</strong></p>
 
 <ul>
-	<li>Alice (student_id 1) is a Computer Science major and has taken both &quot;Algorithms&quot; and &quot;Data Structures&quot;, receiving an &#39;A&#39; in both.</li>
-	<li>Bob (student_id 2) is a Computer Science major but did not receive an &#39;A&#39; in all required courses.</li>
-	<li>Charlie (student_id 3) is a Mathematics major and has taken both &quot;Calculus&quot; and &quot;Linear Algebra&quot;, receiving an &#39;A&#39; in both.</li>
-	<li>David (student_id 4) is a Mathematics major but did not receive an &#39;A&#39; in all required courses.</li>
+	<li>Alice (student_id 1) 是计算机科学专业并且修了 “Algorithms” 和 “Data Structures” 课程，都获得了 ‘A’。</li>
+	<li>Bob (student_id 2) 是计算机科学专业但没有在全部必修课程中获得 ‘A’。</li>
+	<li>Charlie (student_id 3) 是数学专业并且修了 “Calculus”&nbsp;和 “Linear Algebra”&nbsp;课程，都获得了 ‘A’。</li>
+	<li>David (student_id 4) 是数学专业但没有在全部必修课程中获得 'A'。</li>
 </ul>
 
-<p><b>Note:</b> Output table is ordered by student_id in ascending order.</p>
+<p><b>注意：</b>输出表以&nbsp;student_id 升序排序。</p>
 </div>
 
 <!-- description:end -->

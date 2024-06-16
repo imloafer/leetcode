@@ -2,11 +2,14 @@
 comments: true
 difficulty: 简单
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3100-3199/3173.Bitwise%20OR%20of%20Adjacent%20Elements/README.md
+tags:
+    - 位运算
+    - 数组
 ---
 
 <!-- problem:start -->
 
-# [3173. 相邻元素的按位与 🔒](https://leetcode.cn/problems/bitwise-or-of-adjacent-elements)
+# [3173. 相邻元素的按位或 🔒](https://leetcode.cn/problems/bitwise-or-of-adjacent-elements)
 
 [English Version](/solution/3100-3199/3173.Bitwise%20OR%20of%20Adjacent%20Elements/README_EN.md)
 

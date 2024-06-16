@@ -26,6 +26,13 @@ comments: true
 
 ## 往期竞赛
 
+#### 第 402 场周赛(2024-06-16 10:30, 90 分钟) 参赛人数 3283
+
+- [3184. 构成整天的下标对数目 I](/solution/3100-3199/3184.Count%20Pairs%20That%20Form%20a%20Complete%20Day%20I/README.md)
+- [3185. 构成整天的下标对数目 II](/solution/3100-3199/3185.Count%20Pairs%20That%20Form%20a%20Complete%20Day%20II/README.md)
+- [3186. 施咒的最大总伤害](/solution/3100-3199/3186.Maximum%20Total%20Damage%20With%20Spell%20Casting/README.md)
+- [3187. 数组中的峰值](/solution/3100-3199/3187.Peaks%20in%20Array/README.md)
+
 #### 第 401 场周赛(2024-06-09 10:30, 90 分钟) 参赛人数 3160
 
 - [3178. 找出 K 秒后拿着球的孩子](/solution/3100-3199/3178.Find%20the%20Child%20Who%20Has%20the%20Ball%20After%20K%20Seconds/README.md)
@@ -45,7 +52,7 @@ comments: true
 - [3168. 候诊室中的最少椅子数](/solution/3100-3199/3168.Minimum%20Number%20of%20Chairs%20in%20a%20Waiting%20Room/README.md)
 - [3169. 无需开会的工作日](/solution/3100-3199/3169.Count%20Days%20Without%20Meetings/README.md)
 - [3170. 删除星号以后字典序最小的字符串](/solution/3100-3199/3170.Lexicographically%20Minimum%20String%20After%20Removing%20Stars/README.md)
-- [3171. 找到按位与最接近 K 的子数组](/solution/3100-3199/3171.Find%20Subarray%20With%20Bitwise%20AND%20Closest%20to%20K/README.md)
+- [3171. 找到按位或最接近 K 的子数组](/solution/3100-3199/3171.Find%20Subarray%20With%20Bitwise%20OR%20Closest%20to%20K/README.md)
 
 #### 第 399 场周赛(2024-05-26 10:30, 90 分钟) 参赛人数 3424
 
@@ -2894,7 +2901,7 @@ comments: true
 - [0993. 二叉树的堂兄弟节点](/solution/0900-0999/0993.Cousins%20in%20Binary%20Tree/README.md)
 - [0994. 腐烂的橘子](/solution/0900-0999/0994.Rotting%20Oranges/README.md)
 - [0995. K 连续位的最小翻转次数](/solution/0900-0999/0995.Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/README.md)
-- [0996. 正方形数组的数目](/solution/0900-0999/0996.Number%20of%20Squareful%20Arrays/README.md)
+- [0996. 平方数组的数目](/solution/0900-0999/0996.Number%20of%20Squareful%20Arrays/README.md)
 
 #### 第 123 场周赛(2019-02-10 10:30, 90 分钟) 参赛人数 247
 

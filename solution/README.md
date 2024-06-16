@@ -1006,7 +1006,7 @@
 |  0993  |  [二叉树的堂兄弟节点](/solution/0900-0999/0993.Cousins%20in%20Binary%20Tree/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`二叉树`  |  简单  |  第 124 场周赛  |
 |  0994  |  [腐烂的橘子](/solution/0900-0999/0994.Rotting%20Oranges/README.md)  |  `广度优先搜索`,`数组`,`矩阵`  |  中等  |  第 124 场周赛  |
 |  0995  |  [K 连续位的最小翻转次数](/solution/0900-0999/0995.Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/README.md)  |  `位运算`,`队列`,`数组`,`前缀和`,`滑动窗口`  |  困难  |  第 124 场周赛  |
-|  0996  |  [正方形数组的数目](/solution/0900-0999/0996.Number%20of%20Squareful%20Arrays/README.md)  |  `位运算`,`数组`,`数学`,`动态规划`,`回溯`,`状态压缩`  |  困难  |  第 124 场周赛  |
+|  0996  |  [平方数组的数目](/solution/0900-0999/0996.Number%20of%20Squareful%20Arrays/README.md)  |  `位运算`,`数组`,`哈希表`,`数学`,`动态规划`,`回溯`,`状态压缩`  |  困难  |  第 124 场周赛  |
 |  0997  |  [找到小镇的法官](/solution/0900-0999/0997.Find%20the%20Town%20Judge/README.md)  |  `图`,`数组`,`哈希表`  |  简单  |  第 125 场周赛  |
 |  0998  |  [最大二叉树 II](/solution/0900-0999/0998.Maximum%20Binary%20Tree%20II/README.md)  |  `树`,`二叉树`  |  中等  |  第 125 场周赛  |
 |  0999  |  [可以被一步捕获的棋子数](/solution/0900-0999/0999.Available%20Captures%20for%20Rook/README.md)  |  `数组`,`矩阵`,`模拟`  |  简单  |  第 125 场周赛  |
@@ -2723,8 +2723,8 @@
 |  2710  |  [移除字符串中的尾随零](/solution/2700-2799/2710.Remove%20Trailing%20Zeros%20From%20a%20String/README.md)  |  `字符串`  |  简单  |  第 347 场周赛  |
 |  2711  |  [对角线上不同值的数量差](/solution/2700-2799/2711.Difference%20of%20Number%20of%20Distinct%20Values%20on%20Diagonals/README.md)  |  `数组`,`哈希表`,`矩阵`  |  中等  |  第 347 场周赛  |
 |  2712  |  [使所有字符相等的最小成本](/solution/2700-2799/2712.Minimum%20Cost%20to%20Make%20All%20Characters%20Equal/README.md)  |  `贪心`,`字符串`,`动态规划`  |  中等  |  第 347 场周赛  |
-|  2713  |  [矩阵中严格递增的单元格数](/solution/2700-2799/2713.Maximum%20Strictly%20Increasing%20Cells%20in%20a%20Matrix/README.md)  |  `记忆化搜索`,`数组`,`二分查找`,`动态规划`,`矩阵`,`排序`  |  困难  |  第 347 场周赛  |
-|  2714  |  [找到最短路径的 K 次跨越](/solution/2700-2799/2714.Find%20Shortest%20Path%20with%20K%20Hops/README.md)  |  `图`,`最短路`,`堆（优先队列）`  |  困难  |  🔒  |
+|  2713  |  [矩阵中严格递增的单元格数](/solution/2700-2799/2713.Maximum%20Strictly%20Increasing%20Cells%20in%20a%20Matrix/README.md)  |  `记忆化搜索`,`数组`,`哈希表`,`二分查找`,`动态规划`,`矩阵`,`有序集合`,`排序`  |  困难  |  第 347 场周赛  |
+|  2714  |  [找到 K 次跨越的最短路径](/solution/2700-2799/2714.Find%20Shortest%20Path%20with%20K%20Hops/README.md)  |  `图`,`最短路`,`堆（优先队列）`  |  困难  |  🔒  |
 |  2715  |  [执行可取消的延迟函数](/solution/2700-2799/2715.Timeout%20Cancellation/README.md)  |    |  简单  |    |
 |  2716  |  [最小化字符串长度](/solution/2700-2799/2716.Minimize%20String%20Length/README.md)  |  `哈希表`,`字符串`  |  简单  |  第 348 场周赛  |
 |  2717  |  [半有序排列](/solution/2700-2799/2717.Semi-Ordered%20Permutation/README.md)  |  `数组`,`模拟`  |  简单  |  第 348 场周赛  |
@@ -3181,19 +3181,23 @@
 |  3168  |  [候诊室中的最少椅子数](/solution/3100-3199/3168.Minimum%20Number%20of%20Chairs%20in%20a%20Waiting%20Room/README.md)  |  `字符串`,`模拟`  |  简单  |  第 400 场周赛  |
 |  3169  |  [无需开会的工作日](/solution/3100-3199/3169.Count%20Days%20Without%20Meetings/README.md)  |  `数组`,`排序`  |  中等  |  第 400 场周赛  |
 |  3170  |  [删除星号以后字典序最小的字符串](/solution/3100-3199/3170.Lexicographically%20Minimum%20String%20After%20Removing%20Stars/README.md)  |  `栈`,`贪心`,`哈希表`,`字符串`,`堆（优先队列）`  |  中等  |  第 400 场周赛  |
-|  3171  |  [找到按位与最接近 K 的子数组](/solution/3100-3199/3171.Find%20Subarray%20With%20Bitwise%20AND%20Closest%20to%20K/README.md)  |  `位运算`,`线段树`,`数组`,`二分查找`  |  困难  |  第 400 场周赛  |
-|  3171  |  [找到按位或最接近 K 的子数组](/solution/3100-3199/3171.Find%20Subarray%20With%20Bitwise%20OR%20Closest%20to%20K/README.md)  |  `位运算`,`线段树`,`数组`,`二分查找`  |  困难  |    |
+|  3171  |  [找到按位或最接近 K 的子数组](/solution/3100-3199/3171.Find%20Subarray%20With%20Bitwise%20OR%20Closest%20to%20K/README.md)  |  `位运算`,`线段树`,`数组`,`二分查找`  |  困难  |  第 400 场周赛  |
 |  3172  |  [第二天验证](/solution/3100-3199/3172.Second%20Day%20Verification/README.md)  |  `数据库`  |  简单  |  🔒  |
-|  3173  |  [相邻元素的按位与](/solution/3100-3199/3173.Bitwise%20OR%20of%20Adjacent%20Elements/README.md)  |    |  简单  |  🔒  |
-|  3174  |  [清除数字](/solution/3100-3199/3174.Clear%20Digits/README.md)  |    |  简单  |  第 132 场双周赛  |
-|  3175  |  [找到连续赢 K 场比赛的第一位玩家](/solution/3100-3199/3175.Find%20The%20First%20Player%20to%20win%20K%20Games%20in%20a%20Row/README.md)  |    |  中等  |  第 132 场双周赛  |
-|  3176  |  [求出最长好子序列 I](/solution/3100-3199/3176.Find%20the%20Maximum%20Length%20of%20a%20Good%20Subsequence%20I/README.md)  |    |  中等  |  第 132 场双周赛  |
-|  3177  |  [求出最长好子序列 II](/solution/3100-3199/3177.Find%20the%20Maximum%20Length%20of%20a%20Good%20Subsequence%20II/README.md)  |    |  困难  |  第 132 场双周赛  |
-|  3178  |  [找出 K 秒后拿着球的孩子](/solution/3100-3199/3178.Find%20the%20Child%20Who%20Has%20the%20Ball%20After%20K%20Seconds/README.md)  |    |  简单  |  第 401 场周赛  |
-|  3179  |  [K 秒后第 N 个元素的值](/solution/3100-3199/3179.Find%20the%20N-th%20Value%20After%20K%20Seconds/README.md)  |    |  中等  |  第 401 场周赛  |
-|  3180  |  [执行操作可获得的最大总奖励 I](/solution/3100-3199/3180.Maximum%20Total%20Reward%20Using%20Operations%20I/README.md)  |    |  中等  |  第 401 场周赛  |
-|  3181  |  [执行操作可获得的最大总奖励 II](/solution/3100-3199/3181.Maximum%20Total%20Reward%20Using%20Operations%20II/README.md)  |    |  困难  |  第 401 场周赛  |
-|  3182  |  [Find Top Scoring Students](/solution/3100-3199/3182.Find%20Top%20Scoring%20Students/README.md)  |    |  中等  |  🔒  |
+|  3173  |  [相邻元素的按位或](/solution/3100-3199/3173.Bitwise%20OR%20of%20Adjacent%20Elements/README.md)  |  `位运算`,`数组`  |  简单  |  🔒  |
+|  3174  |  [清除数字](/solution/3100-3199/3174.Clear%20Digits/README.md)  |  `哈希表`,`字符串`,`模拟`  |  简单  |  第 132 场双周赛  |
+|  3175  |  [找到连续赢 K 场比赛的第一位玩家](/solution/3100-3199/3175.Find%20The%20First%20Player%20to%20win%20K%20Games%20in%20a%20Row/README.md)  |  `数组`,`模拟`  |  中等  |  第 132 场双周赛  |
+|  3176  |  [求出最长好子序列 I](/solution/3100-3199/3176.Find%20the%20Maximum%20Length%20of%20a%20Good%20Subsequence%20I/README.md)  |  `数组`,`哈希表`,`动态规划`  |  中等  |  第 132 场双周赛  |
+|  3177  |  [求出最长好子序列 II](/solution/3100-3199/3177.Find%20the%20Maximum%20Length%20of%20a%20Good%20Subsequence%20II/README.md)  |  `数组`,`哈希表`,`动态规划`  |  困难  |  第 132 场双周赛  |
+|  3178  |  [找出 K 秒后拿着球的孩子](/solution/3100-3199/3178.Find%20the%20Child%20Who%20Has%20the%20Ball%20After%20K%20Seconds/README.md)  |  `数学`,`模拟`  |  简单  |  第 401 场周赛  |
+|  3179  |  [K 秒后第 N 个元素的值](/solution/3100-3199/3179.Find%20the%20N-th%20Value%20After%20K%20Seconds/README.md)  |  `数组`,`数学`,`组合数学`,`前缀和`,`模拟`  |  中等  |  第 401 场周赛  |
+|  3180  |  [执行操作可获得的最大总奖励 I](/solution/3100-3199/3180.Maximum%20Total%20Reward%20Using%20Operations%20I/README.md)  |  `数组`,`动态规划`  |  中等  |  第 401 场周赛  |
+|  3181  |  [执行操作可获得的最大总奖励 II](/solution/3100-3199/3181.Maximum%20Total%20Reward%20Using%20Operations%20II/README.md)  |  `位运算`,`数组`,`动态规划`  |  困难  |  第 401 场周赛  |
+|  3182  |  [查找得分最高的学生](/solution/3100-3199/3182.Find%20Top%20Scoring%20Students/README.md)  |  `数据库`  |  中等  |  🔒  |
+|  3183  |  [达到总和的方法数量](/solution/3100-3199/3183.The%20Number%20of%20Ways%20to%20Make%20the%20Sum/README.md)  |    |  中等  |  🔒  |
+|  3184  |  [构成整天的下标对数目 I](/solution/3100-3199/3184.Count%20Pairs%20That%20Form%20a%20Complete%20Day%20I/README.md)  |    |  简单  |  第 402 场周赛  |
+|  3185  |  [构成整天的下标对数目 II](/solution/3100-3199/3185.Count%20Pairs%20That%20Form%20a%20Complete%20Day%20II/README.md)  |    |  中等  |  第 402 场周赛  |
+|  3186  |  [施咒的最大总伤害](/solution/3100-3199/3186.Maximum%20Total%20Damage%20With%20Spell%20Casting/README.md)  |    |  中等  |  第 402 场周赛  |
+|  3187  |  [数组中的峰值](/solution/3100-3199/3187.Peaks%20in%20Array/README.md)  |    |  困难  |  第 402 场周赛  |
 
 ## 版权
 
