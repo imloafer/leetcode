@@ -289,6 +289,8 @@
 | 3214 | [同比增长率](/solution/3200-3299/3214.Year%20on%20Year%20Growth%20Rate/README.md)                                                                            | `数据库` | 困难 | 🔒   |
 | 3220 | [奇数和偶数交易](/solution/3200-3299/3220.Odd%20and%20Even%20Transactions/README.md)                                                                         | `数据库` | 中等 |      |
 | 3230 | [客户购买行为分析](/solution/3200-3299/3230.Customer%20Purchasing%20Behavior%20Analysis/README.md)                                                           | `数据库` | 中等 | 🔒   |
+| 3236 | [首席执行官下属层级](/solution/3200-3299/3236.CEO%20Subordinate%20Hierarchy/README.md)                                                                       | `数据库` | 困难 | 🔒   |
+| 3246 | [英超积分榜排名](/solution/3200-3299/3246.Premier%20League%20Table%20Ranking/README.md)                                                                      |          | 简单 | 🔒   |
 
 ## 版权
 
