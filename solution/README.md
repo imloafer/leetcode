@@ -606,7 +606,7 @@
 |  0593  |  [有效的正方形](/solution/0500-0599/0593.Valid%20Square/README.md)  |  `几何`,`数学`  |  中等  |    |
 |  0594  |  [最长和谐子序列](/solution/0500-0599/0594.Longest%20Harmonious%20Subsequence/README.md)  |  `数组`,`哈希表`,`计数`,`排序`,`滑动窗口`  |  简单  |    |
 |  0595  |  [大的国家](/solution/0500-0599/0595.Big%20Countries/README.md)  |  `数据库`  |  简单  |    |
-|  0596  |  [超过5名学生的课](/solution/0500-0599/0596.Classes%20More%20Than%205%20Students/README.md)  |  `数据库`  |  简单  |    |
+|  0596  |  [超过 5 名学生的课](/solution/0500-0599/0596.Classes%20More%20Than%205%20Students/README.md)  |  `数据库`  |  简单  |    |
 |  0597  |  [好友申请 I：总体通过率](/solution/0500-0599/0597.Friend%20Requests%20I%20Overall%20Acceptance%20Rate/README.md)  |  `数据库`  |  简单  |  🔒  |
 |  0598  |  [区间加法 II](/solution/0500-0599/0598.Range%20Addition%20II/README.md)  |  `数组`,`数学`  |  简单  |    |
 |  0599  |  [两个列表的最小索引总和](/solution/0500-0599/0599.Minimum%20Index%20Sum%20of%20Two%20Lists/README.md)  |  `数组`,`哈希表`,`字符串`  |  简单  |    |
@@ -1947,7 +1947,7 @@
 |  1934  |  [确认率](/solution/1900-1999/1934.Confirmation%20Rate/README.md)  |  `数据库`  |  中等  |    |
 |  1935  |  [可以输入的最大单词数](/solution/1900-1999/1935.Maximum%20Number%20of%20Words%20You%20Can%20Type/README.md)  |  `哈希表`,`字符串`  |  简单  |  第 250 场周赛  |
 |  1936  |  [新增的最少台阶数](/solution/1900-1999/1936.Add%20Minimum%20Number%20of%20Rungs/README.md)  |  `贪心`,`数组`  |  中等  |  第 250 场周赛  |
-|  1937  |  [扣分后的最大得分](/solution/1900-1999/1937.Maximum%20Number%20of%20Points%20with%20Cost/README.md)  |  `数组`,`动态规划`  |  中等  |  第 250 场周赛  |
+|  1937  |  [扣分后的最大得分](/solution/1900-1999/1937.Maximum%20Number%20of%20Points%20with%20Cost/README.md)  |  `数组`,`动态规划`,`矩阵`  |  中等  |  第 250 场周赛  |
 |  1938  |  [查询最大基因差](/solution/1900-1999/1938.Maximum%20Genetic%20Difference%20Query/README.md)  |  `位运算`,`深度优先搜索`,`字典树`,`数组`,`哈希表`  |  困难  |  第 250 场周赛  |
 |  1939  |  [主动请求确认消息的用户](/solution/1900-1999/1939.Users%20That%20Actively%20Request%20Confirmation%20Messages/README.md)  |  `数据库`  |  简单  |  🔒  |
 |  1940  |  [排序数组之间的最长公共子序列](/solution/1900-1999/1940.Longest%20Common%20Subsequence%20Between%20Sorted%20Arrays/README.md)  |  `数组`,`哈希表`,`计数`  |  中等  |  🔒  |
@@ -2132,7 +2132,7 @@
 |  2119  |  [反转两次的数字](/solution/2100-2199/2119.A%20Number%20After%20a%20Double%20Reversal/README.md)  |  `数学`  |  简单  |  第 273 场周赛  |
 |  2120  |  [执行所有后缀指令](/solution/2100-2199/2120.Execution%20of%20All%20Suffix%20Instructions%20Staying%20in%20a%20Grid/README.md)  |  `字符串`,`模拟`  |  中等  |  第 273 场周赛  |
 |  2121  |  [相同元素的间隔之和](/solution/2100-2199/2121.Intervals%20Between%20Identical%20Elements/README.md)  |  `数组`,`哈希表`,`前缀和`  |  中等  |  第 273 场周赛  |
-|  2122  |  [还原原数组](/solution/2100-2199/2122.Recover%20the%20Original%20Array/README.md)  |  `数组`,`哈希表`,`枚举`,`排序`  |  困难  |  第 273 场周赛  |
+|  2122  |  [还原原数组](/solution/2100-2199/2122.Recover%20the%20Original%20Array/README.md)  |  `数组`,`哈希表`,`双指针`,`枚举`,`排序`  |  困难  |  第 273 场周赛  |
 |  2123  |  [使矩阵中的 1 互不相邻的最小操作数](/solution/2100-2199/2123.Minimum%20Operations%20to%20Remove%20Adjacent%20Ones%20in%20Matrix/README.md)  |  `图`,`数组`,`矩阵`  |  困难  |  🔒  |
 |  2124  |  [检查是否所有 A 都在 B 之前](/solution/2100-2199/2124.Check%20if%20All%20A%27s%20Appears%20Before%20All%20B%27s/README.md)  |  `字符串`  |  简单  |  第 274 场周赛  |
 |  2125  |  [银行中的激光束数量](/solution/2100-2199/2125.Number%20of%20Laser%20Beams%20in%20a%20Bank/README.md)  |  `数组`,`数学`,`字符串`,`矩阵`  |  中等  |  第 274 场周赛  |
@@ -2873,7 +2873,7 @@
 |  2860  |  [让所有学生保持开心的分组方法数](/solution/2800-2899/2860.Happy%20Students/README.md)  |  `数组`,`枚举`,`排序`  |  中等  |  第 363 场周赛  |
 |  2861  |  [最大合金数](/solution/2800-2899/2861.Maximum%20Number%20of%20Alloys/README.md)  |  `数组`,`二分查找`  |  中等  |  第 363 场周赛  |
 |  2862  |  [完全子集的最大元素和](/solution/2800-2899/2862.Maximum%20Element-Sum%20of%20a%20Complete%20Subset%20of%20Indices/README.md)  |  `数组`,`数学`,`数论`  |  困难  |  第 363 场周赛  |
-|  2863  |  [最长半递减数组](/solution/2800-2899/2863.Maximum%20Length%20of%20Semi-Decreasing%20Subarrays/README.md)  |  `数组`,`哈希表`,`排序`  |  中等  |  🔒  |
+|  2863  |  [最长半递减子数组的长度](/solution/2800-2899/2863.Maximum%20Length%20of%20Semi-Decreasing%20Subarrays/README.md)  |  `栈`,`数组`,`排序`,`单调栈`  |  中等  |  🔒  |
 |  2864  |  [最大二进制奇数](/solution/2800-2899/2864.Maximum%20Odd%20Binary%20Number/README.md)  |  `贪心`,`数学`,`字符串`  |  简单  |  第 364 场周赛  |
 |  2865  |  [美丽塔 I](/solution/2800-2899/2865.Beautiful%20Towers%20I/README.md)  |  `栈`,`数组`,`单调栈`  |  中等  |  第 364 场周赛  |
 |  2866  |  [美丽塔 II](/solution/2800-2899/2866.Beautiful%20Towers%20II/README.md)  |  `栈`,`数组`,`单调栈`  |  中等  |  第 364 场周赛  |
@@ -3002,7 +3002,7 @@
 |  2989  |  [班级表现](/solution/2900-2999/2989.Class%20Performance/README.md)  |  `数据库`  |  中等  |  🔒  |
 |  2990  |  [贷款类型](/solution/2900-2999/2990.Loan%20Types/README.md)  |  `数据库`  |  简单  |  🔒  |
 |  2991  |  [最好的三家酒庄](/solution/2900-2999/2991.Top%20Three%20Wineries/README.md)  |  `数据库`  |  困难  |  🔒  |
-|  2992  |  [自整除排列的数量](/solution/2900-2999/2992.Number%20of%20Self-Divisible%20Permutations/README.md)  |  `位运算`,`递归`,`数组`,`动态规划`,`状态压缩`  |  中等  |  🔒  |
+|  2992  |  [自整除排列的数量](/solution/2900-2999/2992.Number%20of%20Self-Divisible%20Permutations/README.md)  |  `位运算`,`数组`,`动态规划`,`回溯`,`状态压缩`  |  中等  |  🔒  |
 |  2993  |  [发生在周五的交易 I](/solution/2900-2999/2993.Friday%20Purchases%20I/README.md)  |  `数据库`  |  中等  |  🔒  |
 |  2994  |  [发生在周五的交易 II](/solution/2900-2999/2994.Friday%20Purchases%20II/README.md)  |  `数据库`  |  困难  |  🔒  |
 |  2995  |  [观众变主播](/solution/2900-2999/2995.Viewers%20Turned%20Streamers/README.md)  |  `数据库`  |  困难  |  🔒  |
@@ -3263,15 +3263,22 @@
 |  3250  |  [单调数组对的数目 I](/solution/3200-3299/3250.Find%20the%20Count%20of%20Monotonic%20Pairs%20I/README.md)  |  `数组`,`数学`,`动态规划`,`组合数学`,`前缀和`  |  困难  |  第 410 场周赛  |
 |  3251  |  [单调数组对的数目 II](/solution/3200-3299/3251.Find%20the%20Count%20of%20Monotonic%20Pairs%20II/README.md)  |  `数组`,`数学`,`动态规划`,`组合数学`,`前缀和`  |  困难  |  第 410 场周赛  |
 |  3252  |  [英超积分榜排名 II](/solution/3200-3299/3252.Premier%20League%20Table%20Ranking%20II/README.md)  |  `数据库`  |  中等  |  🔒  |
-|  3253  |  [Construct String with Minimum Cost (Easy)](/solution/3200-3299/3253.Construct%20String%20with%20Minimum%20Cost%20%28Easy%29/README.md)  |    |  中等  |  🔒  |
-|  3254  |  [长度为 K 的子数组的能量值 I](/solution/3200-3299/3254.Find%20the%20Power%20of%20K-Size%20Subarrays%20I/README.md)  |    |  中等  |  第 137 场双周赛  |
-|  3255  |  [长度为 K 的子数组的能量值 II](/solution/3200-3299/3255.Find%20the%20Power%20of%20K-Size%20Subarrays%20II/README.md)  |    |  中等  |  第 137 场双周赛  |
-|  3256  |  [放三个车的价值之和最大 I](/solution/3200-3299/3256.Maximum%20Value%20Sum%20by%20Placing%20Three%20Rooks%20I/README.md)  |    |  困难  |  第 137 场双周赛  |
-|  3257  |  [放三个车的价值之和最大 II](/solution/3200-3299/3257.Maximum%20Value%20Sum%20by%20Placing%20Three%20Rooks%20II/README.md)  |    |  困难  |  第 137 场双周赛  |
-|  3258  |  [统计满足 K 约束的子字符串数量 I](/solution/3200-3299/3258.Count%20Substrings%20That%20Satisfy%20K-Constraint%20I/README.md)  |    |  简单  |  第 411 场周赛  |
-|  3259  |  [超级饮料的最大强化能量](/solution/3200-3299/3259.Maximum%20Energy%20Boost%20From%20Two%20Drinks/README.md)  |    |  中等  |  第 411 场周赛  |
-|  3260  |  [找出最大的 N 位 K 回文数](/solution/3200-3299/3260.Find%20the%20Largest%20Palindrome%20Divisible%20by%20K/README.md)  |    |  困难  |  第 411 场周赛  |
-|  3261  |  [统计满足 K 约束的子字符串数量 II](/solution/3200-3299/3261.Count%20Substrings%20That%20Satisfy%20K-Constraint%20II/README.md)  |    |  困难  |  第 411 场周赛  |
+|  3253  |  [最小代价构造字符串（简单）](/solution/3200-3299/3253.Construct%20String%20with%20Minimum%20Cost%20%28Easy%29/README.md)  |    |  中等  |  🔒  |
+|  3254  |  [长度为 K 的子数组的能量值 I](/solution/3200-3299/3254.Find%20the%20Power%20of%20K-Size%20Subarrays%20I/README.md)  |  `数组`,`滑动窗口`  |  中等  |  第 137 场双周赛  |
+|  3255  |  [长度为 K 的子数组的能量值 II](/solution/3200-3299/3255.Find%20the%20Power%20of%20K-Size%20Subarrays%20II/README.md)  |  `数组`,`滑动窗口`  |  中等  |  第 137 场双周赛  |
+|  3256  |  [放三个车的价值之和最大 I](/solution/3200-3299/3256.Maximum%20Value%20Sum%20by%20Placing%20Three%20Rooks%20I/README.md)  |  `数组`,`动态规划`,`枚举`,`矩阵`  |  困难  |  第 137 场双周赛  |
+|  3257  |  [放三个车的价值之和最大 II](/solution/3200-3299/3257.Maximum%20Value%20Sum%20by%20Placing%20Three%20Rooks%20II/README.md)  |  `数组`,`动态规划`,`枚举`,`矩阵`  |  困难  |  第 137 场双周赛  |
+|  3258  |  [统计满足 K 约束的子字符串数量 I](/solution/3200-3299/3258.Count%20Substrings%20That%20Satisfy%20K-Constraint%20I/README.md)  |  `字符串`,`滑动窗口`  |  简单  |  第 411 场周赛  |
+|  3259  |  [超级饮料的最大强化能量](/solution/3200-3299/3259.Maximum%20Energy%20Boost%20From%20Two%20Drinks/README.md)  |  `数组`,`动态规划`  |  中等  |  第 411 场周赛  |
+|  3260  |  [找出最大的 N 位 K 回文数](/solution/3200-3299/3260.Find%20the%20Largest%20Palindrome%20Divisible%20by%20K/README.md)  |  `贪心`,`数学`,`字符串`,`动态规划`,`数论`  |  困难  |  第 411 场周赛  |
+|  3261  |  [统计满足 K 约束的子字符串数量 II](/solution/3200-3299/3261.Count%20Substrings%20That%20Satisfy%20K-Constraint%20II/README.md)  |  `数组`,`字符串`,`二分查找`,`前缀和`,`滑动窗口`  |  困难  |  第 411 场周赛  |
+|  3262  |  [查找重叠的班次](/solution/3200-3299/3262.Find%20Overlapping%20Shifts/README.md)  |    |  中等  |  🔒  |
+|  3263  |  [将双链表转换为数组 I](/solution/3200-3299/3263.Convert%20Doubly%20Linked%20List%20to%20Array%20I/README.md)  |    |  简单  |  🔒  |
+|  3264  |  [K 次乘运算后的最终数组 I](/solution/3200-3299/3264.Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/README.md)  |    |  简单  |  第 412 场周赛  |
+|  3265  |  [统计近似相等数对 I](/solution/3200-3299/3265.Count%20Almost%20Equal%20Pairs%20I/README.md)  |    |  中等  |  第 412 场周赛  |
+|  3266  |  [K 次乘运算后的最终数组 II](/solution/3200-3299/3266.Final%20Array%20State%20After%20K%20Multiplication%20Operations%20II/README.md)  |    |  困难  |  第 412 场周赛  |
+|  3267  |  [统计近似相等数对 II](/solution/3200-3299/3267.Count%20Almost%20Equal%20Pairs%20II/README.md)  |    |  困难  |  第 412 场周赛  |
+|  3268  |  [Find Overlapping Shifts II](/solution/3200-3299/3268.Find%20Overlapping%20Shifts%20II/README.md)  |    |  困难  |  🔒  |
 
 ## 版权
 

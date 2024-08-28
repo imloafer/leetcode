@@ -2,6 +2,8 @@
 comments: true
 difficulty: 困难
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3200-3299/3229.Minimum%20Operations%20to%20Make%20Array%20Equal%20to%20Target/README.md
+rating: 2066
+source: 第 407 场周赛 Q4
 tags:
     - 栈
     - 贪心
@@ -22,7 +24,7 @@ tags:
 
 <p>给你两个长度相同的正整数数组 <code>nums</code> 和 <code>target</code>。</p>
 
-<p>在一次操作中，你可以选择 <code>nums</code> 的任何<span data-keyword="subarray">子数组</span>，并将该子数组内的每个元素的值增加或减少 1。</p>
+<p>在一次操作中，你可以选择 <code>nums</code> 的任何子数组，并将该子数组内的每个元素的值增加或减少 1。</p>
 
 <p>返回使 <code>nums</code> 数组变为 <code>target</code> 数组所需的 <strong>最少 </strong>操作次数。</p>
 
