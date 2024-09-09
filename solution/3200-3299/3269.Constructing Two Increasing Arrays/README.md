@@ -2,11 +2,14 @@
 comments: true
 difficulty: 困难
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3200-3299/3269.Constructing%20Two%20Increasing%20Arrays/README.md
+tags:
+    - 数组
+    - 动态规划
 ---
 
 <!-- problem:start -->
 
-# [3269. Constructing Two Increasing Arrays 🔒](https://leetcode.cn/problems/constructing-two-increasing-arrays)
+# [3269. 构建两个递增数组 🔒](https://leetcode.cn/problems/constructing-two-increasing-arrays)
 
 [English Version](/solution/3200-3299/3269.Constructing%20Two%20Increasing%20Arrays/README_EN.md)
 
@@ -14,56 +17,58 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/3200-3299/3269.Co
 
 <!-- description:start -->
 
-<p>Given 2 integer arrays <code>nums1</code> and <code>nums2</code> consisting only of 0 and 1, your task is to calculate the <strong>minimum</strong> possible <strong>largest</strong> number in arrays <code>nums1</code> and <code>nums2</code>, after doing the following.</p>
+<p>给定两个只包含 0 和 1 的整数数组&nbsp;<code>nums1</code> 和&nbsp;<code>nums2</code>，你的任务是执行下面操作后使数组 <code>nums1</code> 和 <code>nums2</code> 中 <strong>最大</strong> 可达数字 <strong>尽可能小</strong>。</p>
 
-<p>Replace every 0 with an <em>even positive integer</em> and every 1 with an <em>odd positive integer</em>. After replacement, both arrays should be <strong>increasing</strong> and each integer should be used <strong>at most</strong> once.</p>
+<p>将每个 0 替换为正偶数，将每个 1 替换为正奇数。在替换后，两个数组都应该&nbsp;<strong>递增</strong>&nbsp;并且每个整数&nbsp;<strong>至多</strong>&nbsp;被使用一次。</p>
 
-<p>Return the <em>minimum possible largest number</em> after applying the changes.</p>
-
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums1 = [], nums2 = [1,0,1,1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">5</span></p>
-
-<p><strong>Explanation:</strong></p>
-
-<p>After replacing, <code>nums1 = []</code>, and <code>nums2 = [1, 2, 3, 5]</code>.</p>
-</div>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums1 = [0,1,0,1], nums2 = [1,0,0,1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">9</span></p>
-
-<p><strong>Explanation:</strong></p>
-
-<p>One way to replace, having 9 as the largest element is <code>nums1 = [2, 3, 8, 9]</code>, and <code>nums2 = [1, 4, 6, 7]</code>.</p>
-</div>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums1 = [0,1,0,0,1], nums2 = [0,0,0,1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">13</span></p>
-
-<p><strong>Explanation:</strong></p>
-
-<p>One way to replace, having 13 as the largest element is <code>nums1 = [2, 3, 4, 6, 7]</code>, and <code>nums2 = [8, 10, 12, 13]</code>.</p>
-</div>
+<p>返回执行操作后最小的最大可达数字。</p>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>nums1 = [], nums2 = [1,0,1,1]</span></p>
+
+<p><span class="example-io"><b>输出：</b>5</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>在替换之后， <code>nums1 = []</code>&nbsp;与&nbsp;<code>nums2 = [1, 2, 3, 5]</code>。</p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>nums1 = [0,1,0,1], nums2 = [1,0,0,1]</span></p>
+
+<p><span class="example-io"><b>输出：</b>9</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>有最大元素 9 的一种替换方式， <code>nums1 = [2, 3, 8, 9]</code>&nbsp;与&nbsp;<code>nums2 = [1, 4, 6, 7]</code>。</p>
+</div>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>nums1 = [0,1,0,0,1], nums2 = [0,0,0,1]</span></p>
+
+<p><span class="example-io"><b>输出：</b>13</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>有最大元素 13 的一种替换方式，<code>nums1 = [2, 3, 4, 6, 7]</code>&nbsp;与&nbsp;<code>nums2 = [8, 10, 12, 13]</code>。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
 
 <ul>
 	<li><code>0 &lt;= nums1.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= nums2.length &lt;= 1000</code></li>
-	<li><code>nums1</code> and <code>nums2</code> consist only of 0 and 1.</li>
+	<li><code>nums1</code>&nbsp;和&nbsp;<code>nums2</code>&nbsp;只包含 0 和 1。</li>
 </ul>
 
 <!-- description:end -->
