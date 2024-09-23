@@ -723,7 +723,7 @@
 |  0710  |  [黑名单中的随机数](/solution/0700-0799/0710.Random%20Pick%20with%20Blacklist/README.md)  |  `数组`,`哈希表`,`数学`,`二分查找`,`排序`,`随机化`  |  困难  |    |
 |  0711  |  [不同岛屿的数量 II](/solution/0700-0799/0711.Number%20of%20Distinct%20Islands%20II/README.md)  |  `深度优先搜索`,`广度优先搜索`,`并查集`,`哈希表`,`哈希函数`  |  困难  |  🔒  |
 |  0712  |  [两个字符串的最小ASCII删除和](/solution/0700-0799/0712.Minimum%20ASCII%20Delete%20Sum%20for%20Two%20Strings/README.md)  |  `字符串`,`动态规划`  |  中等  |    |
-|  0713  |  [乘积小于 K 的子数组](/solution/0700-0799/0713.Subarray%20Product%20Less%20Than%20K/README.md)  |  `数组`,`滑动窗口`  |  中等  |    |
+|  0713  |  [乘积小于 K 的子数组](/solution/0700-0799/0713.Subarray%20Product%20Less%20Than%20K/README.md)  |  `数组`,`二分查找`,`前缀和`,`滑动窗口`  |  中等  |    |
 |  0714  |  [买卖股票的最佳时机含手续费](/solution/0700-0799/0714.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee/README.md)  |  `贪心`,`数组`,`动态规划`  |  中等  |    |
 |  0715  |  [Range 模块](/solution/0700-0799/0715.Range%20Module/README.md)  |  `设计`,`线段树`,`有序集合`  |  困难  |    |
 |  0716  |  [最大栈](/solution/0700-0799/0716.Max%20Stack/README.md)  |  `栈`,`设计`,`链表`,`双向链表`,`有序集合`  |  困难  |  🔒  |
@@ -1258,7 +1258,7 @@
 |  1245  |  [树的直径](/solution/1200-1299/1245.Tree%20Diameter/README.md)  |  `树`,`深度优先搜索`,`广度优先搜索`,`图`,`拓扑排序`  |  中等  |  第 12 场双周赛  |
 |  1246  |  [删除回文子数组](/solution/1200-1299/1246.Palindrome%20Removal/README.md)  |  `数组`,`动态规划`  |  困难  |  第 12 场双周赛  |
 |  1247  |  [交换字符使得字符串相同](/solution/1200-1299/1247.Minimum%20Swaps%20to%20Make%20Strings%20Equal/README.md)  |  `贪心`,`数学`,`字符串`  |  中等  |  第 161 场周赛  |
-|  1248  |  [统计「优美子数组」](/solution/1200-1299/1248.Count%20Number%20of%20Nice%20Subarrays/README.md)  |  `数组`,`哈希表`,`数学`,`滑动窗口`  |  中等  |  第 161 场周赛  |
+|  1248  |  [统计「优美子数组」](/solution/1200-1299/1248.Count%20Number%20of%20Nice%20Subarrays/README.md)  |  `数组`,`哈希表`,`数学`,`前缀和`,`滑动窗口`  |  中等  |  第 161 场周赛  |
 |  1249  |  [移除无效的括号](/solution/1200-1299/1249.Minimum%20Remove%20to%20Make%20Valid%20Parentheses/README.md)  |  `栈`,`字符串`  |  中等  |  第 161 场周赛  |
 |  1250  |  [检查「好数组」](/solution/1200-1299/1250.Check%20If%20It%20Is%20a%20Good%20Array/README.md)  |  `数组`,`数学`,`数论`  |  困难  |  第 161 场周赛  |
 |  1251  |  [平均售价](/solution/1200-1299/1251.Average%20Selling%20Price/README.md)  |  `数据库`  |  简单  |    |
@@ -3305,6 +3305,10 @@
 |  3292  |  [形成目标字符串需要的最少字符串数 II](/solution/3200-3299/3292.Minimum%20Number%20of%20Valid%20Strings%20to%20Form%20Target%20II/README.md)  |  `线段树`,`数组`,`字符串`,`二分查找`,`动态规划`,`字符串匹配`,`哈希函数`,`滚动哈希`  |  困难  |  第 415 场周赛  |
 |  3293  |  [计算产品最终价格](/solution/3200-3299/3293.Calculate%20Product%20Final%20Price/README.md)  |  `数据库`  |  中等  |  🔒  |
 |  3294  |  [将双链表转换为数组 II](/solution/3200-3299/3294.Convert%20Doubly%20Linked%20List%20to%20Array%20II/README.md)  |    |  中等  |  🔒  |
+|  3295  |  [举报垃圾信息](/solution/3200-3299/3295.Report%20Spam%20Message/README.md)  |    |  中等  |  第 416 场周赛  |
+|  3296  |  [移山所需的最少秒数](/solution/3200-3299/3296.Minimum%20Number%20of%20Seconds%20to%20Make%20Mountain%20Height%20Zero/README.md)  |    |  中等  |  第 416 场周赛  |
+|  3297  |  [统计重新排列后包含另一个字符串的子字符串数目 I](/solution/3200-3299/3297.Count%20Substrings%20That%20Can%20Be%20Rearranged%20to%20Contain%20a%20String%20I/README.md)  |    |  中等  |  第 416 场周赛  |
+|  3298  |  [统计重新排列后包含另一个字符串的子字符串数目 II](/solution/3200-3299/3298.Count%20Substrings%20That%20Can%20Be%20Rearranged%20to%20Contain%20a%20String%20II/README.md)  |    |  困难  |  第 416 场周赛  |
 
 ## 版权
 
