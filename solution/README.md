@@ -3324,6 +3324,15 @@
 |  3311  |  [构造符合图结构的二维矩阵](/solution/3300-3399/3311.Construct%202D%20Grid%20Matching%20Graph%20Layout/README.md)  |  `图`,`数组`,`哈希表`,`矩阵`  |  困难  |  第 418 场周赛  |
 |  3312  |  [查询排序后的最大公约数](/solution/3300-3399/3312.Sorted%20GCD%20Pair%20Queries/README.md)  |  `数组`,`哈希表`,`数学`,`二分查找`,`组合数学`,`计数`,`数论`,`前缀和`  |  困难  |  第 418 场周赛  |
 |  3313  |  [查找树中最后标记的节点](/solution/3300-3399/3313.Find%20the%20Last%20Marked%20Nodes%20in%20Tree/README.md)  |  `树`,`深度优先搜索`  |  困难  |  🔒  |
+|  3314  |  [构造最小位运算数组 I](/solution/3300-3399/3314.Construct%20the%20Minimum%20Bitwise%20Array%20I/README.md)  |    |  简单  |  第 141 场双周赛  |
+|  3315  |  [构造最小位运算数组 II](/solution/3300-3399/3315.Construct%20the%20Minimum%20Bitwise%20Array%20II/README.md)  |    |  中等  |  第 141 场双周赛  |
+|  3316  |  [从原字符串里进行删除操作的最多次数](/solution/3300-3399/3316.Find%20Maximum%20Removals%20From%20Source%20String/README.md)  |    |  中等  |  第 141 场双周赛  |
+|  3317  |  [安排活动的方案数](/solution/3300-3399/3317.Find%20the%20Number%20of%20Possible%20Ways%20for%20an%20Event/README.md)  |    |  困难  |  第 141 场双周赛  |
+|  3318  |  [计算子数组的 x-sum I](/solution/3300-3399/3318.Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20I/README.md)  |    |  简单  |  第 419 场周赛  |
+|  3319  |  [第 K 大的完美二叉子树的大小](/solution/3300-3399/3319.K-th%20Largest%20Perfect%20Subtree%20Size%20in%20Binary%20Tree/README.md)  |    |  中等  |  第 419 场周赛  |
+|  3320  |  [统计能获胜的出招序列数](/solution/3300-3399/3320.Count%20The%20Number%20of%20Winning%20Sequences/README.md)  |    |  困难  |  第 419 场周赛  |
+|  3321  |  [计算子数组的 x-sum II](/solution/3300-3399/3321.Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20II/README.md)  |    |  困难  |  第 419 场周赛  |
+|  3322  |  [英超积分榜排名 III](/solution/3300-3399/3322.Premier%20League%20Table%20Ranking%20III/README.md)  |    |  中等  |  🔒  |
 
 ## 版权
 
