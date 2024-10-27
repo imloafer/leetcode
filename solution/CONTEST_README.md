@@ -26,7 +26,21 @@ comments: true
 
 ## 往期竞赛
 
-#### 第 420 场周赛(2024-10-20 10:30, 90 分钟) 参赛人数 2995
+#### 第 421 场周赛(2024-10-27 10:30, 90 分钟) 参赛人数 2777
+
+- [3334. 数组的最大因子得分](/solution/3300-3399/3334.Find%20the%20Maximum%20Factor%20Score%20of%20Array/README.md)
+- [3335. 字符串转换后的长度 I](/solution/3300-3399/3335.Total%20Characters%20in%20String%20After%20Transformations%20I/README.md)
+- [3336. 最大公约数相等的子序列数量](/solution/3300-3399/3336.Find%20the%20Number%20of%20Subsequences%20With%20Equal%20GCD/README.md)
+- [3337. 字符串转换后的长度 II](/solution/3300-3399/3337.Total%20Characters%20in%20String%20After%20Transformations%20II/README.md)
+
+#### 第 142 场双周赛(2024-10-26 22:30, 90 分钟) 参赛人数 1900
+
+- [3330. 找到初始输入字符串 I](/solution/3300-3399/3330.Find%20the%20Original%20Typed%20String%20I/README.md)
+- [3331. 修改后子树的大小](/solution/3300-3399/3331.Find%20Subtree%20Sizes%20After%20Changes/README.md)
+- [3332. 旅客可以得到的最多点数](/solution/3300-3399/3332.Maximum%20Points%20Tourist%20Can%20Earn/README.md)
+- [3333. 找到初始输入字符串 II](/solution/3300-3399/3333.Find%20the%20Original%20Typed%20String%20II/README.md)
+
+#### 第 420 场周赛(2024-10-20 10:30, 90 分钟) 参赛人数 2996
 
 - [3324. 出现在屏幕上的字符串序列](/solution/3300-3399/3324.Find%20the%20Sequence%20of%20Strings%20Appeared%20on%20the%20Screen/README.md)
 - [3325. 字符至少出现 K 次的子字符串 I](/solution/3300-3399/3325.Count%20Substrings%20With%20K-Frequency%20Characters%20I/README.md)
