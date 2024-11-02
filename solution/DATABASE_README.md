@@ -299,6 +299,7 @@
 | 3308 | [寻找表现最佳的司机](/solution/3300-3399/3308.Find%20Top%20Performing%20Driver/README.md)                                                                    | `数据库` | 中等 | 🔒   |
 | 3322 | [英超积分榜排名 III](/solution/3300-3399/3322.Premier%20League%20Table%20Ranking%20III/README.md)                                                            | `数据库` | 中等 | 🔒   |
 | 3328 | [查找每个州的城市 II](/solution/3300-3399/3328.Find%20Cities%20in%20Each%20State%20II/README.md)                                                             | `数据库` | 中等 | 🔒   |
+| 3338 | [第二高的薪水 II](/solution/3300-3399/3338.Second%20Highest%20Salary%20II/README.md)                                                                         | `数据库` | 中等 | 🔒   |
 
 ## 版权
 

@@ -3340,14 +3340,16 @@
 |  3327  |  [判断 DFS 字符串是否是回文串](/solution/3300-3399/3327.Check%20if%20DFS%20Strings%20Are%20Palindromes/README.md)  |  `树`,`深度优先搜索`,`数组`,`哈希表`,`字符串`,`哈希函数`  |  困难  |  第 420 场周赛  |
 |  3328  |  [查找每个州的城市 II](/solution/3300-3399/3328.Find%20Cities%20in%20Each%20State%20II/README.md)  |  `数据库`  |  中等  |  🔒  |
 |  3329  |  [字符至少出现 K 次的子字符串 II](/solution/3300-3399/3329.Count%20Substrings%20With%20K-Frequency%20Characters%20II/README.md)  |  `哈希表`,`字符串`,`滑动窗口`  |  困难  |  🔒  |
-|  3330  |  [找到初始输入字符串 I](/solution/3300-3399/3330.Find%20the%20Original%20Typed%20String%20I/README.md)  |    |  简单  |  第 142 场双周赛  |
-|  3331  |  [修改后子树的大小](/solution/3300-3399/3331.Find%20Subtree%20Sizes%20After%20Changes/README.md)  |    |  中等  |  第 142 场双周赛  |
-|  3332  |  [旅客可以得到的最多点数](/solution/3300-3399/3332.Maximum%20Points%20Tourist%20Can%20Earn/README.md)  |    |  中等  |  第 142 场双周赛  |
-|  3333  |  [找到初始输入字符串 II](/solution/3300-3399/3333.Find%20the%20Original%20Typed%20String%20II/README.md)  |    |  困难  |  第 142 场双周赛  |
-|  3334  |  [数组的最大因子得分](/solution/3300-3399/3334.Find%20the%20Maximum%20Factor%20Score%20of%20Array/README.md)  |    |  中等  |  第 421 场周赛  |
-|  3335  |  [字符串转换后的长度 I](/solution/3300-3399/3335.Total%20Characters%20in%20String%20After%20Transformations%20I/README.md)  |    |  中等  |  第 421 场周赛  |
-|  3336  |  [最大公约数相等的子序列数量](/solution/3300-3399/3336.Find%20the%20Number%20of%20Subsequences%20With%20Equal%20GCD/README.md)  |    |  困难  |  第 421 场周赛  |
-|  3337  |  [字符串转换后的长度 II](/solution/3300-3399/3337.Total%20Characters%20in%20String%20After%20Transformations%20II/README.md)  |    |  困难  |  第 421 场周赛  |
+|  3330  |  [找到初始输入字符串 I](/solution/3300-3399/3330.Find%20the%20Original%20Typed%20String%20I/README.md)  |  `字符串`  |  简单  |  第 142 场双周赛  |
+|  3331  |  [修改后子树的大小](/solution/3300-3399/3331.Find%20Subtree%20Sizes%20After%20Changes/README.md)  |  `树`,`深度优先搜索`,`数组`,`哈希表`,`字符串`  |  中等  |  第 142 场双周赛  |
+|  3332  |  [旅客可以得到的最多点数](/solution/3300-3399/3332.Maximum%20Points%20Tourist%20Can%20Earn/README.md)  |  `数组`,`动态规划`,`矩阵`  |  中等  |  第 142 场双周赛  |
+|  3333  |  [找到初始输入字符串 II](/solution/3300-3399/3333.Find%20the%20Original%20Typed%20String%20II/README.md)  |  `字符串`,`动态规划`,`前缀和`  |  困难  |  第 142 场双周赛  |
+|  3334  |  [数组的最大因子得分](/solution/3300-3399/3334.Find%20the%20Maximum%20Factor%20Score%20of%20Array/README.md)  |  `数组`,`数学`,`数论`  |  中等  |  第 421 场周赛  |
+|  3335  |  [字符串转换后的长度 I](/solution/3300-3399/3335.Total%20Characters%20in%20String%20After%20Transformations%20I/README.md)  |  `哈希表`,`数学`,`字符串`,`动态规划`,`计数`  |  中等  |  第 421 场周赛  |
+|  3336  |  [最大公约数相等的子序列数量](/solution/3300-3399/3336.Find%20the%20Number%20of%20Subsequences%20With%20Equal%20GCD/README.md)  |  `数组`,`数学`,`动态规划`,`数论`  |  困难  |  第 421 场周赛  |
+|  3337  |  [字符串转换后的长度 II](/solution/3300-3399/3337.Total%20Characters%20in%20String%20After%20Transformations%20II/README.md)  |  `哈希表`,`数学`,`字符串`,`动态规划`,`计数`  |  困难  |  第 421 场周赛  |
+|  3338  |  [第二高的薪水 II](/solution/3300-3399/3338.Second%20Highest%20Salary%20II/README.md)  |  `数据库`  |  中等  |  🔒  |
+|  3339  |  [查找 K 偶数数组的数量](/solution/3300-3399/3339.Find%20the%20Number%20of%20K-Even%20Arrays/README.md)  |  `动态规划`  |  中等  |  🔒  |
 
 ## 版权
 
