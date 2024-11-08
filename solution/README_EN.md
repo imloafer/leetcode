@@ -2532,7 +2532,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2521  |  [Distinct Prime Factors of Product of Array](/solution/2500-2599/2521.Distinct%20Prime%20Factors%20of%20Product%20of%20Array/README_EN.md)  |  `Array`,`Hash Table`,`Math`,`Number Theory`  |  Medium  |  Weekly Contest 326  |
 |  2522  |  [Partition String Into Substrings With Values at Most K](/solution/2500-2599/2522.Partition%20String%20Into%20Substrings%20With%20Values%20at%20Most%20K/README_EN.md)  |  `Greedy`,`String`,`Dynamic Programming`  |  Medium  |  Weekly Contest 326  |
 |  2523  |  [Closest Prime Numbers in Range](/solution/2500-2599/2523.Closest%20Prime%20Numbers%20in%20Range/README_EN.md)  |  `Math`,`Number Theory`  |  Medium  |  Weekly Contest 326  |
-|  2524  |  [Maximum Frequency Score of a Subarray](/solution/2500-2599/2524.Maximum%20Frequency%20Score%20of%20a%20Subarray/README_EN.md)  |  `Array`,`Hash Table`,`Math`,`Sliding Window`  |  Hard  |  🔒  |
+|  2524  |  [Maximum Frequency Score of a Subarray](/solution/2500-2599/2524.Maximum%20Frequency%20Score%20of%20a%20Subarray/README_EN.md)  |  `Stack`,`Array`,`Hash Table`,`Math`,`Sliding Window`  |  Hard  |  🔒  |
 |  2525  |  [Categorize Box According to Criteria](/solution/2500-2599/2525.Categorize%20Box%20According%20to%20Criteria/README_EN.md)  |  `Math`  |  Easy  |  Biweekly Contest 95  |
 |  2526  |  [Find Consecutive Integers from a Data Stream](/solution/2500-2599/2526.Find%20Consecutive%20Integers%20from%20a%20Data%20Stream/README_EN.md)  |  `Design`,`Queue`,`Hash Table`,`Counting`,`Data Stream`  |  Medium  |  Biweekly Contest 95  |
 |  2527  |  [Find Xor-Beauty of Array](/solution/2500-2599/2527.Find%20Xor-Beauty%20of%20Array/README_EN.md)  |  `Bit Manipulation`,`Array`,`Math`  |  Medium  |  Biweekly Contest 95  |
@@ -2693,7 +2693,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  2682  |  [Find the Losers of the Circular Game](/solution/2600-2699/2682.Find%20the%20Losers%20of%20the%20Circular%20Game/README_EN.md)  |  `Array`,`Hash Table`,`Simulation`  |  Easy  |  Weekly Contest 345  |
 |  2683  |  [Neighboring Bitwise XOR](/solution/2600-2699/2683.Neighboring%20Bitwise%20XOR/README_EN.md)  |  `Bit Manipulation`,`Array`  |  Medium  |  Weekly Contest 345  |
 |  2684  |  [Maximum Number of Moves in a Grid](/solution/2600-2699/2684.Maximum%20Number%20of%20Moves%20in%20a%20Grid/README_EN.md)  |  `Array`,`Dynamic Programming`,`Matrix`  |  Medium  |  Weekly Contest 345  |
-|  2685  |  [Count the Number of Complete Components](/solution/2600-2699/2685.Count%20the%20Number%20of%20Complete%20Components/README_EN.md)  |  `Depth-First Search`,`Breadth-First Search`,`Graph`  |  Medium  |  Weekly Contest 345  |
+|  2685  |  [Count the Number of Complete Components](/solution/2600-2699/2685.Count%20the%20Number%20of%20Complete%20Components/README_EN.md)  |  `Depth-First Search`,`Breadth-First Search`,`Union Find`,`Graph`  |  Medium  |  Weekly Contest 345  |
 |  2686  |  [Immediate Food Delivery III](/solution/2600-2699/2686.Immediate%20Food%20Delivery%20III/README_EN.md)  |  `Database`  |  Medium  |  🔒  |
 |  2687  |  [Bikes Last Time Used](/solution/2600-2699/2687.Bikes%20Last%20Time%20Used/README_EN.md)  |  `Database`  |  Easy  |  🔒  |
 |  2688  |  [Find Active Users](/solution/2600-2699/2688.Find%20Active%20Users/README_EN.md)  |  `Database`  |  Medium  |  🔒  |
@@ -3219,7 +3219,7 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  3208  |  [Alternating Groups II](/solution/3200-3299/3208.Alternating%20Groups%20II/README_EN.md)  |  `Array`,`Sliding Window`  |  Medium  |  Biweekly Contest 134  |
 |  3209  |  [Number of Subarrays With AND Value of K](/solution/3200-3299/3209.Number%20of%20Subarrays%20With%20AND%20Value%20of%20K/README_EN.md)  |  `Bit Manipulation`,`Segment Tree`,`Array`,`Binary Search`  |  Hard  |  Biweekly Contest 134  |
 |  3210  |  [Find the Encrypted String](/solution/3200-3299/3210.Find%20the%20Encrypted%20String/README_EN.md)  |  `String`  |  Easy  |  Weekly Contest 405  |
-|  3211  |  [Generate Binary Strings Without Adjacent Zeros](/solution/3200-3299/3211.Generate%20Binary%20Strings%20Without%20Adjacent%20Zeros/README_EN.md)  |  `Bit Manipulation`,`Recursion`,`String`  |  Medium  |  Weekly Contest 405  |
+|  3211  |  [Generate Binary Strings Without Adjacent Zeros](/solution/3200-3299/3211.Generate%20Binary%20Strings%20Without%20Adjacent%20Zeros/README_EN.md)  |  `Bit Manipulation`,`String`,`Backtracking`  |  Medium  |  Weekly Contest 405  |
 |  3212  |  [Count Submatrices With Equal Frequency of X and Y](/solution/3200-3299/3212.Count%20Submatrices%20With%20Equal%20Frequency%20of%20X%20and%20Y/README_EN.md)  |  `Array`,`Matrix`,`Prefix Sum`  |  Medium  |  Weekly Contest 405  |
 |  3213  |  [Construct String with Minimum Cost](/solution/3200-3299/3213.Construct%20String%20with%20Minimum%20Cost/README_EN.md)  |  `Array`,`String`,`Dynamic Programming`,`Suffix Array`  |  Hard  |  Weekly Contest 405  |
 |  3214  |  [Year on Year Growth Rate](/solution/3200-3299/3214.Year%20on%20Year%20Growth%20Rate/README_EN.md)  |  `Database`  |  Hard  |  🔒  |
@@ -3348,6 +3348,10 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  3337  |  [Total Characters in String After Transformations II](/solution/3300-3399/3337.Total%20Characters%20in%20String%20After%20Transformations%20II/README_EN.md)  |  `Hash Table`,`Math`,`String`,`Dynamic Programming`,`Counting`  |  Hard  |  Weekly Contest 421  |
 |  3338  |  [Second Highest Salary II](/solution/3300-3399/3338.Second%20Highest%20Salary%20II/README_EN.md)  |  `Database`  |  Medium  |  🔒  |
 |  3339  |  [Find the Number of K-Even Arrays](/solution/3300-3399/3339.Find%20the%20Number%20of%20K-Even%20Arrays/README_EN.md)  |  `Dynamic Programming`  |  Medium  |  🔒  |
+|  3340  |  [Check Balanced String](/solution/3300-3399/3340.Check%20Balanced%20String/README_EN.md)  |  `String`  |  Easy  |  Weekly Contest 422  |
+|  3341  |  [Find Minimum Time to Reach Last Room I](/solution/3300-3399/3341.Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20I/README_EN.md)  |  `Graph`,`Array`,`Matrix`,`Shortest Path`,`Heap (Priority Queue)`  |  Medium  |  Weekly Contest 422  |
+|  3342  |  [Find Minimum Time to Reach Last Room II](/solution/3300-3399/3342.Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/README_EN.md)  |  `Graph`,`Array`,`Matrix`,`Shortest Path`,`Heap (Priority Queue)`  |  Medium  |  Weekly Contest 422  |
+|  3343  |  [Count Number of Balanced Permutations](/solution/3300-3399/3343.Count%20Number%20of%20Balanced%20Permutations/README_EN.md)  |  `Math`,`String`,`Dynamic Programming`,`Combinatorics`  |  Hard  |  Weekly Contest 422  |
 
 ## Copyright
 
