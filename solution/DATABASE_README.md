@@ -300,6 +300,8 @@
 | 3322 | [英超积分榜排名 III](/solution/3300-3399/3322.Premier%20League%20Table%20Ranking%20III/README.md)                                                            | `数据库` | 中等 | 🔒   |
 | 3328 | [查找每个州的城市 II](/solution/3300-3399/3328.Find%20Cities%20in%20Each%20State%20II/README.md)                                                             | `数据库` | 中等 | 🔒   |
 | 3338 | [第二高的薪水 II](/solution/3300-3399/3338.Second%20Highest%20Salary%20II/README.md)                                                                         | `数据库` | 中等 | 🔒   |
+| 3358 | [评分为 NULL 的图书](/solution/3300-3399/3358.Books%20with%20NULL%20Ratings/README.md)                                                                       | `数据库` | 简单 | 🔒   |
+| 3368 | [首字母大写](/solution/3300-3399/3368.First%20Letter%20Capitalization/README.md)                                                                             |          | 困难 | 🔒   |
 
 ## 版权
 

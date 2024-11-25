@@ -318,7 +318,7 @@
 |  0305  |  [岛屿数量 II](/solution/0300-0399/0305.Number%20of%20Islands%20II/README.md)  |  `并查集`,`数组`,`哈希表`  |  困难  |  🔒  |
 |  0306  |  [累加数](/solution/0300-0399/0306.Additive%20Number/README.md)  |  `字符串`,`回溯`  |  中等  |    |
 |  0307  |  [区域和检索 - 数组可修改](/solution/0300-0399/0307.Range%20Sum%20Query%20-%20Mutable/README.md)  |  `设计`,`树状数组`,`线段树`,`数组`  |  中等  |    |
-|  0308  |  [二维区域和检索 - 矩阵可修改](/solution/0300-0399/0308.Range%20Sum%20Query%202D%20-%20Mutable/README.md)  |  `设计`,`树状数组`,`线段树`,`数组`,`矩阵`  |  困难  |  🔒  |
+|  0308  |  [二维区域和检索 - 矩阵可修改](/solution/0300-0399/0308.Range%20Sum%20Query%202D%20-%20Mutable/README.md)  |  `设计`,`树状数组`,`线段树`,`数组`,`矩阵`  |  中等  |  🔒  |
 |  0309  |  [买卖股票的最佳时机含冷冻期](/solution/0300-0399/0309.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Cooldown/README.md)  |  `数组`,`动态规划`  |  中等  |    |
 |  0310  |  [最小高度树](/solution/0300-0399/0310.Minimum%20Height%20Trees/README.md)  |  `深度优先搜索`,`广度优先搜索`,`图`,`拓扑排序`  |  中等  |    |
 |  0311  |  [稀疏矩阵的乘法](/solution/0300-0399/0311.Sparse%20Matrix%20Multiplication/README.md)  |  `数组`,`哈希表`,`矩阵`  |  中等  |  🔒  |
@@ -3363,7 +3363,22 @@
 |  3350  |  [检测相邻递增子数组 II](/solution/3300-3399/3350.Adjacent%20Increasing%20Subarrays%20Detection%20II/README.md)  |  `数组`,`二分查找`  |  中等  |  第 423 场周赛  |
 |  3351  |  [好子序列的元素之和](/solution/3300-3399/3351.Sum%20of%20Good%20Subsequences/README.md)  |  `数组`,`哈希表`,`动态规划`  |  困难  |  第 423 场周赛  |
 |  3352  |  [统计小于 N 的 K 可约简整数](/solution/3300-3399/3352.Count%20K-Reducible%20Numbers%20Less%20Than%20N/README.md)  |  `数学`,`字符串`,`动态规划`,`组合数学`  |  困难  |  第 423 场周赛  |
-|  3353  |  [Minimum Total Operations](/solution/3300-3399/3353.Minimum%20Total%20Operations/README.md)  |    |  简单  |  🔒  |
+|  3353  |  [最小总操作数](/solution/3300-3399/3353.Minimum%20Total%20Operations/README.md)  |  `数组`  |  简单  |  🔒  |
+|  3354  |  [使数组元素等于零](/solution/3300-3399/3354.Make%20Array%20Elements%20Equal%20to%20Zero/README.md)  |  `数组`,`前缀和`,`模拟`  |  简单  |  第 424 场周赛  |
+|  3355  |  [零数组变换 I](/solution/3300-3399/3355.Zero%20Array%20Transformation%20I/README.md)  |  `数组`,`前缀和`  |  中等  |  第 424 场周赛  |
+|  3356  |  [零数组变换 II](/solution/3300-3399/3356.Zero%20Array%20Transformation%20II/README.md)  |  `数组`,`二分查找`,`前缀和`  |  中等  |  第 424 场周赛  |
+|  3357  |  [最小化相邻元素的最大差值](/solution/3300-3399/3357.Minimize%20the%20Maximum%20Adjacent%20Element%20Difference/README.md)  |  `贪心`,`数组`,`二分查找`  |  困难  |  第 424 场周赛  |
+|  3358  |  [评分为 NULL 的图书](/solution/3300-3399/3358.Books%20with%20NULL%20Ratings/README.md)  |  `数据库`  |  简单  |  🔒  |
+|  3359  |  [查找最大元素不超过 K 的有序子矩阵](/solution/3300-3399/3359.Find%20Sorted%20Submatrices%20With%20Maximum%20Element%20at%20Most%20K/README.md)  |    |  困难  |  🔒  |
+|  3360  |  [移除石头游戏](/solution/3300-3399/3360.Stone%20Removal%20Game/README.md)  |    |  简单  |  第 144 场双周赛  |
+|  3361  |  [两个字符串的切换距离](/solution/3300-3399/3361.Shift%20Distance%20Between%20Two%20Strings/README.md)  |    |  中等  |  第 144 场双周赛  |
+|  3362  |  [零数组变换 III](/solution/3300-3399/3362.Zero%20Array%20Transformation%20III/README.md)  |    |  中等  |  第 144 场双周赛  |
+|  3363  |  [最多可收集的水果数目](/solution/3300-3399/3363.Find%20the%20Maximum%20Number%20of%20Fruits%20Collected/README.md)  |    |  困难  |  第 144 场双周赛  |
+|  3364  |  [最小正和子数组](/solution/3300-3399/3364.Minimum%20Positive%20Sum%20Subarray/README.md)  |    |  简单  |  第 425 场周赛  |
+|  3365  |  [重排子字符串以形成目标字符串](/solution/3300-3399/3365.Rearrange%20K%20Substrings%20to%20Form%20Target%20String/README.md)  |    |  中等  |  第 425 场周赛  |
+|  3366  |  [最小数组和](/solution/3300-3399/3366.Minimum%20Array%20Sum/README.md)  |    |  中等  |  第 425 场周赛  |
+|  3367  |  [移除边之后的权重最大和](/solution/3300-3399/3367.Maximize%20Sum%20of%20Weights%20after%20Edge%20Removals/README.md)  |    |  困难  |  第 425 场周赛  |
+|  3368  |  [首字母大写](/solution/3300-3399/3368.First%20Letter%20Capitalization/README.md)  |    |  困难  |  🔒  |
 
 ## 版权
 
