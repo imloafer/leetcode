@@ -3398,7 +3398,16 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 |  3387  |  [Maximize Amount After Two Days of Conversions](/solution/3300-3399/3387.Maximize%20Amount%20After%20Two%20Days%20of%20Conversions/README_EN.md)  |    |  Medium  |  Weekly Contest 428  |
 |  3388  |  [Count Beautiful Splits in an Array](/solution/3300-3399/3388.Count%20Beautiful%20Splits%20in%20an%20Array/README_EN.md)  |    |  Medium  |  Weekly Contest 428  |
 |  3389  |  [Minimum Operations to Make Character Frequencies Equal](/solution/3300-3399/3389.Minimum%20Operations%20to%20Make%20Character%20Frequencies%20Equal/README_EN.md)  |    |  Hard  |  Weekly Contest 428  |
-|  3390  |  [Longest Team Pass Streak](/solution/3300-3399/3390.Longest%20Team%20Pass%20Streak/README_EN.md)  |    |  Hard  |  🔒  |
+|  3390  |  [Longest Team Pass Streak](/solution/3300-3399/3390.Longest%20Team%20Pass%20Streak/README_EN.md)  |  `Database`  |  Hard  |  🔒  |
+|  3391  |  [Design a 3D Binary Matrix with Efficient Layer Tracking](/solution/3300-3399/3391.Design%20a%203D%20Binary%20Matrix%20with%20Efficient%20Layer%20Tracking/README_EN.md)  |    |  Medium  |  🔒  |
+|  3392  |  [Count Subarrays of Length Three With a Condition](/solution/3300-3399/3392.Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/README_EN.md)  |    |  Easy  |  Biweekly Contest 146  |
+|  3393  |  [Count Paths With the Given XOR Value](/solution/3300-3399/3393.Count%20Paths%20With%20the%20Given%20XOR%20Value/README_EN.md)  |    |  Medium  |  Biweekly Contest 146  |
+|  3394  |  [Check if Grid can be Cut into Sections](/solution/3300-3399/3394.Check%20if%20Grid%20can%20be%20Cut%20into%20Sections/README_EN.md)  |    |  Medium  |  Biweekly Contest 146  |
+|  3395  |  [Subsequences with a Unique Middle Mode I](/solution/3300-3399/3395.Subsequences%20with%20a%20Unique%20Middle%20Mode%20I/README_EN.md)  |    |  Hard  |  Biweekly Contest 146  |
+|  3396  |  [Minimum Number of Operations to Make Elements in Array Distinct](/solution/3300-3399/3396.Minimum%20Number%20of%20Operations%20to%20Make%20Elements%20in%20Array%20Distinct/README_EN.md)  |    |  Easy  |  Weekly Contest 429  |
+|  3397  |  [Maximum Number of Distinct Elements After Operations](/solution/3300-3399/3397.Maximum%20Number%20of%20Distinct%20Elements%20After%20Operations/README_EN.md)  |    |  Medium  |  Weekly Contest 429  |
+|  3398  |  [Smallest Substring With Identical Characters I](/solution/3300-3399/3398.Smallest%20Substring%20With%20Identical%20Characters%20I/README_EN.md)  |    |  Hard  |  Weekly Contest 429  |
+|  3399  |  [Smallest Substring With Identical Characters II](/solution/3300-3399/3399.Smallest%20Substring%20With%20Identical%20Characters%20II/README_EN.md)  |    |  Hard  |  Weekly Contest 429  |
 
 ## Copyright
 

@@ -103,7 +103,6 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3387.Ma
 	<li><code>rates2.length == m</code></li>
 	<li><code>1.0 &lt;= rates1[i], rates2[i] &lt;= 10.0</code></li>
 	<li>输入保证两个转换图在各自的天数中没有矛盾或循环。</li>
-	<li>输入保证输出&nbsp;<strong>最大</strong>&nbsp;为&nbsp;<code>5 * 10<sup>10</sup></code>。</li>
 </ul>
 
 <!-- description:end -->
@@ -230,7 +229,7 @@ private:
             g[b].push_back({a, 1 / r});
         }
 
-        auto dfs = [&](auto&& dfs, const string& a, double v) -> void {
+        auto dfs = [&](this auto&& dfs, const string& a, double v) -> void {
             if (d.find(a) != d.end()) {
                 return;
             }
@@ -238,11 +237,11 @@ private:
             d[a] = v;
             for (const auto& [b, r] : g[a]) {
                 if (d.find(b) == d.end()) {
-                    dfs(dfs, b, v * r);
+                    dfs(b, v * r);
                 }
             }
         };
-        dfs(dfs, init, 1.0);
+        dfs(init, 1.0);
         return d;
     }
 };

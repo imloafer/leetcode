@@ -3400,7 +3400,16 @@
 |  3387  |  [两天自由外汇交易后的最大货币数](/solution/3300-3399/3387.Maximize%20Amount%20After%20Two%20Days%20of%20Conversions/README.md)  |    |  中等  |  第 428 场周赛  |
 |  3388  |  [统计数组中的美丽分割](/solution/3300-3399/3388.Count%20Beautiful%20Splits%20in%20an%20Array/README.md)  |    |  中等  |  第 428 场周赛  |
 |  3389  |  [使字符频率相等的最少操作次数](/solution/3300-3399/3389.Minimum%20Operations%20to%20Make%20Character%20Frequencies%20Equal/README.md)  |    |  困难  |  第 428 场周赛  |
-|  3390  |  [Longest Team Pass Streak](/solution/3300-3399/3390.Longest%20Team%20Pass%20Streak/README.md)  |    |  困难  |  🔒  |
+|  3390  |  [Longest Team Pass Streak](/solution/3300-3399/3390.Longest%20Team%20Pass%20Streak/README.md)  |  `数据库`  |  困难  |  🔒  |
+|  3391  |  [设计一个高效的层跟踪三维二进制矩阵](/solution/3300-3399/3391.Design%20a%203D%20Binary%20Matrix%20with%20Efficient%20Layer%20Tracking/README.md)  |    |  中等  |  🔒  |
+|  3392  |  [统计符合条件长度为 3 的子数组数目](/solution/3300-3399/3392.Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/README.md)  |    |  简单  |  第 146 场双周赛  |
+|  3393  |  [统计异或值为给定值的路径数目](/solution/3300-3399/3393.Count%20Paths%20With%20the%20Given%20XOR%20Value/README.md)  |    |  中等  |  第 146 场双周赛  |
+|  3394  |  [判断网格图能否被切割成块](/solution/3300-3399/3394.Check%20if%20Grid%20can%20be%20Cut%20into%20Sections/README.md)  |    |  中等  |  第 146 场双周赛  |
+|  3395  |  [唯一中间众数子序列 I](/solution/3300-3399/3395.Subsequences%20with%20a%20Unique%20Middle%20Mode%20I/README.md)  |    |  困难  |  第 146 场双周赛  |
+|  3396  |  [使数组元素互不相同所需的最少操作次数](/solution/3300-3399/3396.Minimum%20Number%20of%20Operations%20to%20Make%20Elements%20in%20Array%20Distinct/README.md)  |    |  简单  |  第 429 场周赛  |
+|  3397  |  [执行操作后不同元素的最大数量](/solution/3300-3399/3397.Maximum%20Number%20of%20Distinct%20Elements%20After%20Operations/README.md)  |    |  中等  |  第 429 场周赛  |
+|  3398  |  [字符相同的最短子字符串 I](/solution/3300-3399/3398.Smallest%20Substring%20With%20Identical%20Characters%20I/README.md)  |    |  困难  |  第 429 场周赛  |
+|  3399  |  [字符相同的最短子字符串 II](/solution/3300-3399/3399.Smallest%20Substring%20With%20Identical%20Characters%20II/README.md)  |    |  困难  |  第 429 场周赛  |
 
 ## 版权
 

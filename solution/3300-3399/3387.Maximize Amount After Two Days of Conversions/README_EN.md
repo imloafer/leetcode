@@ -99,7 +99,6 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3387.Ma
 	<li><code>rates2.length == m</code></li>
 	<li><code>1.0 &lt;= rates1[i], rates2[i] &lt;= 10.0</code></li>
 	<li>The input is generated such that there are no contradictions or cycles in the conversion graphs for either day.</li>
-	<li>The input is generated such that the output is <strong>at most</strong> <code>5 * 10<sup>10</sup></code>.</li>
 </ul>
 
 <!-- description:end -->
@@ -226,7 +225,7 @@ private:
             g[b].push_back({a, 1 / r});
         }
 
-        auto dfs = [&](auto&& dfs, const string& a, double v) -> void {
+        auto dfs = [&](this auto&& dfs, const string& a, double v) -> void {
             if (d.find(a) != d.end()) {
                 return;
             }
@@ -234,11 +233,11 @@ private:
             d[a] = v;
             for (const auto& [b, r] : g[a]) {
                 if (d.find(b) == d.end()) {
-                    dfs(dfs, b, v * r);
+                    dfs(b, v * r);
                 }
             }
         };
-        dfs(dfs, init, 1.0);
+        dfs(init, 1.0);
         return d;
     }
 };
