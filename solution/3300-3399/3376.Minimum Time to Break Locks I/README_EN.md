@@ -2,8 +2,11 @@
 comments: true
 difficulty: Medium
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3376.Minimum%20Time%20to%20Break%20Locks%20I/README_EN.md
+rating: 1793
+source: Biweekly Contest 145 Q2
 tags:
     - Bit Manipulation
+    - Depth-First Search
     - Array
     - Dynamic Programming
     - Backtracking
@@ -26,10 +29,10 @@ tags:
 
 <ul>
 	<li>The initial energy of the sword is 0.</li>
-	<li>The initial factor <code><font face="monospace">X</font></code> by which the energy of the sword increases is 1.</li>
-	<li>Every minute, the energy of the sword increases by the current factor <code>X</code>.</li>
+	<li>The initial factor <code><font face="monospace">x</font></code> by which the energy of the sword increases is 1.</li>
+	<li>Every minute, the energy of the sword increases by the current factor <code>x</code>.</li>
 	<li>To break the <code>i<sup>th</sup></code> lock, the energy of the sword must reach <strong>at least</strong> <code>strength[i]</code>.</li>
-	<li>After breaking a lock, the energy of the sword resets to 0, and the factor <code>X</code> increases by a given value <code>K</code>.</li>
+	<li>After breaking a lock, the energy of the sword resets to 0, and the factor <code>x</code> increases by a given value <code>k</code>.</li>
 </ul>
 
 <p>Your task is to determine the <strong>minimum</strong> time in minutes required for Bob to break all <code>n</code> locks and escape the dungeon.</p>
@@ -40,7 +43,7 @@ tags:
 <p><strong class="example">Example 1:</strong></p>
 
 <div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">strength = [3,4,1], K = 1</span></p>
+<p><strong>Input:</strong> <span class="example-io">strength = [3,4,1], k = 1</span></p>
 
 <p><strong>Output:</strong> <span class="example-io">4</span></p>
 
@@ -51,9 +54,9 @@ tags:
 		<tr>
 			<th style="border: 1px solid black;">Time</th>
 			<th style="border: 1px solid black;">Energy</th>
-			<th style="border: 1px solid black;">X</th>
+			<th style="border: 1px solid black;">x</th>
 			<th style="border: 1px solid black;">Action</th>
-			<th style="border: 1px solid black;">Updated X</th>
+			<th style="border: 1px solid black;">Updated x</th>
 		</tr>
 		<tr>
 			<td style="border: 1px solid black;">0</td>
@@ -99,7 +102,7 @@ tags:
 <p><strong class="example">Example 2:</strong></p>
 
 <div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">strength = [2,5,4], K = 2</span></p>
+<p><strong>Input:</strong> <span class="example-io">strength = [2,5,4], k = 2</span></p>
 
 <p><strong>Output:</strong> <span class="example-io">5</span></p>
 
@@ -110,9 +113,9 @@ tags:
 		<tr>
 			<th style="border: 1px solid black;">Time</th>
 			<th style="border: 1px solid black;">Energy</th>
-			<th style="border: 1px solid black;">X</th>
+			<th style="border: 1px solid black;">x</th>
 			<th style="border: 1px solid black;">Action</th>
-			<th style="border: 1px solid black;">Updated X</th>
+			<th style="border: 1px solid black;">Updated x</th>
 		</tr>
 		<tr>
 			<td style="border: 1px solid black;">0</td>

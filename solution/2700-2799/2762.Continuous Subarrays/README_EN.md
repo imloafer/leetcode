@@ -43,7 +43,7 @@ tags:
 Continuous subarray of size 1: [5], [4], [2], [4].
 Continuous subarray of size 2: [5,4], [4,2], [2,4].
 Continuous subarray of size 3: [4,2,4].
-Thereare no subarrys of size 4.
+There are no subarrys of size 4.
 Total continuous subarrays = 4 + 3 + 1 = 8.
 It can be shown that there are no more continuous subarrays.
 </pre>
@@ -91,9 +91,6 @@ The time complexity is $O(n \times \log n)$ and the space complexity is $O(n)$, 
 #### Python3
 
 ```python
-from sortedcontainers import SortedList
-
-
 class Solution:
     def continuousSubarrays(self, nums: List[int]) -> int:
         ans = i = 0

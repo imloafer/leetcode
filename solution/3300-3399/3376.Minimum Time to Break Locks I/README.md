@@ -2,8 +2,11 @@
 comments: true
 difficulty: 中等
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3376.Minimum%20Time%20to%20Break%20Locks%20I/README.md
+rating: 1793
+source: 第 145 场双周赛 Q2
 tags:
     - 位运算
+    - 深度优先搜索
     - 数组
     - 动态规划
     - 回溯

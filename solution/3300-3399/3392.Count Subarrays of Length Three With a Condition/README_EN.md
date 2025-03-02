@@ -2,6 +2,10 @@
 comments: true
 difficulty: Easy
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3392.Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/README_EN.md
+rating: 1200
+source: Biweekly Contest 146 Q1
+tags:
+    - Array
 ---
 
 <!-- problem:start -->
@@ -14,9 +18,7 @@ edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3392.Co
 
 <!-- description:start -->
 
-<p>Given an integer array <code>nums</code>, return the number of subarrays<em> </em>of length 3 such that the sum of the first and third numbers equals <em>exactly</em> half of the second number.</p>
-
-<p>A <strong>subarray</strong> is a contiguous <b>non-empty</b> sequence of elements within an array.</p>
+<p>Given an integer array <code>nums</code>, return the number of <span data-keyword="subarray-nonempty">subarrays</span> of length 3 such that the sum of the first and third numbers equals <em>exactly</em> half of the second number.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

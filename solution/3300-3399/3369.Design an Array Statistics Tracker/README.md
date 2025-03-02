@@ -3,9 +3,13 @@ comments: true
 difficulty: 困难
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/3300-3399/3369.Design%20an%20Array%20Statistics%20Tracker/README.md
 tags:
+    - 设计
     - 队列
     - 哈希表
     - 二分查找
+    - 数据流
+    - 有序集合
+    - 堆（优先队列）
 ---
 
 <!-- problem:start -->
@@ -125,9 +129,6 @@ statisticsTracker.getMode(); // return 5</div>
 #### Python3
 
 ```python
-from sortedcontainers import SortedList
-
-
 class StatisticsTracker:
 
     def __init__(self):

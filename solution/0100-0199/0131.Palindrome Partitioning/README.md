@@ -149,14 +149,14 @@ public:
         }
         vector<vector<string>> ans;
         vector<string> t;
-        function<void(int)> dfs = [&](int i) {
+        auto dfs = [&](this auto&& dfs, int i) -> void {
             if (i == n) {
-                ans.push_back(t);
+                ans.emplace_back(t);
                 return;
             }
             for (int j = i; j < n; ++j) {
                 if (f[i][j]) {
-                    t.push_back(s.substr(i, j - i + 1));
+                    t.emplace_back(s.substr(i, j - i + 1));
                     dfs(j + 1);
                     t.pop_back();
                 }
@@ -210,7 +210,7 @@ func partition(s string) (ans [][]string) {
 ```ts
 function partition(s: string): string[][] {
     const n = s.length;
-    const f: boolean[][] = new Array(n).fill(0).map(() => new Array(n).fill(true));
+    const f: boolean[][] = Array.from({ length: n }, () => Array(n).fill(true));
     for (let i = n - 1; i >= 0; --i) {
         for (let j = i + 1; j < n; ++j) {
             f[i][j] = s[i] === s[j] && f[i + 1][j - 1];
